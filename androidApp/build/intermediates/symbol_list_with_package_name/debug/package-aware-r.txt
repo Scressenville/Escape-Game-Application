@@ -1,4 +1,5 @@
 sae.escapegame.application.android
+array cinematic1
 attr action
 attr alpha
 attr argType
@@ -172,6 +173,9 @@ layout notification_template_icon_group
 layout notification_template_part_chronometer
 layout notification_template_part_time
 string androidx_startup
+string btnJouer
+string btnLangue
+string btnSuivant
 string close_drawer
 string close_sheet
 string default_error_message

@@ -1,0 +1,11 @@
+<resources>
+    <string name="btnJouer" >Jouer</string>
+    <string name="btnSuivant" >Suivant</string>
+    <string name="btnLangue" >fr</string>
+
+    <string-array name="cinematic1">
+        <item>Ouuuups</item>
+        <item>Il semblerai que tu sois bloqué à l\'intérieur du batiment !</item>
+        <item>C\'est à cause de l\'horrible Chain !</item>
+    </string-array>
+</resources>

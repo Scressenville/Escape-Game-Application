@@ -1,7 +1,10 @@
 package sae.escapegame.application.android
 
+import android.R
 import android.annotation.SuppressLint
 import android.os.Bundle
+import android.widget.Button
+import android.widget.TextView
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.background
@@ -165,9 +168,16 @@ fun Body() {
         horizontalAlignment = Alignment.CenterHorizontally,
         modifier = Modifier
             .fillMaxSize()
-            .background(Color.White)
     ) {
-        Text(text = "Body Content", color = Color(0xFF0F9D58))
+        
+        var fdp = "Hello world"
+        Text(text = fdp)
+        Button(onClick =  {
+
+        }) {
+            Text(text = "Joueur", color = Color(0xFFFFFFFF))
+        }
+
     }
 }
 @Composable

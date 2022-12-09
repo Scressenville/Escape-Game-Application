@@ -7,6 +7,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.compose.ui.Modifier
+import androidx.navigation.NavController
 
 @Composable
 fun Navigation() {
@@ -16,7 +17,11 @@ fun Navigation() {
             MainScreen(navController = navController)
         }
         composable(route = Screen.DetailScreen.route){
-            Cinematic1Screen()
+            Cinematic1Screen(navController = navController)
+        }
+        composable(route = Screen.EnigmeScreen.route){
+            enigmeOne()
         }
     }
 }
+

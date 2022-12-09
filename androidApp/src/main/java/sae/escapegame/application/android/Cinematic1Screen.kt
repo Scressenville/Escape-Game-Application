@@ -15,9 +15,10 @@ import androidx.compose.ui.graphics.Color.Companion.White
 import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.stringArrayResource
 import androidx.compose.ui.res.stringResource
+import androidx.navigation.NavController
 
 @Composable
-fun Cinematic1Screen(){
+fun Cinematic1Screen(navController : NavController){
     var compteur by remember{mutableStateOf(0)}
     var dialogue = stringArrayResource(R.array.cinematic1)
     Column(
@@ -32,6 +33,9 @@ fun Cinematic1Screen(){
             onClick = {
                 if (dialogue.size -1 > compteur){
                     compteur++
+                }
+                else{
+                    navController.navigate(Screen.EnigmeScreen.route)
                 }
             },
         ) {

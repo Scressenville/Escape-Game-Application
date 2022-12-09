@@ -5,8 +5,18 @@
         <item>Il semblerai que tu sois bloqué à l\'intérieur du batiment !</item>
         <item>C\'est à cause de l\'horrible Chain !</item>
     </string-array>
+    <string-array name="enigmeOneAlgo">
+        <item>Chain  : "Mouahaha bientôt tu seras bientôt à ma merci, ce n\’est qu\’une question de temps!"</item>
+        <item>Loggy : "Mon ami.e je t\’ai laissé un fragment de mes recherches dans la salle, tu l\’as trouvé?"</item>
+        <item>Oh non!!!</item>
+        <item>Loggy : "Le langage Python s\'est malheureusement allié avec Chain, Java également, c\’est désastreux." </item>
+        <item>Bon, dans un premier temps essayons de vaincre Python à son propre jeu. Traduisons l\’algo que je t\’ai laissé dans son langage pour le vaincre.</item>
+        <item> /!\ Item trouvé : /!\ </item>
+        <item> "receuil de notes de Loggy", "Le serment de protection"</item>
+    </string-array>
     <string name="btnJouer">Jouer</string>
     <string name="btnLangue">fr</string>
     <string name="btnSuivant">Suivant</string>
+    <string name="enigmealgo">imagePremiereEnigme</string>
     <style name="AppTheme" parent="android:Theme.Material.NoActionBar"/>
 </resources>

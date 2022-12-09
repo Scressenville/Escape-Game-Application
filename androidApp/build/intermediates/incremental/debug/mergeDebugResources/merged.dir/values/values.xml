@@ -5,6 +5,15 @@
         <item>Il semblerai que tu sois bloqué à l\'intérieur du batiment !</item>
         <item>C\'est à cause de l\'horrible Chain !</item>
     </string-array>
+    <string-array name="enigmeOneAlgo">
+        <item>Chain  : "Mouahaha bientôt tu seras bientôt à ma merci, ce n\’est qu\’une question de temps!"</item>
+        <item>Loggy : "Mon ami.e je t\’ai laissé un fragment de mes recherches dans la salle, tu l\’as trouvé?"</item>
+        <item>Oh non!!!</item>
+        <item>Loggy : "Le langage Python s\'est malheureusement allié avec Chain, Java également, c\’est désastreux." </item>
+        <item>Bon, dans un premier temps essayons de vaincre Python à son propre jeu. Traduisons l\’algo que je t\’ai laissé dans son langage pour le vaincre.</item>
+        <item> /!\ Item trouvé : /!\ </item>
+        <item> "receuil de notes de Loggy", "Le serment de protection"</item>
+    </string-array>
     <attr format="reference" name="nestedScrollViewStyle"/>
     <color name="androidx_core_ripple_material_light">#1f000000</color>
     <color name="androidx_core_secondary_text_default_material_light">#8a000000</color>
@@ -108,6 +117,7 @@
     <string name="default_error_message">"Invalid input"</string>
     <string name="default_popup_window_title" ns1:ignore="ExtraTranslation">"Pop-Up Window"</string>
     <string name="dropdown_menu">"Dropdown menu"</string>
+    <string name="enigmealgo">imagePremiereEnigme</string>
     <string name="in_progress">In progress</string>
     <string name="indeterminate">Neither checked nor unchecked</string>
     <string name="navigation_menu">"Navigation menu"</string>

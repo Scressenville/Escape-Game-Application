@@ -1,7 +1,10 @@
 R_DEF: Internal format may change without notice
 local
 array cinematic1
+array enigmeOneAlgo
+drawable enigmealgo
 string btnJouer
 string btnLangue
 string btnSuivant
+string enigmealgo
 style AppTheme

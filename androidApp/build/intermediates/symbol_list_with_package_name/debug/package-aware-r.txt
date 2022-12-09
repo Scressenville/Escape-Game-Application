@@ -1,5 +1,6 @@
 sae.escapegame.application.android
 array cinematic1
+array enigmeOneAlgo
 attr action
 attr alpha
 attr argType
@@ -67,6 +68,7 @@ dimen notification_small_icon_size_as_large
 dimen notification_subtext_size
 dimen notification_top_pad
 dimen notification_top_pad_large_text
+drawable enigmealgo
 drawable notification_action_background
 drawable notification_bg
 drawable notification_bg_low
@@ -181,6 +183,7 @@ string close_sheet
 string default_error_message
 string default_popup_window_title
 string dropdown_menu
+string enigmealgo
 string in_progress
 string indeterminate
 string navigation_menu

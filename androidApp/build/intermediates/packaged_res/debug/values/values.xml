@@ -7,6 +7,7 @@
     </string-array>
     <string name="btnJouer">Jouer</string>
     <string name="btnLangue">fr</string>
-    <string name="btnSuivant">Suivant</string>
+    <string name="btnPrecedemment">Prec</string>
+    <string name="btnSuivant">Suiv</string>
     <style name="AppTheme" parent="android:Theme.Material.NoActionBar"/>
 </resources>

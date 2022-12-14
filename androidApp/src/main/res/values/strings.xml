@@ -1,6 +1,7 @@
 <resources>
     <string name="btnJouer" >Jouer</string>
-    <string name="btnSuivant" >Suivant</string>
+    <string name="btnSuivant" >Suiv</string>
+    <string name="btnPrecedemment" >Prec</string>
     <string name="btnLangue" >fr</string>
 
     <string-array name="cinematic1">

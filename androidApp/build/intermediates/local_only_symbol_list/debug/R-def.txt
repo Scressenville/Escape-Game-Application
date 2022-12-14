@@ -1,7 +1,10 @@
 R_DEF: Internal format may change without notice
 local
 array cinematic1
+drawable hallcinematique1
+drawable loggy
 string btnJouer
 string btnLangue
+string btnPrecedemment
 string btnSuivant
 style AppTheme

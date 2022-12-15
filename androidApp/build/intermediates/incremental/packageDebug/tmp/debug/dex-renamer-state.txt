@@ -1,12 +1,12 @@
-#Thu Dec 15 09:44:48 CET 2022
+#Thu Dec 15 10:22:34 CET 2022
 path.3=4/classes.dex
 path.2=0/classes.dex
 path.1=9/classes.dex
 path.0=classes.dex
-base.3=C\:\\Users\\leado\\OneDrive\\Bureau\\SAE EG\\Escape-Game-Application\\androidApp\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\4\\classes.dex
-base.2=C\:\\Users\\leado\\OneDrive\\Bureau\\SAE EG\\Escape-Game-Application\\androidApp\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
-base.1=C\:\\Users\\leado\\OneDrive\\Bureau\\SAE EG\\Escape-Game-Application\\androidApp\\build\\intermediates\\dex\\debug\\mergeLibDexDebug\\9\\classes.dex
-base.0=C\:\\Users\\leado\\OneDrive\\Bureau\\SAE EG\\Escape-Game-Application\\androidApp\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+base.3=C\:\\Users\\Leo\\Desktop\\travail\\A2 BUT INFO\\SAE\\SAE-Escape-Game\\Escape-Game-Application\\androidApp\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\4\\classes.dex
+base.2=C\:\\Users\\Leo\\Desktop\\travail\\A2 BUT INFO\\SAE\\SAE-Escape-Game\\Escape-Game-Application\\androidApp\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
+base.1=C\:\\Users\\Leo\\Desktop\\travail\\A2 BUT INFO\\SAE\\SAE-Escape-Game\\Escape-Game-Application\\androidApp\\build\\intermediates\\dex\\debug\\mergeLibDexDebug\\9\\classes.dex
+base.0=C\:\\Users\\Leo\\Desktop\\travail\\A2 BUT INFO\\SAE\\SAE-Escape-Game\\Escape-Game-Application\\androidApp\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 renamed.3=classes4.dex
 renamed.2=classes3.dex
 renamed.1=classes2.dex

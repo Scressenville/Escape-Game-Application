@@ -26,17 +26,13 @@ import androidx.compose.ui.unit.dp
 fun resolvEnigmeOne(){
     var imageVisible  by remember { mutableStateOf(false) }
     Column(
-        verticalArrangement = Arrangement.Center,
+        verticalArrangement = Arrangement.SpaceEvenly,
         horizontalAlignment = Alignment.CenterHorizontally,
         modifier = Modifier
             .fillMaxSize()
-            .background(color = Color.White)
+            .background(color = Color.White),
+
     ) {
-        AnimatedVisibility(
-            visible = !imageVisible,
-            enter = fadeIn(animationSpec = tween(4000)),
-            exit = fadeOut(animationSpec = tween(4000))
-        ) {
             Image(
 
                 painter = painterResource(R.drawable.enigmealgo),
@@ -58,8 +54,6 @@ fun resolvEnigmeOne(){
                 modifier = Modifier
                     .padding(horizontal = 5.dp)
             )
-            }
-
         }
     }
 

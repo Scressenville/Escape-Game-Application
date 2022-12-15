@@ -1,7 +1,10 @@
 sae.escapegame.application.android
+array choix_enigmes1_nom
 array cinematic1
 array cinematic2
 array cinematic3
+array enigmeOneAlgo
+array enimges_screen
 attr action
 attr alpha
 attr argType

@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="choix_enigmes1_nom">
+        <item>Python</item>
+        <item>SQL</item>
+    </string-array>
     <string-array name="cinematic1">
         <item>Ouuuups</item>
         <item>Il semblerai que tu sois bloqué à l\'intérieur du batiment !</item>
@@ -15,6 +19,18 @@
         <item>Cela fut difficile mais maintenant nous allons enfin pouvoir en découdre avec chain !</item>
         <item>Il est temps que cette masquerade ce termine !</item>
     </string-array>
+    <string-array name="enigmeOneAlgo">
+        <item>Chain  : "Mouahaha tu seras bientôt à ma merci, ce n\’est qu\’une question de temps!"</item>
+        <item>Loggy : "Mon ami.e je t\’ai laissé.e un fragment de mes recherches dans la salle, tu l\’as trouvé?"</item>
+        <item>Oh non!!!</item>
+        <item>Loggy : "Le langage Python s\'est malheureusement allié avec Chain, Java également, c\’est désastreux." </item>
+        <item>Bon, dans un premier temps essayons de vaincre Python à son propre jeu. Traduisons l\’algo que je t\’ai laissé dans son langage pour le vaincre.</item>
+        <item> /!\ Item trouvé : /!\ </item>
+        <item> "recueil de notes de Loggy", "Le serment de protection"</item>
+    </string-array>
+    <array name="enimges_screen">
+
+    </array>
     <string name="btnJouer">Jouer</string>
     <string name="btnLangue">fr</string>
     <string name="btnPrecedemment">Prec</string>

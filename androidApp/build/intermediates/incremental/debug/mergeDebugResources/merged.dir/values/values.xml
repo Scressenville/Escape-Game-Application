@@ -2,17 +2,17 @@
 <resources xmlns:ns1="http://schemas.android.com/tools" xmlns:ns2="urn:oasis:names:tc:xliff:document:1.2">
     <string-array name="cinematic1">
         <item>Ouuuups</item>
-        <item>Il semblerai que tu sois bloqué à l\'intérieur du batiment !</item>
+        <item>Il semblerait que tu sois bloqué à l\'intérieur du bâtiment !</item>
         <item>C\'est à cause de l\'horrible Chain !</item>
     </string-array>
     <string-array name="enigmeOneAlgo">
-        <item>Chain  : "Mouahaha bientôt tu seras bientôt à ma merci, ce n\’est qu\’une question de temps!"</item>
-        <item>Loggy : "Mon ami.e je t\’ai laissé un fragment de mes recherches dans la salle, tu l\’as trouvé?"</item>
+        <item>Chain  : "Mouahaha tu seras bientôt à ma merci, ce n\’est qu\’une question de temps!"</item>
+        <item>Loggy : "Mon ami.e je t\’ai laissé.e un fragment de mes recherches dans la salle, tu l\’as trouvé?"</item>
         <item>Oh non!!!</item>
         <item>Loggy : "Le langage Python s\'est malheureusement allié avec Chain, Java également, c\’est désastreux." </item>
         <item>Bon, dans un premier temps essayons de vaincre Python à son propre jeu. Traduisons l\’algo que je t\’ai laissé dans son langage pour le vaincre.</item>
         <item> /!\ Item trouvé : /!\ </item>
-        <item> "receuil de notes de Loggy", "Le serment de protection"</item>
+        <item> "recueil de notes de Loggy", "Le serment de protection"</item>
     </string-array>
     <attr format="reference" name="nestedScrollViewStyle"/>
     <color name="androidx_core_ripple_material_light">#1f000000</color>
@@ -109,6 +109,8 @@
     <item name="wrapped_composition_tag" type="id"/>
     <integer name="status_bar_notification_info_maxnum">999</integer>
     <string name="androidx_startup" translatable="false">androidx.startup</string>
+    <string name="answer1">Rep1PremiereEnigme</string>
+    <string name="answer2">Rep2PremiereEnigme</string>
     <string name="btnJouer">Jouer</string>
     <string name="btnLangue">fr</string>
     <string name="btnSuivant">Suivant</string>

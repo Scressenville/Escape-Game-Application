@@ -2,7 +2,11 @@ R_DEF: Internal format may change without notice
 local
 array cinematic1
 array enigmeOneAlgo
+drawable answer1
+drawable answer2
 drawable enigmealgo
+string answer1
+string answer2
 string btnJouer
 string btnLangue
 string btnSuivant

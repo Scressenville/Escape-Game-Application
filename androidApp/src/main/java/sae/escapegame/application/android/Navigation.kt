@@ -19,8 +19,11 @@ fun Navigation() {
         composable(route = Screen.DetailScreen.route){
             Cinematic1Screen(navController = navController)
         }
-        composable(route = Screen.EnigmeScreen.route){
-            enigmeOne()
+        composable(route = Screen.EnigmeOneScreen.route){
+            enigmeOne(navController = navController)
+        }
+        composable(route = Screen.ResolvEnigmeOneScreen.route){
+            resolvEnigmeOne()
         }
     }
 }

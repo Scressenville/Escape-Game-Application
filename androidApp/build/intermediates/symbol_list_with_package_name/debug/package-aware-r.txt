@@ -68,6 +68,8 @@ dimen notification_small_icon_size_as_large
 dimen notification_subtext_size
 dimen notification_top_pad
 dimen notification_top_pad_large_text
+drawable answer1
+drawable answer2
 drawable enigmealgo
 drawable notification_action_background
 drawable notification_bg
@@ -175,6 +177,8 @@ layout notification_template_icon_group
 layout notification_template_part_chronometer
 layout notification_template_part_time
 string androidx_startup
+string answer1
+string answer2
 string btnJouer
 string btnLangue
 string btnSuivant

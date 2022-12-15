@@ -35,7 +35,7 @@ fun Cinematic1Screen(navController : NavController){
                     compteur++
                 }
                 else{
-                    navController.navigate(Screen.EnigmeScreen.route)
+                    navController.navigate(Screen.EnigmeOneScreen.route)
                 }
             },
         ) {

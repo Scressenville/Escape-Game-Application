@@ -9,4 +9,14 @@
         <item>Il semblerai que tu sois bloqué à l\'intérieur du batiment !</item>
         <item>C\'est à cause de l\'horrible Chain !</item>
     </string-array>
+    <string-array name="cinematic2">
+        <item>Très bien on a réussi à passer le rez de chaussée</item>
+        <item>Il faut maintenant réussir à passer le premier étage !</item>
+        <item>Je crois en toi on va y arriver !</item>
+    </string-array>
+    <string-array name="cinematic3">
+        <item>Nous y sommes le dernier étage !</item>
+        <item>Cela fut difficile mais maintenant nous allons enfin pouvoir en découdre avec chain !</item>
+        <item>Il est temps que cette masquerade ce termine !</item>
+    </string-array>
 </resources>

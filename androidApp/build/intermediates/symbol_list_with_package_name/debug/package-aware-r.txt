@@ -1,5 +1,7 @@
 sae.escapegame.application.android
 array cinematic1
+array cinematic2
+array cinematic3
 attr action
 attr alpha
 attr argType

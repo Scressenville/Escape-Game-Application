@@ -16,9 +16,10 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
+import androidx.navigation.NavController
 
 @Composable
-fun Cinematic(imageFond: Painter,imageLoggy: Painter , dialogue : Array<String>){
+fun Cinematic(imageFond: Painter,imageLoggy: Painter , dialogue : Array<String>, nextScreen : Screen, navController : NavController){
     var compteur by remember{mutableStateOf(0)}
     Column(
         modifier = Modifier
@@ -69,7 +70,14 @@ fun Cinematic(imageFond: Painter,imageLoggy: Painter , dialogue : Array<String>)
                     onClick = { if (0 < compteur){compteur--} }
                 ) { Text(text = stringResource(R.string.btnPrecedemment))}
                 Button(
-                    onClick = { if (dialogue.size -1> compteur){compteur++} }
+                    onClick = {
+                        if (dialogue.size -1> compteur){
+                            compteur++
+                        }
+                        else{
+                            navController.navigate(nextScreen.route)
+                        }
+                    }
                 ) { Text(text = stringResource(R.string.btnSuivant))}
             }
         }

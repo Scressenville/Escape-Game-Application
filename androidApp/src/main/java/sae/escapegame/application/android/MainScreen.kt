@@ -106,7 +106,7 @@ private fun body(navController: NavController) {
     ) {
         Button(
             onClick = {
-                navController.navigate(Screen.DetailScreen.route)
+                navController.navigate(Screen.Cinematic1Screen.route)
             },
         ) {
             Text(stringResource(sae.escapegame.application.android.R.string.btnJouer))

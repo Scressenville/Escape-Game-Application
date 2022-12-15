@@ -26,7 +26,7 @@ fun Navigation() {
                 Screen.Cinematic2Screen, navController)
         }
         composable(route = Screen.ChoixEnigme1.route){
-            choixEnigmes()
+
         }
         composable(route = Screen.Cinematic2Screen.route){
             Cinematic(painterResource(id = R.drawable.hallcinematique1),

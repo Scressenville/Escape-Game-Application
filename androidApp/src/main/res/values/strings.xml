@@ -19,4 +19,11 @@
         <item>Cela fut difficile mais maintenant nous allons enfin pouvoir en découdre avec chain !</item>
         <item>Il est temps que cette masquerade ce termine !</item>
     </string-array>
+    <array name="enimges_screen">
+
+    </array>
+    <string-array name="choix_enigmes1_nom">
+        <item>Python</item>
+        <item>SQL</item>
+    </string-array>
 </resources>

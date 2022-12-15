@@ -12,10 +12,10 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.navigation.NavController
 
-@Preview(showBackground = true)
 @Composable
-fun choixEnigmes(){
+fun choixEnigmes(enigmes_screen : Array<Screen>,enigmes_nom : Array<String> , navController: NavController){
     Column(modifier = Modifier
         .fillMaxSize()
         .background(Color.White),
@@ -28,11 +28,11 @@ fun choixEnigmes(){
             horizontalArrangement = Arrangement.SpaceEvenly
         ){
             Button(
-                onClick = {/*Todo*/}
-            ) { Text(text = "Python")}
+                onClick = {navController.navigate(enigmes_screen[0].route)}
+            ) { Text(text = enigmes_nom[0])}
             Button(
-                onClick = {/*Todo*/}
-            ) { Text(text = "SQL")}
+                onClick = {navController.navigate(enigmes_screen[1].route)}
+            ) { Text(text = enigmes_nom[1])}
         }
     }
 }

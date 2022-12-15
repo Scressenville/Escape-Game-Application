@@ -15,7 +15,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.NavController
 
 @Composable
-fun choixEnigmes(enigmes_screen : Array<Screen>,enigmes_nom : Array<String> , navController: NavController){
+fun choixEnigmes(enigmes1 : Screen, enigmes2 : Screen,enigmes_nom : Array<String> , navController: NavController){
     Column(modifier = Modifier
         .fillMaxSize()
         .background(Color.White),
@@ -28,10 +28,10 @@ fun choixEnigmes(enigmes_screen : Array<Screen>,enigmes_nom : Array<String> , na
             horizontalArrangement = Arrangement.SpaceEvenly
         ){
             Button(
-                onClick = {navController.navigate(enigmes_screen[0].route)}
+                onClick = {navController.navigate(enigmes1.route)}
             ) { Text(text = enigmes_nom[0])}
             Button(
-                onClick = {navController.navigate(enigmes_screen[1].route)}
+                onClick = {navController.navigate(enigmes2.route)}
             ) { Text(text = enigmes_nom[1])}
         }
     }

@@ -7,6 +7,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.integerArrayResource
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringArrayResource
 import androidx.compose.ui.res.stringResource
@@ -26,7 +27,7 @@ fun Navigation() {
                 painterResource(id = R.drawable.hallcinematique1),
                 painterResource(id = R.drawable.loggy),
                 stringArrayResource(id = R.array.cinematic1),
-                Screen.Cinematic2Screen,
+                Screen.ChoixEnigme1,
                 navController
             )
         }
@@ -42,7 +43,10 @@ fun Navigation() {
 
         }
         composable(route = Screen.ChoixEnigme1.route) {
-
+            choixEnigmes(enigmes1 = Screen.EnigmeOneScreen,
+                enigmes2 = Screen.EnigmeOneScreen,
+                enigmes_nom = stringArrayResource(R.array.choix_enigmes1_nom),
+                navController = navController)
         }
         composable(route = Screen.Cinematic2Screen.route) {
             Cinematic(

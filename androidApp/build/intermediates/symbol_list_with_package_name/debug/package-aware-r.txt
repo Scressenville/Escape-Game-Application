@@ -1,5 +1,8 @@
 sae.escapegame.application.android
+array choix_enigmes1_nom
 array cinematic1
+array cinematic2
+array cinematic3
 array enigmeOneAlgo
 attr action
 attr alpha
@@ -71,6 +74,8 @@ dimen notification_top_pad_large_text
 drawable answer1
 drawable answer2
 drawable enigmealgo
+drawable hallcinematique1
+drawable loggy
 drawable notification_action_background
 drawable notification_bg
 drawable notification_bg_low
@@ -181,6 +186,7 @@ string answer1
 string answer2
 string btnJouer
 string btnLangue
+string btnPrecedemment
 string btnSuivant
 string close_drawer
 string close_sheet

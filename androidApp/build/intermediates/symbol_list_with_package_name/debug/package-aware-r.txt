@@ -1,10 +1,6 @@
 sae.escapegame.application.android
-array choix_enigmes1_nom
 array cinematic1
-array cinematic2
-array cinematic3
 array enigmeOneAlgo
-array enimges_screen
 attr action
 attr alpha
 attr argType
@@ -72,8 +68,9 @@ dimen notification_small_icon_size_as_large
 dimen notification_subtext_size
 dimen notification_top_pad
 dimen notification_top_pad_large_text
-drawable hallcinematique1
-drawable loggy
+drawable answer1
+drawable answer2
+drawable enigmealgo
 drawable notification_action_background
 drawable notification_bg
 drawable notification_bg_low
@@ -180,15 +177,17 @@ layout notification_template_icon_group
 layout notification_template_part_chronometer
 layout notification_template_part_time
 string androidx_startup
+string answer1
+string answer2
 string btnJouer
 string btnLangue
-string btnPrecedemment
 string btnSuivant
 string close_drawer
 string close_sheet
 string default_error_message
 string default_popup_window_title
 string dropdown_menu
+string enigmealgo
 string in_progress
 string indeterminate
 string navigation_menu

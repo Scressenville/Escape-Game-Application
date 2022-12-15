@@ -1,15 +1,14 @@
 R_DEF: Internal format may change without notice
 local
-array choix_enigmes1_nom
 array cinematic1
-array cinematic2
-array cinematic3
 array enigmeOneAlgo
-array enimges_screen
-drawable hallcinematique1
-drawable loggy
+drawable answer1
+drawable answer2
+drawable enigmealgo
+string answer1
+string answer2
 string btnJouer
 string btnLangue
-string btnPrecedemment
 string btnSuivant
+string enigmealgo
 style AppTheme

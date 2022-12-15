@@ -103,6 +103,7 @@ private fun body(navController: NavController) {
         horizontalAlignment = Alignment.CenterHorizontally,
         modifier = Modifier
             .fillMaxSize()
+            
     ) {
         Button(
             onClick = {
@@ -111,6 +112,7 @@ private fun body(navController: NavController) {
         ) {
             Text(stringResource(sae.escapegame.application.android.R.string.btnJouer))
         }
+
 
     }
 }

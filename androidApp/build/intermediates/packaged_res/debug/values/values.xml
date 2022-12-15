@@ -6,9 +6,10 @@
     </string-array>
     <string-array name="cinematic1">
         <item>Ouuuups</item>
-        <item>Il semblerai que tu sois bloqué à l\'intérieur du batiment !</item>
+        <item>Il semblerait que tu sois bloqué à l\'intérieur du bâtiment !</item>
         <item>C\'est à cause de l\'horrible Chain !</item>
     </string-array>
+<<<<<<< HEAD
     <string-array name="cinematic2">
         <item>Très bien on a réussi à passer le rez de chaussée</item>
         <item>Il faut maintenant réussir à passer le premier étage !</item>
@@ -19,6 +20,8 @@
         <item>Cela fut difficile mais maintenant nous allons enfin pouvoir en découdre avec chain !</item>
         <item>Il est temps que cette masquerade ce termine !</item>
     </string-array>
+=======
+>>>>>>> WIP_FirstEnigme
     <string-array name="enigmeOneAlgo">
         <item>Chain  : "Mouahaha tu seras bientôt à ma merci, ce n\’est qu\’une question de temps!"</item>
         <item>Loggy : "Mon ami.e je t\’ai laissé.e un fragment de mes recherches dans la salle, tu l\’as trouvé?"</item>
@@ -28,6 +31,7 @@
         <item> /!\ Item trouvé : /!\ </item>
         <item> "recueil de notes de Loggy", "Le serment de protection"</item>
     </string-array>
+<<<<<<< HEAD
     <array name="enimges_screen">
 
     </array>
@@ -35,5 +39,13 @@
     <string name="btnLangue">fr</string>
     <string name="btnPrecedemment">Prec</string>
     <string name="btnSuivant">Suiv</string>
+=======
+    <string name="answer1">Rep1PremiereEnigme</string>
+    <string name="answer2">Rep2PremiereEnigme</string>
+    <string name="btnJouer">Jouer</string>
+    <string name="btnLangue">fr</string>
+    <string name="btnSuivant">Suivant</string>
+    <string name="enigmealgo">imagePremiereEnigme</string>
+>>>>>>> WIP_FirstEnigme
     <style name="AppTheme" parent="android:Theme.Material.NoActionBar"/>
 </resources>

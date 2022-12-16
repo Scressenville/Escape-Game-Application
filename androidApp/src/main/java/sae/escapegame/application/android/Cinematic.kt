@@ -40,7 +40,6 @@ fun Cinematic(imageFond: Painter,imageLoggy: Painter , dialogue : Array<String>,
                     contentScale = ContentScale.Crop
                 )
             }
-
             Image(
                 painter = imageLoggy,
                 contentDescription = "Loggy",
@@ -49,7 +48,6 @@ fun Cinematic(imageFond: Painter,imageLoggy: Painter , dialogue : Array<String>,
                     .width(150.dp)
                     .align(Alignment.BottomEnd)
             )
-
         }
         Column(
             modifier = Modifier
@@ -66,9 +64,15 @@ fun Cinematic(imageFond: Painter,imageLoggy: Painter , dialogue : Array<String>,
                 verticalAlignment = Alignment.Bottom
             )
             {
-                Button(
-                    onClick = { if (0 < compteur){compteur--} }
-                ) { Text(text = stringResource(R.string.btnPrecedemment))}
+                if (compteur != 0){
+                    Button(
+                        onClick = {
+                            if (0 < compteur){
+                                compteur--
+                            }
+                        }
+                    ) { Text(text = stringResource(R.string.btnPrecedemment))}
+                }
                 Button(
                     onClick = {
                         if (dialogue.size -1> compteur){

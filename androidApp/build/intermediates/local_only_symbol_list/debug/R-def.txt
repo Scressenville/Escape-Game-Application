@@ -8,8 +8,13 @@ array enigmeOneAlgo
 drawable answer1
 drawable answer2
 drawable enigmealgo
+drawable escalier1
+drawable escalier2
+drawable etage1
 drawable hallcinematique1
 drawable loggy
+drawable r47
+drawable rezdechaussee
 string answer1
 string answer2
 string btnJouer

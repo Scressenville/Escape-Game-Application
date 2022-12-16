@@ -29,7 +29,7 @@ fun Cinematic(imageFond: Painter,imageLoggy: Painter , dialogue : Array<String>,
         verticalArrangement = Arrangement.SpaceBetween
     ){
         Box(modifier = Modifier
-            .fillMaxHeight(0.7f)
+            .fillMaxHeight(0.8f)
             .fillMaxWidth()) {
             Card(modifier = Modifier.fillMaxWidth())
             {

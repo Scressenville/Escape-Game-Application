@@ -36,7 +36,13 @@ fun Navigation() {
             Cinematic1Screen(navController = navController)
         }
         composable(route = Screen.EnigmeOneScreen.route) {
-            enigmeOne(navController = navController)
+            Cinematic(
+                painterResource(id = R.drawable.rezdechaussee),
+                painterResource(id = R.drawable.loggy),
+                stringArrayResource(id = R.array.enigmeOneAlgo),
+                Screen.ResolvEnigmeOneScreen,
+                navController
+            )
         }
         composable(route = Screen.ResolvEnigmeOneScreen.route) {
             resolvEnigmeOne()

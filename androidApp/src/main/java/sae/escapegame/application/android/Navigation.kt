@@ -45,7 +45,7 @@ fun Navigation() {
             )
         }
         composable(route = Screen.ResolvEnigmeOneScreen.route) {
-            resolvEnigmeOne()
+            resolvEnigmeOne(navController)
 
         }
         composable(route = Screen.ChoixEnigme1.route) {

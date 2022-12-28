@@ -5,6 +5,7 @@ array cinematic1
 array cinematic2
 array cinematic3
 array enigmeOneAlgo
+drawable aide
 drawable answer1
 drawable answer2
 drawable enigmealgo
@@ -12,9 +13,14 @@ drawable escalier1
 drawable escalier2
 drawable etage1
 drawable hallcinematique1
+drawable home
 drawable loggy
+drawable plan_rdc
+drawable qrcode_scanner
 drawable r47
 drawable rezdechaussee
+drawable sac_a_dos
+drawable sauvegarde
 string answer1
 string answer2
 string btnJouer

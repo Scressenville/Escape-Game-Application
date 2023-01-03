@@ -3,7 +3,6 @@ array choix_enigmes1_nom
 array cinematic1
 array cinematic2
 array cinematic3
-array codesSql
 array enigmeOneAlgo
 attr action
 attr alpha

@@ -19,17 +19,6 @@
         <item>Cela fut difficile, mais maintenant nous allons enfin pouvoir en découdre avec Chain !</item>
         <item>Il est temps que cette mascarade se termine !</item>
     </string-array>
-    <string-array name="codesSql">
-        <item>Select * From Etudiant</item>
-        <item>Select nom From Etudiant Where nom = Mathis</item>
-        <item>Select note \n
-            From Etudiant Join Note On Etudiant.idEtudiant = Note.idEtudiant Join Matiere On Note.idMatiere = Matiere \n
-            Where nom = Mathis And matiereNom = Mathématique
-        </item>
-        <item>Select nom \n
-            From Etudiant Join Note On Etudiant.idEtudiant = Note.idEtudiant Join Matiere On Note.idMatiere = Matiere \n
-            Where nom = Mathis And matiereNom = Mathématique  </item>
-    </string-array>
     <string-array name="enigmeOneAlgo">
         <item>Chain  : "Mouahaha ! Tu seras bientôt à ma merci, ce n\’est qu\’une question de temps!"</item>
         <item>Loggy : "Mon ami.e je t\’ai laissé un fragment de mes recherches dans la salle, tu l\’as trouvé?"</item>
@@ -46,6 +35,6 @@
     <string name="btnPrecedemment">Prec</string>
     <string name="btnSuivant">Suiv</string>
     <string name="enigmealgo">imagePremiereEnigme</string>
-    <string name="questionSQL">Quel code permet de récupérer les notes de Mathis en maths</string>
+    <string name="questionSQL">Choisissez les mots permmettant d\'obtenir les notes de maths de Bob</string>
     <style name="AppTheme" parent="android:Theme.Material.NoActionBar"/>
 </resources>

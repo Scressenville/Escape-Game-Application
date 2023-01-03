@@ -15,6 +15,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.Color.Companion.Green
 import androidx.compose.ui.graphics.Color.Companion.Magenta
+import androidx.compose.ui.graphics.Color.Companion.Red
 import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.stringArrayResource
 import androidx.compose.ui.res.stringResource
@@ -47,27 +48,31 @@ fun skillTest(navController: NavController, item: Array<String>, reponses: Array
             ){
                 Text("Test de connaissances : ")
                 Text("Selectionne la/les reponse.s juste.s ! ")
-                Text("Rose = Faux  Vert = Vrai")
+                Text("Rouge = Faux  Vert = Vrai")
             }
             Column(modifier = Modifier
                 .fillMaxHeight(0.8f)
                 .fillMaxWidth()
 
             ){
+                var selectedA by remember { mutableStateOf(false) }
+                var selectedB by remember { mutableStateOf(false) }
+                var selectedC by remember { mutableStateOf(false) }
+                var selectedD by remember { mutableStateOf(false) }
+                val colorA = if (selectedA) Color.Green else Color.Red
+                val colorB = if (selectedB) Color.Green else Color.Red
+                val colorC = if (selectedC) Color.Green else Color.Red
+                val colorD = if (selectedD) Color.Green else Color.Red
 
                 Button(
                     modifier = Modifier
-                        .padding(15.dp,15.dp)
-                        .height(60.dp).width(500.dp)
+                    .padding(15.dp,15.dp)
+                    .height(60.dp).width(500.dp)
                     ,
-
-                    onClick = {
-                        //your onclick code
-                    },
-
+                    onClick = { selectedA = !selectedA },
                     border = BorderStroke(1.dp, Color.Red),
-                    colors = ButtonDefaults.outlinedButtonColors(contentColor = Color.Red)
-                ) {
+                    colors= ButtonDefaults.outlinedButtonColors(backgroundColor = colorA)
+                ){
                     Text(text = item[0], color = Color.DarkGray)
                 }
 
@@ -76,11 +81,9 @@ fun skillTest(navController: NavController, item: Array<String>, reponses: Array
                         .padding(15.dp,15.dp)
                         .height(60.dp).width(500.dp)
                     ,
-                    onClick = {
-                        //your onclick code
-                    },
+                    onClick = { selectedB = !selectedB },
                     border = BorderStroke(1.dp, Color.Red),
-                    colors = ButtonDefaults.outlinedButtonColors(contentColor = Color.Red)
+                    colors = ButtonDefaults.outlinedButtonColors(backgroundColor = colorB)
                 ) {
                     Text(text = item[1], color = Color.DarkGray)
                 }
@@ -90,11 +93,10 @@ fun skillTest(navController: NavController, item: Array<String>, reponses: Array
                         .padding(15.dp,15.dp)
                         .height(60.dp).width(500.dp)
                     ,
-                    onClick = {
-                        //your onclick code
-                    },
+
+                    onClick = { selectedC = !selectedC },
                     border = BorderStroke(1.dp, Color.Red),
-                    colors = ButtonDefaults.outlinedButtonColors(contentColor = Color.Red)
+                    colors = ButtonDefaults.outlinedButtonColors(backgroundColor = colorC)
                 ) {
                     Text(text = item[2], color = Color.DarkGray)
                 }
@@ -104,11 +106,9 @@ fun skillTest(navController: NavController, item: Array<String>, reponses: Array
                         .padding(15.dp,15.dp)
                         .height(60.dp).width(500.dp)
                     ,
-                    onClick = {
-                        //your onclick code
-                    },
+                    onClick = { selectedD = !selectedD },
                     border = BorderStroke(1.dp, Color.Red),
-                    colors = ButtonDefaults.outlinedButtonColors(contentColor = Color.Red)
+                    colors = ButtonDefaults.outlinedButtonColors(backgroundColor = colorD)
                 ) {
                     Text(text = item[3], color = Color.DarkGray)
                 }

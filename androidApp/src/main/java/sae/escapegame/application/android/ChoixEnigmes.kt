@@ -11,7 +11,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.navigation.NavController
 
 @Composable
-fun choixEnigmes(enigmes1 : Screen, enigmes2 : Screen,enigmes_nom : Array<String> , navController: NavController){
+fun choixEnigmes(enigme1 : Ecran, enigme2 : Ecran, nomEnigme : Array<String>, controlleurNavigation: NavController){
     Column(modifier = Modifier
         .fillMaxSize()
         .background(Color.White),
@@ -24,11 +24,11 @@ fun choixEnigmes(enigmes1 : Screen, enigmes2 : Screen,enigmes_nom : Array<String
             horizontalArrangement = Arrangement.SpaceEvenly
         ){
             Button(
-                onClick = {navController.navigate(enigmes1.route)}
-            ) { Text(text = enigmes_nom[0])}
+                onClick = {controlleurNavigation.navigate(enigme1.route)}
+            ) { Text(text = nomEnigme[0])}
             Button(
-                onClick = {navController.navigate(enigmes2.route)}
-            ) { Text(text = enigmes_nom[1])}
+                onClick = {controlleurNavigation.navigate(enigme2.route)}
+            ) { Text(text = nomEnigme[1])}
         }
     }
 }

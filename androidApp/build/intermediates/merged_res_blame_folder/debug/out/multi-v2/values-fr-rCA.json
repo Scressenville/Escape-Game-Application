@@ -4,7 +4,7 @@
             "outputFile": "sae.escapegame.application.android.androidApp-mergeDebugResources-44:/values-fr-rCA/values-fr-rCA.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Léo\\.gradle\\caches\\transforms-3\\2cb82df905438d1b9a47ed0734fb9e16\\transformed\\ui-1.2.1\\res\\values-fr-rCA\\values-fr-rCA.xml",
+                    "source": "C:\\Users\\Sylvain\\.gradle\\caches\\transforms-3\\2cb82df905438d1b9a47ed0734fb9e16\\transformed\\ui-1.2.1\\res\\values-fr-rCA\\values-fr-rCA.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Léo\\.gradle\\caches\\transforms-3\\10634acf96c8b2d41780170076f28ac9\\transformed\\core-1.8.0\\res\\values-fr-rCA\\values-fr-rCA.xml",
+                    "source": "C:\\Users\\Sylvain\\.gradle\\caches\\transforms-3\\10634acf96c8b2d41780170076f28ac9\\transformed\\core-1.8.0\\res\\values-fr-rCA\\values-fr-rCA.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

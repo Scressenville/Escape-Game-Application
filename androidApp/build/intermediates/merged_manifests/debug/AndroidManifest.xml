@@ -17,9 +17,10 @@
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:debuggable="true"
         android:supportsRtl="true"
+        android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="sae.escapegame.application.android.MainActivity"
+            android:name="sae.escapegame.application.android.ActivitePrincipale"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

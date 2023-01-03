@@ -13,6 +13,7 @@ import androidx.compose.ui.res.stringArrayResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.NavController
+import sae.escapegame.application.android.QCM.skillTest
 
 @Composable
 fun Navigation() {
@@ -53,6 +54,10 @@ fun Navigation() {
                 enigmes2 = Screen.EnigmeOneScreen,
                 enigmes_nom = stringArrayResource(R.array.choix_enigmes1_nom),
                 navController = navController)
+        }
+        composable(route = Screen.QCM.route){
+            skillTest(navController)
+            Screen.QCM
         }
         composable(route = Screen.Cinematic2Screen.route) {
             Cinematic(

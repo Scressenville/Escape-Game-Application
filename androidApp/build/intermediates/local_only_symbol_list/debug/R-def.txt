@@ -5,6 +5,7 @@ array cinematic1
 array cinematic2
 array cinematic3
 array enigmeOneAlgo
+array qcmAlgo
 drawable answer1
 drawable answer2
 drawable enigmealgo

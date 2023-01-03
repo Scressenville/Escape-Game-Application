@@ -28,7 +28,19 @@ import androidx.navigation.NavController
 
 @Composable
 fun skillTest(navController: NavController, item: Array<String>, reponses: Array<String> ){
-//quand carte cliquée changer couleur , on change valeur et apres on compare les reponses
+// apres on compare les reponses
+    var selectedA by remember { mutableStateOf(false) }
+    var selectedB by remember { mutableStateOf(false) }
+    var selectedC by remember { mutableStateOf(false) }
+    var selectedD by remember { mutableStateOf(false) }
+    val colorA = if (selectedA) Color.Green else Color.Red
+    val colorB = if (selectedB) Color.Green else Color.Red
+    val colorC = if (selectedC) Color.Green else Color.Red
+    val colorD = if (selectedD) Color.Green else Color.Red
+    var a : Boolean by remember { mutableStateOf(false) }
+    var b : Boolean by remember { mutableStateOf(false) }
+    var c : Boolean by remember { mutableStateOf(false) }
+    var d : Boolean by remember { mutableStateOf(false) }
     Column(
         verticalArrangement = Arrangement.SpaceBetween,
         horizontalAlignment = Alignment.CenterHorizontally,
@@ -55,25 +67,21 @@ fun skillTest(navController: NavController, item: Array<String>, reponses: Array
                 .fillMaxWidth()
 
             ){
-                var selectedA by remember { mutableStateOf(false) }
-                var selectedB by remember { mutableStateOf(false) }
-                var selectedC by remember { mutableStateOf(false) }
-                var selectedD by remember { mutableStateOf(false) }
-                val colorA = if (selectedA) Color.Green else Color.Red
-                val colorB = if (selectedB) Color.Green else Color.Red
-                val colorC = if (selectedC) Color.Green else Color.Red
-                val colorD = if (selectedD) Color.Green else Color.Red
-
                 Button(
                     modifier = Modifier
                     .padding(15.dp,15.dp)
                     .height(60.dp).width(500.dp)
                     ,
-                    onClick = { selectedA = !selectedA },
+                    onClick = {//quand carte cliquée changer couleur
+                        selectedA = !selectedA
+                        // on change valeur
+                        a = !a
+                              },
                     border = BorderStroke(1.dp, Color.Red),
                     colors= ButtonDefaults.outlinedButtonColors(backgroundColor = colorA)
                 ){
                     Text(text = item[0], color = Color.DarkGray)
+
                 }
 
                 Button(
@@ -81,7 +89,10 @@ fun skillTest(navController: NavController, item: Array<String>, reponses: Array
                         .padding(15.dp,15.dp)
                         .height(60.dp).width(500.dp)
                     ,
-                    onClick = { selectedB = !selectedB },
+                    onClick = {
+                        selectedB = !selectedB
+                        b = !b
+                              },
                     border = BorderStroke(1.dp, Color.Red),
                     colors = ButtonDefaults.outlinedButtonColors(backgroundColor = colorB)
                 ) {
@@ -94,7 +105,10 @@ fun skillTest(navController: NavController, item: Array<String>, reponses: Array
                         .height(60.dp).width(500.dp)
                     ,
 
-                    onClick = { selectedC = !selectedC },
+                    onClick = {
+                        selectedC = !selectedC
+                        c = !c
+                              },
                     border = BorderStroke(1.dp, Color.Red),
                     colors = ButtonDefaults.outlinedButtonColors(backgroundColor = colorC)
                 ) {
@@ -106,7 +120,10 @@ fun skillTest(navController: NavController, item: Array<String>, reponses: Array
                         .padding(15.dp,15.dp)
                         .height(60.dp).width(500.dp)
                     ,
-                    onClick = { selectedD = !selectedD },
+                    onClick = {
+                        selectedD = !selectedD
+                        d = !d
+                              },
                     border = BorderStroke(1.dp, Color.Red),
                     colors = ButtonDefaults.outlinedButtonColors(backgroundColor = colorD)
                 ) {

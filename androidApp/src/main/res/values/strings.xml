@@ -34,10 +34,10 @@
     </string-array>
 
     <string-array name="qcmAlgo">
-        <item>A : </item>
-        <item>B : </item>
-        <item>C : </item>
-        <item>D : </item>
+        <item>A : Une variable peut contenir différents types de données </item>
+        <item>B : un Booléen représente une valeur logique binaire </item>
+        <item>C : 2.0 est un Integer</item>
+        <item>D : 2 est un Float </item>
     </string-array>
 
     <string-array name="choix_enigmes1_nom">

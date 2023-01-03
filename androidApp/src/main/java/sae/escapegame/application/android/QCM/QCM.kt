@@ -10,6 +10,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.stringArrayResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.SpanStyle
 import androidx.compose.ui.text.buildAnnotatedString
@@ -19,7 +20,8 @@ import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 
 @Composable
-fun skillTest(navController: NavController){
+fun skillTest(navController: NavController, item: Array<String>){
+
     Column(
         verticalArrangement = Arrangement.SpaceBetween,
         horizontalAlignment = Alignment.CenterHorizontally,
@@ -32,11 +34,12 @@ fun skillTest(navController: NavController){
             modifier = Modifier
                 .fillMaxHeight(0.8f)
                 .fillMaxWidth()
-                .padding(15.dp,50.dp)
+                .padding(15.dp, 50.dp)
         ) {
-            Box(modifier = Modifier
-                .padding(100.dp)){
-                Text("Test de connaissances")
+            Column(modifier = Modifier
+                .padding(30.dp)){
+                Text("Test de connaissances : ")
+                Text("Selectionne la/les reponse.s juste.s ! ")
             }
 
             Card(
@@ -49,7 +52,7 @@ fun skillTest(navController: NavController){
                 Column(
                     modifier = Modifier.padding(15.dp)
                 ) {
-                    Text("card A")
+                    Text(text = item[0])
                 }
 
             }
@@ -64,7 +67,7 @@ fun skillTest(navController: NavController){
                 Column(
                     modifier = Modifier.padding(15.dp)
                 ) {
-                    Text("card B")
+                    Text(text = item[1])
                 }
 
             }
@@ -79,7 +82,7 @@ fun skillTest(navController: NavController){
                 Column(
                     modifier = Modifier.padding(15.dp)
                 ) {
-                    Text("card C")
+                    Text(text = item[2])
                 }
             }
             Card(
@@ -92,7 +95,7 @@ fun skillTest(navController: NavController){
                 Column(
                     modifier = Modifier.padding(15.dp)
                 ) {
-                    Text("card D")
+                    Text(text = item[3])
                 }
 
             }

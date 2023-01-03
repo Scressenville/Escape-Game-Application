@@ -56,8 +56,9 @@ fun Navigation() {
                 navController = navController)
         }
         composable(route = Screen.QCM.route){
-            skillTest(navController)
-            Screen.QCM
+            var item = stringArrayResource(id = sae.escapegame.application.android.R.array.qcmAlgo)
+            skillTest(navController,item)
+
         }
         composable(route = Screen.Cinematic2Screen.route) {
             Cinematic(

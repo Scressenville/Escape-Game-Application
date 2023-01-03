@@ -169,10 +169,10 @@
         <item>Python</item>
         <item>SQL</item>
     </string-array><string-array name="qcmAlgo">
-        <item>A : </item>
-        <item>B : </item>
-        <item>C : </item>
-        <item>D : </item>
+        <item>A : Une variable peut contenir différents types de données </item>
+        <item>B : un Booléen représente une valeur logique binaire </item>
+        <item>C : 2.0 est un Integer</item>
+        <item>D : 2 est un Float </item>
     </string-array></file><file path="C:\sae\Escape-Game-Application\androidApp\src\main\res\values\styles.xml" qualifiers=""><style name="AppTheme" parent="android:Theme.Material.NoActionBar"/></file></source><source path="C:\sae\Escape-Game-Application\androidApp\build\generated\res\rs\debug"/><source path="C:\sae\Escape-Game-Application\androidApp\build\generated\res\resValues\debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\sae\Escape-Game-Application\androidApp\src\debug\res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug" generated-set="debug$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\sae\Escape-Game-Application\androidApp\src\debug\res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="generated$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"/><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="generated" generated-set="generated$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"/><mergedItems><configuration qualifiers=""><declare-styleable name="FontFamily">
         
         <attr format="string" name="fontProviderAuthority"/>

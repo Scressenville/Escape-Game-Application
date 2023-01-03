@@ -5,6 +5,7 @@ array cinematic2
 array cinematic3
 array enigmeOneAlgo
 array qcmAlgo
+array reponseQCMAlgo
 attr action
 attr alpha
 attr argType

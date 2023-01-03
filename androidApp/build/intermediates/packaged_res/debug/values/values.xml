@@ -34,6 +34,12 @@
         <item>C : 2.0 est un Integer</item>
         <item>D : 2 est un Float </item>
     </string-array>
+    <string-array name="reponseQCMAlgo">
+        <item>0110</item>
+        <item>true</item>
+        <item>false</item>
+        <item>false</item>
+    </string-array>
     <string name="answer1">Rep1PremiereEnigme</string>
     <string name="answer2">Rep2PremiereEnigme</string>
     <string name="btnJouer">Jouer</string>

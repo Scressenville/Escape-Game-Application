@@ -24,7 +24,7 @@ import androidx.navigation.NavController
 
 @Composable
 fun MenuPrincipal(enigme1 : Ecran, enigme2 : Ecran, nomEnigme : Array<String>, controlleurNavigation: NavController) {
-    var qrcode by remember{ mutableStateOf(true) }
+    var qrcode by remember{ mutableStateOf(false) }
     Column(
         modifier = Modifier
             .fillMaxSize()
@@ -85,7 +85,8 @@ fun MenuPrincipal(enigme1 : Ecran, enigme2 : Ecran, nomEnigme : Array<String>, c
 
                 }
             }
-        } else {
+        }
+        else {
             choixEnigmes(enigme1 = enigme1, enigme2 = enigme2, nomEnigme = nomEnigme, controlleurNavigation = controlleurNavigation)
         }
         Row(

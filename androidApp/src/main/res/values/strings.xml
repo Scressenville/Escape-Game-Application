@@ -14,20 +14,20 @@
     </string-array>
 
     <string-array name="cinematic2">
-        <item>Très bien on a réussi à passer le rez de chaussée</item>
+        <item>Très bien, on a réussi à passer le rez-de-chaussée</item>
         <item>Il faut maintenant réussir à passer le premier étage !</item>
-        <item>Je crois en toi on va y arriver !</item>
+        <item>Je crois en toi, on va y arriver !</item>
     </string-array>
     <string-array name="cinematic3">
-        <item>Nous y sommes le dernier étage !</item>
-        <item>Cela fut difficile mais maintenant nous allons enfin pouvoir en découdre avec chain !</item>
-        <item>Il est temps que cette masquerade ce termine !</item>
+        <item>Nous y sommes ! Le dernier étage !</item>
+        <item>Cela fut difficile, mais maintenant nous allons enfin pouvoir en découdre avec Chain !</item>
+        <item>Il est temps que cette mascarade se termine !</item>
     </string-array>
     <string-array name="enigmeOneAlgo">
-        <item>Chain  : "Mouahaha tu seras bientôt à ma merci, ce n\’est qu\’une question de temps!"</item>
-        <item>Loggy : "Mon ami.e je t\’ai laissé.e un fragment de mes recherches dans la salle, tu l\’as trouvé?"</item>
+        <item>Chain  : "Mouahaha ! Tu seras bientôt à ma merci, ce n\’est qu\’une question de temps!"</item>
+        <item>Loggy : "Mon ami.e je t\’ai laissé un fragment de mes recherches dans la salle, tu l\’as trouvé?"</item>
         <item>Oh non!!!</item>
-        <item>Loggy : "Le langage Python s\'est malheureusement allié avec Chain, Java également, c\’est désastreux." </item>
+        <item>Loggy : "Le langage Python s\'est malheureusement allié avec Chain, Java également, c\’est désastreux !" </item>
         <item>Bon, dans un premier temps essayons de vaincre Python à son propre jeu. Traduisons l\’algo que je t\’ai laissé dans son langage pour le vaincre.</item>
         <item> /!\ Item trouvé : /!\ </item>
         <item> "recueil de notes de Loggy", "Le serment de protection"</item>

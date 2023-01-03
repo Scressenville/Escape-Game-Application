@@ -67,7 +67,7 @@ fun Navigation() {
         }
 
         composable(route = Ecran.EcranMenuPrincipal.route) {
-            MenuPrincipal()
+            MenuPrincipal(Ecran.EcranPremiereEnigme,Ecran.EcranPremiereEnigme,stringArrayResource(R.array.choix_enigmes1_nom),navController)
         }
 
 

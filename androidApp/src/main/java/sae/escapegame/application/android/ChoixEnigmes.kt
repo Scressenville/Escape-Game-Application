@@ -13,7 +13,8 @@ import androidx.navigation.NavController
 @Composable
 fun choixEnigmes(enigme1 : Ecran, enigme2 : Ecran, nomEnigme : Array<String>, controlleurNavigation: NavController){
     Column(modifier = Modifier
-        .fillMaxSize()
+        .fillMaxHeight(0.9f)
+        .fillMaxWidth()
         .background(Color.White),
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center

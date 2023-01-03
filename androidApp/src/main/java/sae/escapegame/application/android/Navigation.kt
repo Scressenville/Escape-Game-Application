@@ -24,9 +24,8 @@ fun Navigation() {
                 navController
             )
         }
-
-        composable(route = Ecran.EcranDetails.route) {
-            EcranPremiereCinematique(controlleurNavigation = navController)
+        composable(route = Ecran.EcranMenuPrincipal.route) {
+            MenuPrincipal(Ecran.EcranPremiereEnigme,Ecran.EcranPremiereEnigme,stringArrayResource(R.array.choix_enigmes1_nom),navController)
         }
         composable(route = Ecran.EcranPremiereEnigme.route) {
             Cinematique(
@@ -40,12 +39,6 @@ fun Navigation() {
         composable(route = Ecran.EcranResolutionPremiereEnigme.route) {
             resoudrePremiereEnigme(navController)
 
-        }
-        composable(route = Ecran.ChoixEnigmeUn.route) {
-            choixEnigmes(enigme1 = Ecran.EcranPremiereEnigme,
-                enigme2 = Ecran.EcranPremiereEnigme,
-                nomEnigme = stringArrayResource(R.array.choix_enigmes1_nom),
-                controlleurNavigation = navController)
         }
         composable(route = Ecran.EcranDeuxiemeCinematique.route) {
             Cinematique(
@@ -66,9 +59,6 @@ fun Navigation() {
             )
         }
 
-        composable(route = Ecran.EcranMenuPrincipal.route) {
-            MenuPrincipal(Ecran.EcranPremiereEnigme,Ecran.EcranPremiereEnigme,stringArrayResource(R.array.choix_enigmes1_nom),navController)
-        }
 
 
     }

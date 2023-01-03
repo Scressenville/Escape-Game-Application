@@ -4,6 +4,7 @@ array choix_enigmes1_nom
 array cinematic1
 array cinematic2
 array cinematic3
+array codesSql
 array enigmeOneAlgo
 drawable loggy
 drawable photo_escalier1
@@ -28,4 +29,5 @@ string btnLangue
 string btnPrecedemment
 string btnSuivant
 string enigmealgo
+string questionSQL
 style AppTheme

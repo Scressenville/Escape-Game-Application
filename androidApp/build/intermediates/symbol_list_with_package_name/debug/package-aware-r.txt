@@ -3,6 +3,7 @@ array choix_enigmes1_nom
 array cinematic1
 array cinematic2
 array cinematic3
+array codesSql
 array enigmeOneAlgo
 attr action
 attr alpha
@@ -211,6 +212,7 @@ string navigation_menu
 string not_selected
 string off
 string on
+string questionSQL
 string range_end
 string range_start
 string selected

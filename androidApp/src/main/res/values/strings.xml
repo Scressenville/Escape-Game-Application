@@ -6,6 +6,7 @@
     <string name="enigmealgo">imagePremiereEnigme</string>
     <string name="answer1">Rep1PremiereEnigme</string>
     <string name="answer2">Rep2PremiereEnigme</string>
+    <string name="questionSQL">Quel code permet de récupérer les notes de Mathis en maths</string>
 
     <string-array name="cinematic1">
         <item>Ouuuups</item>
@@ -36,6 +37,18 @@
     <string-array name="choix_enigmes1_nom">
         <item>Python</item>
         <item>SQL</item>
+    </string-array>
+
+    <string-array name="codesSql">
+        <item>Select * From Etudiant</item>
+        <item>Select nom From Etudiant Where nom = Mathis</item>
+        <item>Select note \n
+            From Etudiant Join Note On Etudiant.idEtudiant = Note.idEtudiant Join Matiere On Note.idMatiere = Matiere \n
+            Where nom = Mathis And matiereNom = Mathématique
+        </item>
+        <item>Select nom \n
+            From Etudiant Join Note On Etudiant.idEtudiant = Note.idEtudiant Join Matiere On Note.idMatiere = Matiere \n
+            Where nom = Mathis And matiereNom = Mathématique  </item>
     </string-array>
 
 </resources>

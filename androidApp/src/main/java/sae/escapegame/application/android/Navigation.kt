@@ -25,7 +25,7 @@ fun Navigation() {
             )
         }
         composable(route = Ecran.EcranMenuPrincipal.route) {
-            MenuPrincipal(Ecran.EcranPremiereEnigme,Ecran.EcranPremiereEnigme,stringArrayResource(R.array.choix_enigmes1_nom),navController)
+            MenuPrincipal(Ecran.EcranPremiereEnigme,Ecran.EcranEnigmeSQL,stringArrayResource(R.array.choix_enigmes1_nom),navController)
         }
         composable(route = Ecran.EcranPremiereEnigme.route) {
             Cinematique(
@@ -57,6 +57,9 @@ fun Navigation() {
                 Ecran.EcranPrincipal,
                 navController
             )
+        }
+        composable(route = Ecran.EcranEnigmeSQL.route){
+            SQL()
         }
     }
 }

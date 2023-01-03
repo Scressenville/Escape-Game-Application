@@ -8,6 +8,7 @@ sealed class Ecran(val route: String){
     object EcranDeuxiemeCinematique : Ecran("ecranDeuxiemeCinematique")
     object EcranTroisiemeCinematique : Ecran("ecranTroisiemeCinematique")
     object EcranPremiereEnigme : Ecran("ecranPremiereEnigme")
+    object EcranEnigmeSQL : Ecran("ecranSQL")
     object EcranResolutionPremiereEnigme : Ecran("ecranResolutionPremiereEnigme")
     object EcranMenuPrincipal : Ecran("ecranMenuPrincipal")
 

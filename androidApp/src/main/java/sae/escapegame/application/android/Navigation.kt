@@ -54,7 +54,7 @@ fun Navigation() {
         composable(route = Ecran.ResultatQCM.route){
             var correctionQCM = stringArrayResource(id = sae.escapegame.application.android.R.array.reponseQCMAlgo)
             println(correctionQCM)
-            result(repJoueur, correctionQCM)
+            result(repJoueur, correctionQCM,navController)
         }
 
         composable(route = Ecran.EcranDeuxiemeCinematique.route) {

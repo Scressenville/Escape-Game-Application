@@ -5,11 +5,11 @@ array cinematic1
 array cinematic2
 array cinematic3
 array enigmeOneAlgo
-array motsSQL
+array enigmesSQL
+array phrasesacompléter
 array qcmAlgo
-array questionsSQL
 array reponseQCMAlgo
-array sujetsSQL
+array réponses
 drawable loggy
 drawable photo_escalier1
 drawable photo_escalier2

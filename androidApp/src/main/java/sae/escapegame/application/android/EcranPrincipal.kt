@@ -103,7 +103,7 @@ private fun CorpsAppli(controlleurNavigation: NavController) {
     ) {
         Button(
             onClick = {
-                controlleurNavigation.navigate(Ecran.EcranPremiereCinematique.route)
+                controlleurNavigation.navigate(Ecran.EcranCinématiqueRezDeChaussée.route)
             },
         ) {
             Text(stringResource(sae.escapegame.application.android.R.string.btnJouer))

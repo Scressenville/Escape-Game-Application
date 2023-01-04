@@ -1,5 +1,4 @@
 package sae.escapegame.application.android
-import androidx.compose.foundation.layout.*
 
 import androidx.compose.runtime.*
 import androidx.navigation.compose.NavHost
@@ -20,7 +19,7 @@ fun Navigation() {
             EcranPrincipal(controlleurNavigation = navController)
         }
 
-        composable(route = Ecran.EcranPremiereCinematique.route) {
+        composable(route = Ecran.EcranCinématiqueRezDeChaussée.route) {
             Cinematique(
                 painterResource(id = R.drawable.photo_hall),
                 painterResource(id = R.drawable.loggy),
@@ -30,20 +29,19 @@ fun Navigation() {
             )
         }
         composable(route = Ecran.EcranMenuPrincipal.route) {
-            MenuPrincipal(Ecran.EcranPremiereEnigme,Ecran.EcranEnigmeSQL,stringArrayResource(R.array.choix_enigmes1_nom),navController)
+            MenuPrincipal(Ecran.EcranCinématiqueIntroAlgo,Ecran.EcranCinématiqueIntroSQL,stringArrayResource(R.array.choix_enigmes1_nom),navController)
         }
-        composable(route = Ecran.EcranPremiereEnigme.route) {
+        composable(route = Ecran.EcranCinématiqueIntroAlgo.route) {
             Cinematique(
                 painterResource(id = R.drawable.photo_rdc),
                 painterResource(id = R.drawable.loggy),
                 stringArrayResource(id = R.array.enigmeOneAlgo),
-                Ecran.EcranResolutionPremiereEnigme,
+                Ecran.EcranLancementEnigmeSQL,
                 navController
             )
         }
-        composable(route = Ecran.EcranResolutionPremiereEnigme.route) {
-            resoudrePremiereEnigme(navController)
-
+        composable(route = Ecran.EcranLancementEnigmeSQL.route) {
+            SQL()
         }
 
         composable(route = Ecran.QCM.route){
@@ -57,16 +55,16 @@ fun Navigation() {
             result(repJoueur, correctionQCM,navController)
         }
 
-        composable(route = Ecran.EcranDeuxiemeCinematique.route) {
+        composable(route = Ecran.EcranCinematiquePremièreEtage.route) {
             Cinematique(
                 painterResource(id = R.drawable.photo_hall),
                 painterResource(id = R.drawable.loggy),
                 stringArrayResource(id = R.array.cinematic2),
-                Ecran.EcranTroisiemeCinematique,
+                Ecran.EcranCinématiqueDerniereEtage,
                 navController
             )
         }
-        composable(route = Ecran.EcranTroisiemeCinematique.route) {
+        composable(route = Ecran.EcranCinématiqueDerniereEtage.route) {
             Cinematique(
                 painterResource(id = R.drawable.photo_hall),
                 painterResource(id = R.drawable.loggy),
@@ -75,9 +73,16 @@ fun Navigation() {
                 navController
             )
         }
-        composable(route = Ecran.EcranEnigmeSQL.route){
-            SQL()
+        composable(route = Ecran.EcranCinématiqueIntroSQL.route){
+            Cinematique(
+                painterResource(id = R.drawable.photo_r47),
+                painterResource(id = R.drawable.loggy),
+                stringArrayResource(id = R.array.cinematic1),
+                Ecran.EcranLancementEnigmeSQL,
+                navController
+            )
         }
+
     }
 }
 

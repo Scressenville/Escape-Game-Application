@@ -4,11 +4,11 @@ array cinematic1
 array cinematic2
 array cinematic3
 array enigmeOneAlgo
-array motsSQL
+array enigmesSQL
+array phrasesacompléter
 array qcmAlgo
-array questionsSQL
 array reponseQCMAlgo
-array sujetsSQL
+array réponses
 attr action
 attr alpha
 attr argType

@@ -28,9 +28,13 @@
         <item> /!\ Item trouvé : /!\ </item>
         <item> "recueil de notes de Loggy", "Le serment de protection"</item>
     </string-array>
-    <string-array name="motsSQL">
-        <item>nom,Notes,Bob</item>
-        <item>notes,Etudiant,Bob</item>
+    <string-array name="enigmesSQL">
+        <item>Choisissez les bons mots pour afficher les notes de Bob</item>
+        <item>Choisissez les bons mots pour afficher les notes et les noms de toutes la classes</item>
+    </string-array>
+    <string-array name="phrasesacompléter">
+        <item>Select 1 From 2 Join Etudiant On 2.idEtudiant = Etudiant.idEtudiant Where 3 = Bob</item>
+        <item>Select 1 From 2 Join 3 On 2.idEtudiant = 3.idEtudiant </item>
     </string-array>
     <string-array name="qcmAlgo">
         <item>A : Les variables peuvent contenir différents types de données </item>
@@ -38,20 +42,15 @@
         <item>C : 2.0 est un Integer</item>
         <item>D : 2 est un Float </item>
     </string-array>
-    <string-array name="questionsSQL">
-        <item>Choisissez les bons mots afin d\'obtenir les notes de Bob</item>
-        <item>Choisisser les bons mots afin d\'obtenir les notes de toutes la classes</item>
-        <item>Choisisser les bons mots afin d\'obtenir les notes de mathématique des Bob</item>
-    </string-array>
     <string-array name="reponseQCMAlgo">
         <item>true</item>
         <item>true</item>
         <item>false</item>
         <item>false</item>
     </string-array>
-    <string-array name="sujetsSQL">
-        <item>Select,From,Where nom = </item>
-        <item>Select,From,Where</item>
+    <string-array name="réponses">
+        <item>note,Notes,nom</item>
+        <item>Notes,Etudiant,*</item>
     </string-array>
     <string name="answer1">Rep1PremiereEnigme</string>
     <string name="answer2">Rep2PremiereEnigme</string>

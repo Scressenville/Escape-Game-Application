@@ -23,7 +23,7 @@
         <item>Python</item>
         <item>SQL</item>
     </string-array><string-array name="qcmAlgo">
-        <item>A : Une variable peut contenir différents types de données </item>
+        <item>A : Les variables peuvent contenir différents types de données </item>
         <item>B : un Booléen représente une valeur logique binaire </item>
         <item>C : 2.0 est un Integer</item>
         <item>D : 2 est un Float </item>

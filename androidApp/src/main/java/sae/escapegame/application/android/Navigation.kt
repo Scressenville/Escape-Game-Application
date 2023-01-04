@@ -28,15 +28,19 @@ fun Navigation() {
                 navController
             )
         }
+
+        composable(route = Ecran.EcranSplash.route){
+            EcranSplash(navController)
+        }
         composable(route = Ecran.EcranMenuPrincipal.route) {
-            MenuPrincipal(Ecran.EcranCinématiqueIntroAlgo,Ecran.EcranCinématiqueIntroSQL,stringArrayResource(R.array.choix_enigmes1_nom),navController)
+            MenuPrincipal(Ecran.EcranCinématiqueIntroAlgo,Ecran.EcranCinématiqueIntroSQL,navController)
         }
         composable(route = Ecran.EcranCinématiqueIntroAlgo.route) {
             Cinematique(
                 painterResource(id = R.drawable.photo_rdc),
                 painterResource(id = R.drawable.loggy),
                 stringArrayResource(id = R.array.enigmeOneAlgo),
-                Ecran.EcranLancementEnigmeSQL,
+                Ecran.EcranLancementEnigmeAlgo,
                 navController
             )
         }
@@ -72,6 +76,9 @@ fun Navigation() {
                 Ecran.EcranPrincipal,
                 navController
             )
+        }
+        composable(route = Ecran.EcranLancementEnigmeAlgo.route){
+            resoudrePremiereEnigme(controlleurNavigation = navController)
         }
         composable(route = Ecran.EcranCinématiqueIntroSQL.route){
             Cinematique(

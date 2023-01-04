@@ -72,8 +72,8 @@ fun resoudrePremiereEnigme(controlleurNavigation : NavController){
                         onClickLabel = "Image cliquable",
                         onClick = {
                             Toast
-                                .makeText(context, "Bonne réponse", Toast.LENGTH_LONG).show()
-                            controlleurNavigation.navigate(Ecran.QCM.route)
+                                .makeText(context, "", Toast.LENGTH_LONG).show()
+                            controlleurNavigation.navigate(Ecran.EcranSplash.route)
                         }
                     )
             )

@@ -6,95 +6,111 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="21"
-8-->C:\Users\Leo\Desktop\travail\A2 BUT INFO\SAE\SAE-Escape-Game\Escape-Game-Application\androidApp\src\main\AndroidManifest.xml
+8-->C:\Users\Maeva\AndroidStudioProjects\Escape-Game-Application\androidApp\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="32" />
-9-->C:\Users\Leo\Desktop\travail\A2 BUT INFO\SAE\SAE-Escape-Game\Escape-Game-Application\androidApp\src\main\AndroidManifest.xml
+9-->C:\Users\Maeva\AndroidStudioProjects\Escape-Game-Application\androidApp\src\main\AndroidManifest.xml
 10
 11    <uses-feature android:name="android.hardware.camera" />
-11-->C:\Users\Leo\Desktop\travail\A2 BUT INFO\SAE\SAE-Escape-Game\Escape-Game-Application\androidApp\src\main\AndroidManifest.xml:3:5-60
-11-->C:\Users\Leo\Desktop\travail\A2 BUT INFO\SAE\SAE-Escape-Game\Escape-Game-Application\androidApp\src\main\AndroidManifest.xml:3:19-57
+11-->C:\Users\Maeva\AndroidStudioProjects\Escape-Game-Application\androidApp\src\main\AndroidManifest.xml:3:5-60
+11-->C:\Users\Maeva\AndroidStudioProjects\Escape-Game-Application\androidApp\src\main\AndroidManifest.xml:3:19-57
 12
 13    <uses-permission android:name="android.permission.CAMERA" />
-13-->C:\Users\Leo\Desktop\travail\A2 BUT INFO\SAE\SAE-Escape-Game\Escape-Game-Application\androidApp\src\main\AndroidManifest.xml:4:5-65
-13-->C:\Users\Leo\Desktop\travail\A2 BUT INFO\SAE\SAE-Escape-Game\Escape-Game-Application\androidApp\src\main\AndroidManifest.xml:4:22-62
+13-->C:\Users\Maeva\AndroidStudioProjects\Escape-Game-Application\androidApp\src\main\AndroidManifest.xml:4:5-65
+13-->C:\Users\Maeva\AndroidStudioProjects\Escape-Game-Application\androidApp\src\main\AndroidManifest.xml:4:22-62
 14
 15    <application
-15-->C:\Users\Leo\Desktop\travail\A2 BUT INFO\SAE\SAE-Escape-Game\Escape-Game-Application\androidApp\src\main\AndroidManifest.xml:6:5-18:19
+15-->C:\Users\Maeva\AndroidStudioProjects\Escape-Game-Application\androidApp\src\main\AndroidManifest.xml:6:5-18:19
 16        android:allowBackup="false"
-16-->C:\Users\Leo\Desktop\travail\A2 BUT INFO\SAE\SAE-Escape-Game\Escape-Game-Application\androidApp\src\main\AndroidManifest.xml:7:9-36
+16-->C:\Users\Maeva\AndroidStudioProjects\Escape-Game-Application\androidApp\src\main\AndroidManifest.xml:7:9-36
 17        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-17-->[androidx.core:core:1.8.0] C:\Users\Leo\.gradle\caches\transforms-3\10634acf96c8b2d41780170076f28ac9\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
+17-->[androidx.core:core:1.8.0] C:\Users\Maeva\.gradle\caches\transforms-3\10634acf96c8b2d41780170076f28ac9\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
 18        android:debuggable="true"
 19        android:supportsRtl="true"
-19-->C:\Users\Leo\Desktop\travail\A2 BUT INFO\SAE\SAE-Escape-Game\Escape-Game-Application\androidApp\src\main\AndroidManifest.xml:8:9-35
+19-->C:\Users\Maeva\AndroidStudioProjects\Escape-Game-Application\androidApp\src\main\AndroidManifest.xml:8:9-35
 20        android:testOnly="true"
 21        android:theme="@style/AppTheme" >
-21-->C:\Users\Leo\Desktop\travail\A2 BUT INFO\SAE\SAE-Escape-Game\Escape-Game-Application\androidApp\src\main\AndroidManifest.xml:9:9-40
+21-->C:\Users\Maeva\AndroidStudioProjects\Escape-Game-Application\androidApp\src\main\AndroidManifest.xml:9:9-40
 22        <activity
-22-->C:\Users\Leo\Desktop\travail\A2 BUT INFO\SAE\SAE-Escape-Game\Escape-Game-Application\androidApp\src\main\AndroidManifest.xml:10:9-17:20
+22-->C:\Users\Maeva\AndroidStudioProjects\Escape-Game-Application\androidApp\src\main\AndroidManifest.xml:10:9-17:20
 23            android:name="sae.escapegame.application.android.ActivitePrincipale"
-23-->C:\Users\Leo\Desktop\travail\A2 BUT INFO\SAE\SAE-Escape-Game\Escape-Game-Application\androidApp\src\main\AndroidManifest.xml:11:13-47
+23-->C:\Users\Maeva\AndroidStudioProjects\Escape-Game-Application\androidApp\src\main\AndroidManifest.xml:11:13-47
 24            android:exported="true" >
-24-->C:\Users\Leo\Desktop\travail\A2 BUT INFO\SAE\SAE-Escape-Game\Escape-Game-Application\androidApp\src\main\AndroidManifest.xml:12:13-36
+24-->C:\Users\Maeva\AndroidStudioProjects\Escape-Game-Application\androidApp\src\main\AndroidManifest.xml:12:13-36
 25            <intent-filter>
-25-->C:\Users\Leo\Desktop\travail\A2 BUT INFO\SAE\SAE-Escape-Game\Escape-Game-Application\androidApp\src\main\AndroidManifest.xml:13:13-16:29
+25-->C:\Users\Maeva\AndroidStudioProjects\Escape-Game-Application\androidApp\src\main\AndroidManifest.xml:13:13-16:29
 26                <action android:name="android.intent.action.MAIN" />
-26-->C:\Users\Leo\Desktop\travail\A2 BUT INFO\SAE\SAE-Escape-Game\Escape-Game-Application\androidApp\src\main\AndroidManifest.xml:14:17-69
-26-->C:\Users\Leo\Desktop\travail\A2 BUT INFO\SAE\SAE-Escape-Game\Escape-Game-Application\androidApp\src\main\AndroidManifest.xml:14:25-66
+26-->C:\Users\Maeva\AndroidStudioProjects\Escape-Game-Application\androidApp\src\main\AndroidManifest.xml:14:17-69
+26-->C:\Users\Maeva\AndroidStudioProjects\Escape-Game-Application\androidApp\src\main\AndroidManifest.xml:14:25-66
 27
 28                <category android:name="android.intent.category.LAUNCHER" />
-28-->C:\Users\Leo\Desktop\travail\A2 BUT INFO\SAE\SAE-Escape-Game\Escape-Game-Application\androidApp\src\main\AndroidManifest.xml:15:17-77
-28-->C:\Users\Leo\Desktop\travail\A2 BUT INFO\SAE\SAE-Escape-Game\Escape-Game-Application\androidApp\src\main\AndroidManifest.xml:15:27-74
+28-->C:\Users\Maeva\AndroidStudioProjects\Escape-Game-Application\androidApp\src\main\AndroidManifest.xml:15:17-77
+28-->C:\Users\Maeva\AndroidStudioProjects\Escape-Game-Application\androidApp\src\main\AndroidManifest.xml:15:27-74
 29            </intent-filter>
 30        </activity>
 31        <activity
-31-->[androidx.compose.ui:ui-tooling:1.2.1] C:\Users\Leo\.gradle\caches\transforms-3\a7b614aa49b2d322700232e66cbb2ec0\transformed\ui-tooling-1.2.1\AndroidManifest.xml:24:9-26:39
+31-->[androidx.compose.ui:ui-tooling:1.3.2] C:\Users\Maeva\.gradle\caches\transforms-3\a043fc6ed28cd539b5b46989944ea160\transformed\ui-tooling-1.3.2\AndroidManifest.xml:23:9-25:39
 32            android:name="androidx.compose.ui.tooling.PreviewActivity"
-32-->[androidx.compose.ui:ui-tooling:1.2.1] C:\Users\Leo\.gradle\caches\transforms-3\a7b614aa49b2d322700232e66cbb2ec0\transformed\ui-tooling-1.2.1\AndroidManifest.xml:25:13-71
+32-->[androidx.compose.ui:ui-tooling:1.3.2] C:\Users\Maeva\.gradle\caches\transforms-3\a043fc6ed28cd539b5b46989944ea160\transformed\ui-tooling-1.3.2\AndroidManifest.xml:24:13-71
 33            android:exported="true" />
-33-->[androidx.compose.ui:ui-tooling:1.2.1] C:\Users\Leo\.gradle\caches\transforms-3\a7b614aa49b2d322700232e66cbb2ec0\transformed\ui-tooling-1.2.1\AndroidManifest.xml:26:13-36
+33-->[androidx.compose.ui:ui-tooling:1.3.2] C:\Users\Maeva\.gradle\caches\transforms-3\a043fc6ed28cd539b5b46989944ea160\transformed\ui-tooling-1.3.2\AndroidManifest.xml:25:13-36
 34
-35        <provider
-35-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\Leo\.gradle\caches\transforms-3\6ad99b5f2a8ed7840da5292b09cc590c\transformed\profileinstaller-1.2.0\AndroidManifest.xml:25:9-33:20
-36            android:name="androidx.startup.InitializationProvider"
-36-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\Leo\.gradle\caches\transforms-3\6ad99b5f2a8ed7840da5292b09cc590c\transformed\profileinstaller-1.2.0\AndroidManifest.xml:26:13-67
-37            android:authorities="sae.escapegame.application.android.androidx-startup"
-37-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\Leo\.gradle\caches\transforms-3\6ad99b5f2a8ed7840da5292b09cc590c\transformed\profileinstaller-1.2.0\AndroidManifest.xml:27:13-68
+35        <service
+35-->[androidx.camera:camera-camera2:1.1.0-beta02] C:\Users\Maeva\.gradle\caches\transforms-3\d96a13a8287a09f3a75d0a355f5f0cce\transformed\camera-camera2-1.1.0-beta02\AndroidManifest.xml:26:9-35:19
+36            android:name="androidx.camera.core.impl.MetadataHolderService"
+36-->[androidx.camera:camera-camera2:1.1.0-beta02] C:\Users\Maeva\.gradle\caches\transforms-3\d96a13a8287a09f3a75d0a355f5f0cce\transformed\camera-camera2-1.1.0-beta02\AndroidManifest.xml:27:13-75
+37            android:enabled="false"
+37-->[androidx.camera:camera-camera2:1.1.0-beta02] C:\Users\Maeva\.gradle\caches\transforms-3\d96a13a8287a09f3a75d0a355f5f0cce\transformed\camera-camera2-1.1.0-beta02\AndroidManifest.xml:28:13-36
 38            android:exported="false" >
-38-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\Leo\.gradle\caches\transforms-3\6ad99b5f2a8ed7840da5292b09cc590c\transformed\profileinstaller-1.2.0\AndroidManifest.xml:28:13-37
+38-->[androidx.camera:camera-camera2:1.1.0-beta02] C:\Users\Maeva\.gradle\caches\transforms-3\d96a13a8287a09f3a75d0a355f5f0cce\transformed\camera-camera2-1.1.0-beta02\AndroidManifest.xml:29:13-37
 39            <meta-data
-39-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\Leo\.gradle\caches\transforms-3\6ad99b5f2a8ed7840da5292b09cc590c\transformed\profileinstaller-1.2.0\AndroidManifest.xml:30:13-32:52
-40                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-40-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\Leo\.gradle\caches\transforms-3\6ad99b5f2a8ed7840da5292b09cc590c\transformed\profileinstaller-1.2.0\AndroidManifest.xml:31:17-85
-41                android:value="androidx.startup" />
-41-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\Leo\.gradle\caches\transforms-3\6ad99b5f2a8ed7840da5292b09cc590c\transformed\profileinstaller-1.2.0\AndroidManifest.xml:32:17-49
-42        </provider>
+39-->[androidx.camera:camera-camera2:1.1.0-beta02] C:\Users\Maeva\.gradle\caches\transforms-3\d96a13a8287a09f3a75d0a355f5f0cce\transformed\camera-camera2-1.1.0-beta02\AndroidManifest.xml:32:13-34:89
+40                android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER"
+40-->[androidx.camera:camera-camera2:1.1.0-beta02] C:\Users\Maeva\.gradle\caches\transforms-3\d96a13a8287a09f3a75d0a355f5f0cce\transformed\camera-camera2-1.1.0-beta02\AndroidManifest.xml:33:17-103
+41                android:value="androidx.camera.camera2.Camera2Config$DefaultProvider" />
+41-->[androidx.camera:camera-camera2:1.1.0-beta02] C:\Users\Maeva\.gradle\caches\transforms-3\d96a13a8287a09f3a75d0a355f5f0cce\transformed\camera-camera2-1.1.0-beta02\AndroidManifest.xml:34:17-86
+42        </service>
 43
-44        <receiver
-44-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\Leo\.gradle\caches\transforms-3\6ad99b5f2a8ed7840da5292b09cc590c\transformed\profileinstaller-1.2.0\AndroidManifest.xml:35:9-47:20
-45            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-45-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\Leo\.gradle\caches\transforms-3\6ad99b5f2a8ed7840da5292b09cc590c\transformed\profileinstaller-1.2.0\AndroidManifest.xml:36:13-76
-46            android:directBootAware="false"
-46-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\Leo\.gradle\caches\transforms-3\6ad99b5f2a8ed7840da5292b09cc590c\transformed\profileinstaller-1.2.0\AndroidManifest.xml:37:13-44
-47            android:enabled="true"
-47-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\Leo\.gradle\caches\transforms-3\6ad99b5f2a8ed7840da5292b09cc590c\transformed\profileinstaller-1.2.0\AndroidManifest.xml:38:13-35
-48            android:exported="true"
-48-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\Leo\.gradle\caches\transforms-3\6ad99b5f2a8ed7840da5292b09cc590c\transformed\profileinstaller-1.2.0\AndroidManifest.xml:39:13-36
-49            android:permission="android.permission.DUMP" >
-49-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\Leo\.gradle\caches\transforms-3\6ad99b5f2a8ed7840da5292b09cc590c\transformed\profileinstaller-1.2.0\AndroidManifest.xml:40:13-57
-50            <intent-filter>
-50-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\Leo\.gradle\caches\transforms-3\6ad99b5f2a8ed7840da5292b09cc590c\transformed\profileinstaller-1.2.0\AndroidManifest.xml:41:13-43:29
-51                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-51-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\Leo\.gradle\caches\transforms-3\6ad99b5f2a8ed7840da5292b09cc590c\transformed\profileinstaller-1.2.0\AndroidManifest.xml:42:17-91
-51-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\Leo\.gradle\caches\transforms-3\6ad99b5f2a8ed7840da5292b09cc590c\transformed\profileinstaller-1.2.0\AndroidManifest.xml:42:25-88
-52            </intent-filter>
-53            <intent-filter>
-53-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\Leo\.gradle\caches\transforms-3\6ad99b5f2a8ed7840da5292b09cc590c\transformed\profileinstaller-1.2.0\AndroidManifest.xml:44:13-46:29
-54                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-54-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\Leo\.gradle\caches\transforms-3\6ad99b5f2a8ed7840da5292b09cc590c\transformed\profileinstaller-1.2.0\AndroidManifest.xml:45:17-85
-54-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\Leo\.gradle\caches\transforms-3\6ad99b5f2a8ed7840da5292b09cc590c\transformed\profileinstaller-1.2.0\AndroidManifest.xml:45:25-82
-55            </intent-filter>
-56        </receiver>
-57    </application>
-58
-59</manifest>
+44        <provider
+44-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\Maeva\.gradle\caches\transforms-3\6ad99b5f2a8ed7840da5292b09cc590c\transformed\profileinstaller-1.2.0\AndroidManifest.xml:25:9-33:20
+45            android:name="androidx.startup.InitializationProvider"
+45-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\Maeva\.gradle\caches\transforms-3\6ad99b5f2a8ed7840da5292b09cc590c\transformed\profileinstaller-1.2.0\AndroidManifest.xml:26:13-67
+46            android:authorities="sae.escapegame.application.android.androidx-startup"
+46-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\Maeva\.gradle\caches\transforms-3\6ad99b5f2a8ed7840da5292b09cc590c\transformed\profileinstaller-1.2.0\AndroidManifest.xml:27:13-68
+47            android:exported="false" >
+47-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\Maeva\.gradle\caches\transforms-3\6ad99b5f2a8ed7840da5292b09cc590c\transformed\profileinstaller-1.2.0\AndroidManifest.xml:28:13-37
+48            <meta-data
+48-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\Maeva\.gradle\caches\transforms-3\6ad99b5f2a8ed7840da5292b09cc590c\transformed\profileinstaller-1.2.0\AndroidManifest.xml:30:13-32:52
+49                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+49-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\Maeva\.gradle\caches\transforms-3\6ad99b5f2a8ed7840da5292b09cc590c\transformed\profileinstaller-1.2.0\AndroidManifest.xml:31:17-85
+50                android:value="androidx.startup" />
+50-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\Maeva\.gradle\caches\transforms-3\6ad99b5f2a8ed7840da5292b09cc590c\transformed\profileinstaller-1.2.0\AndroidManifest.xml:32:17-49
+51        </provider>
+52
+53        <receiver
+53-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\Maeva\.gradle\caches\transforms-3\6ad99b5f2a8ed7840da5292b09cc590c\transformed\profileinstaller-1.2.0\AndroidManifest.xml:35:9-47:20
+54            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+54-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\Maeva\.gradle\caches\transforms-3\6ad99b5f2a8ed7840da5292b09cc590c\transformed\profileinstaller-1.2.0\AndroidManifest.xml:36:13-76
+55            android:directBootAware="false"
+55-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\Maeva\.gradle\caches\transforms-3\6ad99b5f2a8ed7840da5292b09cc590c\transformed\profileinstaller-1.2.0\AndroidManifest.xml:37:13-44
+56            android:enabled="true"
+56-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\Maeva\.gradle\caches\transforms-3\6ad99b5f2a8ed7840da5292b09cc590c\transformed\profileinstaller-1.2.0\AndroidManifest.xml:38:13-35
+57            android:exported="true"
+57-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\Maeva\.gradle\caches\transforms-3\6ad99b5f2a8ed7840da5292b09cc590c\transformed\profileinstaller-1.2.0\AndroidManifest.xml:39:13-36
+58            android:permission="android.permission.DUMP" >
+58-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\Maeva\.gradle\caches\transforms-3\6ad99b5f2a8ed7840da5292b09cc590c\transformed\profileinstaller-1.2.0\AndroidManifest.xml:40:13-57
+59            <intent-filter>
+59-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\Maeva\.gradle\caches\transforms-3\6ad99b5f2a8ed7840da5292b09cc590c\transformed\profileinstaller-1.2.0\AndroidManifest.xml:41:13-43:29
+60                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+60-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\Maeva\.gradle\caches\transforms-3\6ad99b5f2a8ed7840da5292b09cc590c\transformed\profileinstaller-1.2.0\AndroidManifest.xml:42:17-91
+60-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\Maeva\.gradle\caches\transforms-3\6ad99b5f2a8ed7840da5292b09cc590c\transformed\profileinstaller-1.2.0\AndroidManifest.xml:42:25-88
+61            </intent-filter>
+62            <intent-filter>
+62-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\Maeva\.gradle\caches\transforms-3\6ad99b5f2a8ed7840da5292b09cc590c\transformed\profileinstaller-1.2.0\AndroidManifest.xml:44:13-46:29
+63                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+63-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\Maeva\.gradle\caches\transforms-3\6ad99b5f2a8ed7840da5292b09cc590c\transformed\profileinstaller-1.2.0\AndroidManifest.xml:45:17-85
+63-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\Maeva\.gradle\caches\transforms-3\6ad99b5f2a8ed7840da5292b09cc590c\transformed\profileinstaller-1.2.0\AndroidManifest.xml:45:25-82
+64            </intent-filter>
+65        </receiver>
+66    </application>
+67
+68</manifest>

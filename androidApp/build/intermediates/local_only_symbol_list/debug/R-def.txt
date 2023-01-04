@@ -10,7 +10,11 @@ array phrasesacompléter
 array qcmAlgo
 array reponseQCMAlgo
 array réponses
+drawable bonne_reponse
+drawable img_enigme_algo
+drawable img_enigme_sql
 drawable loggy
+drawable mauvaise_reponse
 drawable photo_escalier1
 drawable photo_escalier2
 drawable photo_etage1

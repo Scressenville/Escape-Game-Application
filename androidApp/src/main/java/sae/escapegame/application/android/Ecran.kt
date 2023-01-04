@@ -12,6 +12,8 @@ sealed class Ecran(val route: String){
     object EcranLancementEnigmeAlgo : Ecran("ecranLancementEnigmeAlgo")
     object EcranLancementEnigmeSQL : Ecran("ecranLancementEnigmeSQL")
     object EcranMenuPrincipal : Ecran("ecranMenuPrincipal")
+    object EcranSplash : Ecran("ecranSplash")
+
     object QCM : Ecran("QCM_screen")
     object ResultatQCM: Ecran("ResultatQCM")
 

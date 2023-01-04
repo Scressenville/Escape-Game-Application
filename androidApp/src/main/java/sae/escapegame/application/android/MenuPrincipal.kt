@@ -22,7 +22,7 @@ import androidx.compose.runtime.*
 import androidx.navigation.NavController
 
 @Composable
-fun MenuPrincipal(enigme1 : Ecran, enigme2 : Ecran, nomEnigme : Array<String>, controlleurNavigation: NavController) {
+fun MenuPrincipal(enigme1 : Ecran, enigme2 : Ecran, controlleurNavigation: NavController) {
     var qrcode by remember{ mutableStateOf(false) }
     Column(
         modifier = Modifier
@@ -86,7 +86,7 @@ fun MenuPrincipal(enigme1 : Ecran, enigme2 : Ecran, nomEnigme : Array<String>, c
             }
         }
         else {
-            choixEnigmes(enigme1 = enigme1, enigme2 = enigme2, nomEnigme = nomEnigme, controlleurNavigation = controlleurNavigation)
+            EcranDeScan(enigme1 = enigme1, enigme2 = enigme2, controlleurNavigation = controlleurNavigation)
         }
         Row(
             modifier = Modifier

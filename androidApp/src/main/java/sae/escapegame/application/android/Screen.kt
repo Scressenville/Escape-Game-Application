@@ -7,6 +7,7 @@ sealed class Screen(val route: String){
     object Cinematic1Screen : Screen("cinematic1_screen")
     object ChoixEnigme1 : Screen("choix_enigme")
     object QCM : Screen("QCM_screen")
+    object ResultatQCM: Screen("ResultatQCM")
     object Cinematic2Screen : Screen("cinematic2_screen")
     object Cinematic3Screen : Screen("cinematic3_screen")
 

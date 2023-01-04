@@ -5,6 +5,9 @@ array cinematic1
 array cinematic2
 array cinematic3
 array enigmeOneAlgo
+array motsSQL
+array questionsSQL
+array sujetsSQL
 drawable loggy
 drawable photo_escalier1
 drawable photo_escalier2

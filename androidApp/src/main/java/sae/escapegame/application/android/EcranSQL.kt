@@ -9,6 +9,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringArrayResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.sp
@@ -16,11 +17,16 @@ import androidx.compose.ui.unit.sp
 @Preview
 @Composable
 fun SQL(){
-    var mot : Array<String>
+    var question = stringArrayResource(id = R.array.questionsSQL)
+    var suivant : Int by remember{mutableStateOf(0)}
+    var listeMots : Array<String>
+    listeMots = stringArrayResource(id = R.array.questionsSQL)
     var compteur1 : Int by remember{mutableStateOf(0)}
     var compteur2 : Int by remember{mutableStateOf(0)}
     var compteur3 : Int by remember{mutableStateOf(0)}
-    mot = arrayOf("nom", "Notes", "Bob")
+    var mots by remember {
+        mutableStateOf(listeMots[suivant].split(","))
+    }
     Column(
         modifier = Modifier
             .fillMaxSize()
@@ -30,14 +36,14 @@ fun SQL(){
     ) {
         Image(painter = painterResource(id = R.drawable.symbole_qr_code), contentDescription = null)
 
-       Text(text = stringResource(id = R.string.questionSQL), fontSize = 30.sp)
+       Text(text = question[suivant], fontSize = 30.sp)
 
        Row(modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.Center){
+           mots = listeMots[suivant].split(",")
           Text(
-              "Select " + mot[compteur1] + "\nFrom " + mot[compteur2] + "Join Etudiant On Etudiant.idEtudiant = " +  mot[compteur2] + "\n"
-          +"Where " + mot[compteur1] +"= "+ mot[compteur3], fontSize = 20.sp
+              "Select " + mots[compteur1] + "\nFrom " + mots[compteur2] + "Join Etudiant On Etudiant.idEtudiant = " +  mots[compteur2] + ".idEtudiant \n"
+          +"Where " + mots[compteur1] +"= "+ mots[compteur3], fontSize = 20.sp
           )
-
        }
         Column(){
             Button(onClick = {
@@ -63,7 +69,17 @@ fun SQL(){
                 else{
                     compteur3 = 0
                 }
-            }){Text("troisieme mot : " + compteur1)}
+            }){Text("troisieme mot : " + compteur3)}
+        }
+
+        Row(modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.End ){
+            Button(onClick = {
+                if (suivant < question.size - 1){
+                    suivant += 1
+
+            } }) {
+                Text("Suivant")
+            }
         }
     }
 }

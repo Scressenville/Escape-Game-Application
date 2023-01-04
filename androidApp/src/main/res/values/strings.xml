@@ -6,7 +6,7 @@
     <string name="enigmealgo">imagePremiereEnigme</string>
     <string name="answer1">Rep1PremiereEnigme</string>
     <string name="answer2">Rep2PremiereEnigme</string>
-    <string name="questionSQL">Choisissez les mots permmettant d\'obtenir les notes de maths de Bob</string>
+    <string name="questionSQL"></string>
 
     <string-array name="cinematic1">
         <item>Ouuuups</item>
@@ -37,6 +37,20 @@
     <string-array name="choix_enigmes1_nom">
         <item>Python</item>
         <item>SQL</item>
+    </string-array>
+
+    <string-array name="questionsSQL">
+        <item>Choisissez les bons mots afin d\'obtenir les notes de Bob</item>
+        <item>Choisisser les bons mots afin d\'obtenir les notes de toutes la classes</item>
+        <item>Choisisser les bons mots afin d\'obtenir les notes de mathématique des Bob</item>
+    </string-array>
+    <string-array name="motsSQL">
+        <item>nom,Notes,Bob</item>
+        <item>notes,Etudiant,Bob</item>
+    </string-array>
+    <string-array name="sujetsSQL">
+        <item>Select,From,Where nom = </item>
+        <item>Select,From,Where</item>
     </string-array>
 
 </resources>

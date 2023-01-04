@@ -3,6 +3,9 @@ int array cinematic1 0x7f010001
 int array cinematic2 0x7f010002
 int array cinematic3 0x7f010003
 int array enigmeOneAlgo 0x7f010004
+int array motsSQL 0x7f010005
+int array questionsSQL 0x7f010006
+int array sujetsSQL 0x7f010007
 int attr action 0x7f020000
 int attr alpha 0x7f020001
 int attr argType 0x7f020002

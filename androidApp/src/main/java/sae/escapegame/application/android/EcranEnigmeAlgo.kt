@@ -73,7 +73,11 @@ fun resoudrePremiereEnigme(controlleurNavigation : NavController){
                         onClick = {
                             Toast
                                 .makeText(context, "Bonne réponse", Toast.LENGTH_LONG).show()
+<<<<<<<< HEAD:androidApp/src/main/java/sae/escapegame/application/android/EcranEnigmeAlgo.kt
                             controlleurNavigation.navigate(Ecran.EcranPrincipal.route)
+========
+                            navController.navigate(Screen.QCM.route)
+>>>>>>>> QCM-pattern:androidApp/src/main/java/sae/escapegame/application/android/enigmes/EnigmeOneResolvingScreen.kt
                         }
                     )
             )

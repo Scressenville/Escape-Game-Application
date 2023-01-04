@@ -11,7 +11,8 @@ sealed class Ecran(val route: String){
     object EcranEnigmeSQL : Ecran("ecranSQL")
     object EcranResolutionPremiereEnigme : Ecran("ecranResolutionPremiereEnigme")
     object EcranMenuPrincipal : Ecran("ecranMenuPrincipal")
-
+    object QCM : Ecran("QCM_screen")
+    object ResultatQCM: Ecran("ResultatQCM")
 
     fun avecArguments(vararg args: String): String {
         return buildString {

@@ -12,7 +12,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
-import sae.escapegame.application.android.Screen
+import sae.escapegame.application.android.Ecran
 
 @Composable
 fun skillTest(navController: NavController, item: Array<String> ): Array<String> {
@@ -120,7 +120,7 @@ fun skillTest(navController: NavController, item: Array<String> ): Array<String>
                         .padding(15.dp, 15.dp)
                         .height(60.dp).width(500.dp),
                     onClick = {
-                        navController.navigate(Screen.ResultatQCM.route)
+                        navController.navigate(Ecran.ResultatQCM.route)
                     },
                     border = BorderStroke(1.dp, Color.Red),
                     colors = ButtonDefaults.outlinedButtonColors(backgroundColor = Color.Gray)

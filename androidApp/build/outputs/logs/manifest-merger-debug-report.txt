@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\sae\Escape-Game-Application\androidApp\src\main\AndroidManifest.xml:2:1-17:12
-INJECTED from C:\sae\Escape-Game-Application\androidApp\src\main\AndroidManifest.xml:2:1-17:12
-INJECTED from C:\sae\Escape-Game-Application\androidApp\src\main\AndroidManifest.xml:2:1-17:12
-INJECTED from C:\sae\Escape-Game-Application\androidApp\src\main\AndroidManifest.xml:2:1-17:12
+ADDED from C:\sae\Escape-Game-Application\androidApp\src\main\AndroidManifest.xml:2:1-19:12
+INJECTED from C:\sae\Escape-Game-Application\androidApp\src\main\AndroidManifest.xml:2:1-19:12
+INJECTED from C:\sae\Escape-Game-Application\androidApp\src\main\AndroidManifest.xml:2:1-19:12
+INJECTED from C:\sae\Escape-Game-Application\androidApp\src\main\AndroidManifest.xml:2:1-19:12
 MERGED from [:shared] C:\sae\Escape-Game-Application\shared\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.compose.ui:ui-tooling:1.2.1] C:\Users\leado\.gradle\caches\transforms-3\a7b614aa49b2d322700232e66cbb2ec0\transformed\ui-tooling-1.2.1\AndroidManifest.xml:17:1-29:12
 MERGED from [androidx.compose.material:material:1.2.1] C:\Users\leado\.gradle\caches\transforms-3\63b6a010d97bb47037dd8a4ab78d05e7\transformed\material-1.2.1\AndroidManifest.xml:17:1-23:12
@@ -50,25 +50,33 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\leado\.gradle\cach
 MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\leado\.gradle\caches\transforms-3\fa18ea3694ff1da0bdfeef6e2621dfb7\transformed\tracing-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\leado\.gradle\caches\transforms-3\cf8f304308400d7d5a87ee39485388b9\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\leado\.gradle\caches\transforms-3\b856b60e4fe177e3c70811c7841243a3\transformed\annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
-INJECTED from C:\sae\Escape-Game-Application\androidApp\src\main\AndroidManifest.xml:2:1-17:12
-INJECTED from C:\sae\Escape-Game-Application\androidApp\src\main\AndroidManifest.xml:2:1-17:12
-INJECTED from C:\sae\Escape-Game-Application\androidApp\src\main\AndroidManifest.xml:2:1-17:12
+INJECTED from C:\sae\Escape-Game-Application\androidApp\src\main\AndroidManifest.xml:2:1-19:12
+INJECTED from C:\sae\Escape-Game-Application\androidApp\src\main\AndroidManifest.xml:2:1-19:12
+INJECTED from C:\sae\Escape-Game-Application\androidApp\src\main\AndroidManifest.xml:2:1-19:12
 	package
 		INJECTED from C:\sae\Escape-Game-Application\androidApp\src\main\AndroidManifest.xml
-		ADDED from C:\sae\Escape-Game-Application\androidApp\src\main\AndroidManifest.xml:2:1-17:12
+		ADDED from C:\sae\Escape-Game-Application\androidApp\src\main\AndroidManifest.xml:2:1-19:12
 		INJECTED from C:\sae\Escape-Game-Application\androidApp\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\sae\Escape-Game-Application\androidApp\src\main\AndroidManifest.xml
-		ADDED from C:\sae\Escape-Game-Application\androidApp\src\main\AndroidManifest.xml:2:1-17:12
+		ADDED from C:\sae\Escape-Game-Application\androidApp\src\main\AndroidManifest.xml:2:1-19:12
 		INJECTED from C:\sae\Escape-Game-Application\androidApp\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\sae\Escape-Game-Application\androidApp\src\main\AndroidManifest.xml
-		ADDED from C:\sae\Escape-Game-Application\androidApp\src\main\AndroidManifest.xml:2:1-17:12
+		ADDED from C:\sae\Escape-Game-Application\androidApp\src\main\AndroidManifest.xml:2:1-19:12
 		INJECTED from C:\sae\Escape-Game-Application\androidApp\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\sae\Escape-Game-Application\androidApp\src\main\AndroidManifest.xml:2:11-69
+uses-feature#android.hardware.camera
+ADDED from C:\sae\Escape-Game-Application\androidApp\src\main\AndroidManifest.xml:3:5-60
+	android:name
+		ADDED from C:\sae\Escape-Game-Application\androidApp\src\main\AndroidManifest.xml:3:19-57
+uses-permission#android.permission.CAMERA
+ADDED from C:\sae\Escape-Game-Application\androidApp\src\main\AndroidManifest.xml:4:5-65
+	android:name
+		ADDED from C:\sae\Escape-Game-Application\androidApp\src\main\AndroidManifest.xml:4:22-62
 application
-ADDED from C:\sae\Escape-Game-Application\androidApp\src\main\AndroidManifest.xml:4:5-16:19
+ADDED from C:\sae\Escape-Game-Application\androidApp\src\main\AndroidManifest.xml:6:5-18:19
 MERGED from [androidx.compose.ui:ui-tooling:1.2.1] C:\Users\leado\.gradle\caches\transforms-3\a7b614aa49b2d322700232e66cbb2ec0\transformed\ui-tooling-1.2.1\AndroidManifest.xml:23:5-27:19
 MERGED from [androidx.compose.ui:ui-tooling:1.2.1] C:\Users\leado\.gradle\caches\transforms-3\a7b614aa49b2d322700232e66cbb2ec0\transformed\ui-tooling-1.2.1\AndroidManifest.xml:23:5-27:19
 MERGED from [androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\leado\.gradle\caches\transforms-3\6ad99b5f2a8ed7840da5292b09cc590c\transformed\profileinstaller-1.2.0\AndroidManifest.xml:24:5-48:19
@@ -82,27 +90,27 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\le
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.8.0] C:\Users\leado\.gradle\caches\transforms-3\10634acf96c8b2d41780170076f28ac9\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from C:\sae\Escape-Game-Application\androidApp\src\main\AndroidManifest.xml:6:9-35
+		ADDED from C:\sae\Escape-Game-Application\androidApp\src\main\AndroidManifest.xml:8:9-35
 	android:allowBackup
-		ADDED from C:\sae\Escape-Game-Application\androidApp\src\main\AndroidManifest.xml:5:9-36
+		ADDED from C:\sae\Escape-Game-Application\androidApp\src\main\AndroidManifest.xml:7:9-36
 	android:theme
-		ADDED from C:\sae\Escape-Game-Application\androidApp\src\main\AndroidManifest.xml:7:9-40
-activity#sae.escapegame.application.android.MainActivity
-ADDED from C:\sae\Escape-Game-Application\androidApp\src\main\AndroidManifest.xml:8:9-15:20
+		ADDED from C:\sae\Escape-Game-Application\androidApp\src\main\AndroidManifest.xml:9:9-40
+activity#sae.escapegame.application.android.ActivitePrincipale
+ADDED from C:\sae\Escape-Game-Application\androidApp\src\main\AndroidManifest.xml:10:9-17:20
 	android:exported
-		ADDED from C:\sae\Escape-Game-Application\androidApp\src\main\AndroidManifest.xml:10:13-36
+		ADDED from C:\sae\Escape-Game-Application\androidApp\src\main\AndroidManifest.xml:12:13-36
 	android:name
-		ADDED from C:\sae\Escape-Game-Application\androidApp\src\main\AndroidManifest.xml:9:13-41
+		ADDED from C:\sae\Escape-Game-Application\androidApp\src\main\AndroidManifest.xml:11:13-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\sae\Escape-Game-Application\androidApp\src\main\AndroidManifest.xml:11:13-14:29
+ADDED from C:\sae\Escape-Game-Application\androidApp\src\main\AndroidManifest.xml:13:13-16:29
 action#android.intent.action.MAIN
-ADDED from C:\sae\Escape-Game-Application\androidApp\src\main\AndroidManifest.xml:12:17-69
+ADDED from C:\sae\Escape-Game-Application\androidApp\src\main\AndroidManifest.xml:14:17-69
 	android:name
-		ADDED from C:\sae\Escape-Game-Application\androidApp\src\main\AndroidManifest.xml:12:25-66
+		ADDED from C:\sae\Escape-Game-Application\androidApp\src\main\AndroidManifest.xml:14:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\sae\Escape-Game-Application\androidApp\src\main\AndroidManifest.xml:13:17-77
+ADDED from C:\sae\Escape-Game-Application\androidApp\src\main\AndroidManifest.xml:15:17-77
 	android:name
-		ADDED from C:\sae\Escape-Game-Application\androidApp\src\main\AndroidManifest.xml:13:27-74
+		ADDED from C:\sae\Escape-Game-Application\androidApp\src\main\AndroidManifest.xml:15:27-74
 uses-sdk
 INJECTED from C:\sae\Escape-Game-Application\androidApp\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\sae\Escape-Game-Application\androidApp\src\main\AndroidManifest.xml

@@ -2,12 +2,9 @@ package sae.escapegame.application.android
 import androidx.compose.foundation.layout.*
 
 import androidx.compose.runtime.*
-import androidx.compose.ui.Alignment
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.res.integerArrayResource
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringArrayResource
 import sae.escapegame.application.android.QCM.result
@@ -48,13 +45,8 @@ fun Navigation() {
             resoudrePremiereEnigme(navController)
 
         }
-        composable(route = Ecran.ChoixEnigme1.route) {
-            choixEnigmes(enigmes1 = Screen.EnigmeOneScreen,
-                enigmes2 = Screen.EnigmeOneScreen,
-                enigmes_nom = stringArrayResource(R.array.choix_enigmes1_nom),
-                navController = navController)
-        }
-        composable(route = Screen.QCM.route){
+
+        composable(route = Ecran.QCM.route){
             var item = stringArrayResource(id = sae.escapegame.application.android.R.array.qcmAlgo)
             repJoueur = skillTest(navController,item)
             println(repJoueur)

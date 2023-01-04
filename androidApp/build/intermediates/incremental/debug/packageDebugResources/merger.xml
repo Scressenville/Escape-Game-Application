@@ -1,27 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\sae\Escape-Game-Application\androidApp\src\main\res"/><source path="C:\sae\Escape-Game-Application\androidApp\build\generated\res\rs\debug"/><source path="C:\sae\Escape-Game-Application\androidApp\build\generated\res\resValues\debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main" generated-set="main$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\sae\Escape-Game-Application\androidApp\src\main\res"><file name="answer1" path="C:\sae\Escape-Game-Application\androidApp\src\main\res\drawable\answer1.png" qualifiers="" type="drawable"/><file name="answer2" path="C:\sae\Escape-Game-Application\androidApp\src\main\res\drawable\answer2.png" qualifiers="" type="drawable"/><file name="enigmealgo" path="C:\sae\Escape-Game-Application\androidApp\src\main\res\drawable\enigmealgo.png" qualifiers="" type="drawable"/><file name="escalier1" path="C:\sae\Escape-Game-Application\androidApp\src\main\res\drawable\escalier1.jpg" qualifiers="" type="drawable"/><file name="escalier2" path="C:\sae\Escape-Game-Application\androidApp\src\main\res\drawable\escalier2.jpg" qualifiers="" type="drawable"/><file name="etage1" path="C:\sae\Escape-Game-Application\androidApp\src\main\res\drawable\etage1.jpg" qualifiers="" type="drawable"/><file name="hallcinematique1" path="C:\sae\Escape-Game-Application\androidApp\src\main\res\drawable\hallcinematique1.png" qualifiers="" type="drawable"/><file name="loggy" path="C:\sae\Escape-Game-Application\androidApp\src\main\res\drawable\loggy.png" qualifiers="" type="drawable"/><file name="r47" path="C:\sae\Escape-Game-Application\androidApp\src\main\res\drawable\r47.jpg" qualifiers="" type="drawable"/><file name="rezdechaussee" path="C:\sae\Escape-Game-Application\androidApp\src\main\res\drawable\rezdechaussee.jpg" qualifiers="" type="drawable"/><file path="C:\sae\Escape-Game-Application\androidApp\src\main\res\values\strings.xml" qualifiers=""><string name="btnJouer">Jouer</string><string name="btnSuivant">Suiv</string><string name="btnPrecedemment">Prec</string><string name="btnLangue">fr</string><string name="enigmealgo">imagePremiereEnigme</string><string name="answer1">Rep1PremiereEnigme</string><string name="answer2">Rep2PremiereEnigme</string><string-array name="cinematic1">
+<merger version="3"><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\sae\Escape-Game-Application\androidApp\src\main\res"/><source path="C:\sae\Escape-Game-Application\androidApp\build\generated\res\rs\debug"/><source path="C:\sae\Escape-Game-Application\androidApp\build\generated\res\resValues\debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main" generated-set="main$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\sae\Escape-Game-Application\androidApp\src\main\res"><file name="loggy" path="C:\sae\Escape-Game-Application\androidApp\src\main\res\drawable\loggy.png" qualifiers="" type="drawable"/><file name="photo_escalier1" path="C:\sae\Escape-Game-Application\androidApp\src\main\res\drawable\photo_escalier1.jpg" qualifiers="" type="drawable"/><file name="photo_escalier2" path="C:\sae\Escape-Game-Application\androidApp\src\main\res\drawable\photo_escalier2.jpg" qualifiers="" type="drawable"/><file name="photo_etage1" path="C:\sae\Escape-Game-Application\androidApp\src\main\res\drawable\photo_etage1.jpg" qualifiers="" type="drawable"/><file name="photo_hall" path="C:\sae\Escape-Game-Application\androidApp\src\main\res\drawable\photo_hall.png" qualifiers="" type="drawable"/><file name="photo_r47" path="C:\sae\Escape-Game-Application\androidApp\src\main\res\drawable\photo_r47.jpg" qualifiers="" type="drawable"/><file name="photo_rdc" path="C:\sae\Escape-Game-Application\androidApp\src\main\res\drawable\photo_rdc.jpg" qualifiers="" type="drawable"/><file name="plan_rdc" path="C:\sae\Escape-Game-Application\androidApp\src\main\res\drawable\plan_rdc.png" qualifiers="" type="drawable"/><file name="python_algo" path="C:\sae\Escape-Game-Application\androidApp\src\main\res\drawable\python_algo.png" qualifiers="" type="drawable"/><file name="python_reponse_1" path="C:\sae\Escape-Game-Application\androidApp\src\main\res\drawable\python_reponse_1.png" qualifiers="" type="drawable"/><file name="python_reponse_2" path="C:\sae\Escape-Game-Application\androidApp\src\main\res\drawable\python_reponse_2.png" qualifiers="" type="drawable"/><file name="symbole_aide" path="C:\sae\Escape-Game-Application\androidApp\src\main\res\drawable\symbole_aide.png" qualifiers="" type="drawable"/><file name="symbole_ecran_principal" path="C:\sae\Escape-Game-Application\androidApp\src\main\res\drawable\symbole_ecran_principal.png" qualifiers="" type="drawable"/><file name="symbole_inventaire" path="C:\sae\Escape-Game-Application\androidApp\src\main\res\drawable\symbole_inventaire.png" qualifiers="" type="drawable"/><file name="symbole_qr_code" path="C:\sae\Escape-Game-Application\androidApp\src\main\res\drawable\symbole_qr_code.png" qualifiers="" type="drawable"/><file name="symbole_sauvegarde" path="C:\sae\Escape-Game-Application\androidApp\src\main\res\drawable\symbole_sauvegarde.png" qualifiers="" type="drawable"/><file path="C:\sae\Escape-Game-Application\androidApp\src\main\res\values\strings.xml" qualifiers=""><string name="btnJouer">Jouer</string><string name="btnSuivant">Suiv</string><string name="btnPrecedemment">Prec</string><string name="btnLangue">fr</string><string name="enigmealgo">imagePremiereEnigme</string><string name="answer1">Rep1PremiereEnigme</string><string name="answer2">Rep2PremiereEnigme</string><string name="questionSQL"/><string-array name="cinematic1">
         <item>Ouuuups</item>
         <item>Il semblerait que tu sois bloqué à l\'intérieur du bâtiment !</item>
         <item>C\'est à cause de l\'horrible Chain !</item>
     </string-array><string-array name="cinematic2">
-        <item>Très bien on a réussi à passer le rez de chaussée</item>
+        <item>Très bien, on a réussi à passer le rez-de-chaussée</item>
         <item>Il faut maintenant réussir à passer le premier étage !</item>
-        <item>Je crois en toi on va y arriver !</item>
+        <item>Je crois en toi, on va y arriver !</item>
     </string-array><string-array name="cinematic3">
-        <item>Nous y sommes le dernier étage !</item>
-        <item>Cela fut difficile mais maintenant nous allons enfin pouvoir en découdre avec chain !</item>
-        <item>Il est temps que cette masquerade ce termine !</item>
+        <item>Nous y sommes ! Le dernier étage !</item>
+        <item>Cela fut difficile, mais maintenant nous allons enfin pouvoir en découdre avec Chain !</item>
+        <item>Il est temps que cette mascarade se termine !</item>
     </string-array><string-array name="enigmeOneAlgo">
-        <item>Chain  : "Mouahaha tu seras bientôt à ma merci, ce n\’est qu\’une question de temps!"</item>
-        <item>Loggy : "Mon ami.e je t\’ai laissé.e un fragment de mes recherches dans la salle, tu l\’as trouvé?"</item>
+        <item>Chain  : "Mouahaha ! Tu seras bientôt à ma merci, ce n\’est qu\’une question de temps!"</item>
+        <item>Loggy : "Mon ami.e je t\’ai laissé un fragment de mes recherches dans la salle, tu l\’as trouvé?"</item>
         <item>Oh non!!!</item>
-        <item>Loggy : "Le langage Python s\'est malheureusement allié avec Chain, Java également, c\’est désastreux." </item>
+        <item>Loggy : "Le langage Python s\'est malheureusement allié avec Chain, Java également, c\’est désastreux !" </item>
         <item>Bon, dans un premier temps essayons de vaincre Python à son propre jeu. Traduisons l\’algo que je t\’ai laissé dans son langage pour le vaincre.</item>
         <item> /!\ Item trouvé : /!\ </item>
         <item> "recueil de notes de Loggy", "Le serment de protection"</item>
-    </string-array><string-array name="choix_enigmes1_nom">
-        <item>Python</item>
-        <item>SQL</item>
     </string-array><string-array name="qcmAlgo">
         <item>A : Les variables peuvent contenir différents types de données </item>
         <item>B : un Booléen représente une valeur logique binaire </item>
@@ -32,4 +29,17 @@
         <item>true</item>
         <item>false</item>
         <item>false</item>
+    </string-array><string-array name="choix_enigmes1_nom">
+        <item>Python</item>
+        <item>SQL</item>
+    </string-array><string-array name="questionsSQL">
+        <item>Choisissez les bons mots afin d\'obtenir les notes de Bob</item>
+        <item>Choisisser les bons mots afin d\'obtenir les notes de toutes la classes</item>
+        <item>Choisisser les bons mots afin d\'obtenir les notes de mathématique des Bob</item>
+    </string-array><string-array name="motsSQL">
+        <item>nom,Notes,Bob</item>
+        <item>notes,Etudiant,Bob</item>
+    </string-array><string-array name="sujetsSQL">
+        <item>Select,From,Where nom = </item>
+        <item>Select,From,Where</item>
     </string-array></file><file path="C:\sae\Escape-Game-Application\androidApp\src\main\res\values\styles.xml" qualifiers=""><style name="AppTheme" parent="android:Theme.Material.NoActionBar"/></file></source><source path="C:\sae\Escape-Game-Application\androidApp\build\generated\res\rs\debug"/><source path="C:\sae\Escape-Game-Application\androidApp\build\generated\res\resValues\debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\sae\Escape-Game-Application\androidApp\src\debug\res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug" generated-set="debug$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\sae\Escape-Game-Application\androidApp\src\debug\res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="generated$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"/><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="generated" generated-set="generated$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"/><mergedItems/></merger>

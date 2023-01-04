@@ -17,16 +17,18 @@ import androidx.compose.ui.unit.sp
 @Preview
 @Composable
 fun SQL(){
-    var question = stringArrayResource(id = R.array.questionsSQL)
-    var suivant : Int by remember{mutableStateOf(0)}
-    var listeMots : Array<String>
-    listeMots = stringArrayResource(id = R.array.questionsSQL)
+    var suivant by remember{ mutableStateOf(0) }
     var compteur1 : Int by remember{mutableStateOf(0)}
     var compteur2 : Int by remember{mutableStateOf(0)}
     var compteur3 : Int by remember{mutableStateOf(0)}
-    var mots by remember {
-        mutableStateOf(listeMots[suivant].split(","))
-    }
+    var enigmesTitre : Array<String>
+    enigmesTitre = stringArrayResource(id = R.array.enigmesSQL)
+    var listes_phrases : Array<String>
+    listes_phrases = stringArrayResource(id = R.array.phrasesacompléter)
+    var choix_réponses : Array<String> by remember{ mutableStateMapOf() }
+    choix_réponses = stringArrayResource(id = R.array.réponses)[suivant].split(",").toTypedArray()
+    var phrase_a_compléter : String by remember{ mutableStateOf("") }
+
     Column(
         modifier = Modifier
             .fillMaxSize()
@@ -35,16 +37,15 @@ fun SQL(){
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         Image(painter = painterResource(id = R.drawable.symbole_qr_code), contentDescription = null)
+        //Titre de la question
+       Text(text = enigmesTitre[suivant])
+        //Phrase a compléter
+        phrase_a_compléter = listes_phrases[suivant]
+        phrase_a_compléter = phrase_a_compléter.replace("1",choix_réponses[compteur1])
+        phrase_a_compléter = phrase_a_compléter.replace("2",choix_réponses[compteur2])
+        phrase_a_compléter = phrase_a_compléter.replace("3",choix_réponses[compteur3])
+        Text(text = phrase_a_compléter)
 
-       Text(text = question[suivant], fontSize = 30.sp)
-
-       Row(modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.Center){
-           mots = listeMots[suivant].split(",")
-          Text(
-              "Select " + mots[compteur1] + "\nFrom " + mots[compteur2] + "Join Etudiant On Etudiant.idEtudiant = " +  mots[compteur2] + ".idEtudiant \n"
-          +"Where " + mots[compteur1] +"= "+ mots[compteur3], fontSize = 20.sp
-          )
-       }
         Column(){
             Button(onClick = {
                 if (compteur1 < 2) {
@@ -71,13 +72,13 @@ fun SQL(){
                 }
             }){Text("troisieme mot : " + compteur3)}
         }
+        Row(){
 
-        Row(modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.End ){
             Button(onClick = {
-                if (suivant < question.size - 1){
+                if (suivant < enigmesTitre.size - 1){
                     suivant += 1
-
-            } }) {
+                }
+            }){
                 Text("Suivant")
             }
         }

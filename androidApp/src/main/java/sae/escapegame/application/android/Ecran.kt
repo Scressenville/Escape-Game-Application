@@ -1,5 +1,7 @@
 package sae.escapegame.application.android
 
+import sae.escapegame.application.Greeting
+
 sealed class Ecran(val route: String){
 
     object EcranPrincipal : Ecran("ecranPrincipal")

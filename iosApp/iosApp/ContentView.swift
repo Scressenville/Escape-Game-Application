@@ -22,30 +22,34 @@ struct ContentView: View {
 }
 struct PremiereCinematique: View {
     @State var listeDialogue : String = "Bonjour"
+    
     var body: some View {
         GeometryReader { geometry in
             VStack{
-                ZStack {
-                    VStack{
-                        Image("photo_hall")
-                            .resizable()
-                            .scaledToFill()
-                        Image("loggy").zIndex(1)
-                    }
-                }
-                            
+                ZStack(alignment: .bottomTrailing) {
+                    Image("photo_hall")
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .edgesIgnoringSafeArea(.all)
+                    Image("loggy")
+
+                }.frame(width: geometry.size.width, height: geometry.size.height * 0.8).padding(.leading,-50)
+                        
                 HStack{
                     //Boite de texte et Boutton
                     Button(action: {
-                        listeDialogue = "ok"
-                        print(listeDialogue)
+                        listeDialogue = "Suivant"
                     }, label: {
-                        Text("Suivant")
+                        Text("Suiv")
                     })
+                    Button(action: {
+                        listeDialogue = "Précédent"
+                    }, label: {
+                        Text("Préc")
+                    })
+
                 }
-            }.frame(width: geometry.size.width * 1, height: geometry.size.height * 0.85)
-            
-            
+            }
         }
     }
 }

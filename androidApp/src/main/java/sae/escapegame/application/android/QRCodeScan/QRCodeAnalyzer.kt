@@ -1,4 +1,4 @@
-package sae.escapegame.application.android
+package sae.escapegame.application.android.QRCodeScan
 
 import android.graphics.ImageFormat
 import androidx.camera.core.ImageAnalysis

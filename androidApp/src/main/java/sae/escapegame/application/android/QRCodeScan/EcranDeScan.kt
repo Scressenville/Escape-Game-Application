@@ -17,6 +17,7 @@ import androidx.compose.ui.platform.LocalLifecycleOwner
 import androidx.compose.ui.viewinterop.AndroidView
 import androidx.core.content.ContextCompat
 import androidx.navigation.NavController
+import sae.escapegame.application.android.QRCodeScan.QRCodeAnalyzer
 
 @Composable
 fun EcranDeScan(controlleurNavigation: NavController,enigme1 : Ecran, enigme2 : Ecran) {

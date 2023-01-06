@@ -17,10 +17,12 @@ import androidx.compose.ui.unit.sp
 @Preview
 @Composable
 fun SQL(){
+
     var suivant by remember{ mutableStateOf(0) }
     var compteur1 : Int by remember{mutableStateOf(0)}
     var compteur2 : Int by remember{mutableStateOf(0)}
     var compteur3 : Int by remember{mutableStateOf(0)}
+
     var enigmesTitre : Array<String>
     enigmesTitre = stringArrayResource(id = R.array.enigmesSQL)
     var listes_phrases : Array<String>
@@ -28,6 +30,8 @@ fun SQL(){
     var choix_réponses : Array<String> by remember{ mutableStateMapOf() }
     choix_réponses = stringArrayResource(id = R.array.réponses)[suivant].split(",").toTypedArray()
     var phrase_a_compléter : String by remember{ mutableStateOf("") }
+    var reponse_juste : Array<String>
+    reponse_juste = stringArrayResource(id = R.array.reponses_juste)[suivant].split(",").toTypedArray()
 
     Column(
         modifier = Modifier
@@ -75,7 +79,13 @@ fun SQL(){
         Row(){
 
             Button(onClick = {
-                if (suivant < enigmesTitre.size - 1){
+                var verif = true
+                for (i in 0..choix_réponses.size-1){
+                    if (choix_réponses[i] != reponse_juste[i]){
+                        verif=false
+                    }
+            }
+                if (suivant < enigmesTitre.size - 1 && verif == true){
                     suivant += 1
                 }
             }){

@@ -9,6 +9,7 @@ array enigmesSQL
 array phrasesacompléter
 array qcmAlgo
 array reponseQCMAlgo
+array reponses_juste
 array réponses
 drawable bonne_reponse
 drawable img_enigme_algo

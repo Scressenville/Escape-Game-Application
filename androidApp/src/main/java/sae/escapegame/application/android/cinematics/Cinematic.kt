@@ -10,6 +10,7 @@ import androidx.compose.material.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.painter.Painter
 import androidx.compose.ui.layout.ContentScale
@@ -21,6 +22,8 @@ import androidx.navigation.NavController
 @Composable
 fun Cinematique(imageFond: Painter, imageLoggy: Painter, dialogue : Array<String>, sceneSuivante : Ecran, controlleurNavigation : NavController){
     var compteur by remember{mutableStateOf(0)}
+    val gradient =
+        Brush.horizontalGradient(listOf(Color.Yellow, Color.Red))
     Column(
         modifier = Modifier
             .fillMaxSize()
@@ -59,9 +62,11 @@ fun Cinematique(imageFond: Painter, imageLoggy: Painter, dialogue : Array<String
         {
             Text(dialogue[compteur],textAlign = TextAlign.Center,modifier = Modifier.height(100.dp).width(400.dp))
             Row(
-                modifier = Modifier.fillMaxWidth(),
+                modifier = Modifier.fillMaxWidth()
+                    .background(Color.Black),
                 horizontalArrangement = Arrangement.SpaceAround,
                 verticalAlignment = Alignment.Bottom
+
             )
             {
                 if (compteur != 0){
@@ -73,7 +78,10 @@ fun Cinematique(imageFond: Painter, imageLoggy: Painter, dialogue : Array<String
                         }
                     ) { Text(text = stringResource(R.string.btnPrecedemment))}
                 }
+                
                 Button(
+
+
                     onClick = {
                         if (dialogue.size -1> compteur){
                             compteur++

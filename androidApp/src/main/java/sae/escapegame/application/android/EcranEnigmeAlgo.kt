@@ -18,6 +18,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.input.TextFieldValue
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
+import kotlinx.coroutines.delay
 
 
 @Composable
@@ -74,11 +75,15 @@ fun resoudrePremiereEnigme(controlleurNavigation : NavController){
                             Toast
                                 .makeText(context, "", Toast.LENGTH_LONG).show()
                             controlleurNavigation.navigate(Ecran.EcranSplash.route)
+                            controlleurNavigation.navigate(Ecran.QCM.route)
+
                         }
                     )
             )
         }
     }
+
+
 
 @Composable
 fun OutlineTextFieldSample() {

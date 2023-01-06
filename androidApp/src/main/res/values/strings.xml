@@ -63,5 +63,9 @@
         <item>note,Notes,nom</item>
         <item>Notes,Etudiant,*</item>
     </string-array>
+    <string-array name="reponses_juste">
+        <item>note,Notes,nom</item>
+        <item>*,Notes,Etudiant</item>
+    </string-array>
 
 </resources>

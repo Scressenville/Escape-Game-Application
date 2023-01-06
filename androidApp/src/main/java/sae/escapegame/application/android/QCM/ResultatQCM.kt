@@ -41,7 +41,7 @@ fun result(repJoueur: Array<String>, correctionQCM: Array<String>, controllerNav
                         .padding(15.dp, 15.dp)
                         .height(60.dp).width(500.dp),
                     onClick = {
-                        controllerNavigation.navigate(Ecran.EcranPrincipal.route)
+                        controllerNavigation.navigate(Ecran.EcranMenuPrincipal.route)
                     },
                     border = BorderStroke(1.dp, Color.Red),
                     colors = ButtonDefaults.outlinedButtonColors(backgroundColor = Color.Gray)

@@ -56,7 +56,8 @@ fun resoudrePremiereEnigme(controlleurNavigation : NavController){
                         onClickLabel = "Clickable image",
                         onClick = {
                             Toast
-                                .makeText(context, "Mauvaise réponse", Toast.LENGTH_LONG).show()
+                                .makeText(context, "", Toast.LENGTH_LONG).show()
+                            controlleurNavigation.navigate(Ecran.EcranSplashReponseF.route)
                         }
                     )
             )
@@ -74,8 +75,7 @@ fun resoudrePremiereEnigme(controlleurNavigation : NavController){
                         onClick = {
                             Toast
                                 .makeText(context, "", Toast.LENGTH_LONG).show()
-                            controlleurNavigation.navigate(Ecran.EcranSplash.route)
-                            controlleurNavigation.navigate(Ecran.QCM.route)
+                            controlleurNavigation.navigate(Ecran.EcranSplashReponseV.route)
 
                         }
                     )

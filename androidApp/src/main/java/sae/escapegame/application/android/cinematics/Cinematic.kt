@@ -1,4 +1,4 @@
-package sae.escapegame.application.android
+package sae.escapegame.application.android.cinematics
 
 
 import androidx.compose.foundation.BorderStroke
@@ -18,6 +18,8 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
+import sae.escapegame.application.android.Ecran
+import sae.escapegame.application.android.R
 
 @Composable
 fun Cinematique(imageFond: Painter, imageLoggy: Painter, dialogue : Array<String>, sceneSuivante : Ecran, controlleurNavigation : NavController){
@@ -47,7 +49,8 @@ fun Cinematique(imageFond: Painter, imageLoggy: Painter, dialogue : Array<String
                 painter = imageLoggy,
                 contentDescription = "Loggy",
                 contentScale = ContentScale.Crop,
-                modifier = Modifier.height(300.dp)
+                modifier = Modifier
+                    .height(300.dp)
                     .width(150.dp)
                     .align(Alignment.BottomEnd)
             )
@@ -80,8 +83,6 @@ fun Cinematique(imageFond: Painter, imageLoggy: Painter, dialogue : Array<String
                 }
                 
                 Button(
-
-
                     onClick = {
                         if (dialogue.size -1> compteur){
                             compteur++

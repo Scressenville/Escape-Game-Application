@@ -12,7 +12,8 @@ sealed class Ecran(val route: String){
     object EcranLancementEnigmeAlgo : Ecran("ecranLancementEnigmeAlgo")
     object EcranLancementEnigmeSQL : Ecran("ecranLancementEnigmeSQL")
     object EcranMenuPrincipal : Ecran("ecranMenuPrincipal")
-    object EcranSplash : Ecran("ecranSplash")
+    object EcranSplashReponseV : Ecran("ecranSplashReponseV")
+    object EcranSplashReponseF : Ecran("ecranSplashReponseF")
 
     object EcranSQL : Ecran("QCM_SQL")
     object EcranSQLResultat: Ecran("SQL_Resultat")

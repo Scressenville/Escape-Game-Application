@@ -8,6 +8,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringArrayResource
 import sae.escapegame.application.android.QCM.result
 import sae.escapegame.application.android.QCM.skillTest
+import sae.escapegame.application.android.cinematics.Cinematique
 
 @Composable
 fun Navigation() {
@@ -29,9 +30,14 @@ fun Navigation() {
             )
         }
 
-        composable(route = Ecran.EcranSplash.route){
-            EcranSplash(navController)
+        composable(route = Ecran.EcranSplashReponseV.route){
+            EcranSplashReponseV(navController)
         }
+
+        composable(route = Ecran.EcranSplashReponseF.route){
+            EcranSplashReponseF(navController)
+        }
+
         composable(route = Ecran.EcranMenuPrincipal.route) {
             MenuPrincipal(Ecran.EcranCinematiqueIntroAlgo,Ecran.EcranCinematiqueIntroSQL,navController)
         }

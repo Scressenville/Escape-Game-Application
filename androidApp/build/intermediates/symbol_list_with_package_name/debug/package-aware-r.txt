@@ -678,6 +678,7 @@ drawable symbole_ecran_principal
 drawable symbole_inventaire
 drawable symbole_qr_code
 drawable symbole_sauvegarde
+drawable titre_escape_game
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 id ALT

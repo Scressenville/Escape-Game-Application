@@ -24,23 +24,26 @@ struct PremiereCinematique: View {
     @State var listeDialogue : String = "Bonjour"
     var body: some View {
         GeometryReader { geometry in
-            VStack {
-                // Contenu du VStack
-                Image("photo_hall")
-                    .resizable()
-                    .scaledToFill()
-                
-            }.frame(width: geometry.size.width * 1, height: geometry.size.height *
-                        0.85)
-            HStack{
-                //Boite de texte et Boutton
-                Button(action: {
-                    listeDialogue = "ok"
-                    print(listeDialogue)
-                }, label: {
-                    Text("Suivant")
-                })
-            }
+            VStack{
+                ZStack {
+                    VStack{
+                        Image("photo_hall")
+                            .resizable()
+                            .scaledToFill()
+                        Image("loggy").zIndex(1)
+                    }
+                }
+                            
+                HStack{
+                    //Boite de texte et Boutton
+                    Button(action: {
+                        listeDialogue = "ok"
+                        print(listeDialogue)
+                    }, label: {
+                        Text("Suivant")
+                    })
+                }
+            }.frame(width: geometry.size.width * 1, height: geometry.size.height * 0.85)
             
             
         }

@@ -13,10 +13,11 @@ import androidx.compose.ui.res.stringArrayResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.sp
+import androidx.navigation.NavController
 
-@Preview
+
 @Composable
-fun SQL(){
+fun SQL(controllerNavigation: NavController){
 
     var suivant by remember{ mutableStateOf(0) }
     var compteur1 : Int by remember{mutableStateOf(0)}
@@ -40,8 +41,8 @@ fun SQL(){
         verticalArrangement = Arrangement.SpaceAround,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        Image(painter = painterResource(id = R.drawable.symbole_qr_code), contentDescription = null)
         Image(painter = painterResource(id = R.drawable.bdd), contentDescription = null)
+
         //Titre de la question
        Text(text = enigmesTitre[suivant])
         //Phrase a compléter
@@ -86,9 +87,21 @@ fun SQL(){
                         verif=false
                     }
             }
-                if (suivant < enigmesTitre.size - 1 && verif == true){
-                    suivant += 1
+
+                if (verif == true){
+
+                    if (suivant >= enigmesTitre.size - 1){
+                        controllerNavigation.navigate(Ecran.EcranSQL.route)
+                    }
+                    if (suivant < enigmesTitre.size - 1){
+                        suivant ++
+                    }
+                    println("la valeur de suivant" + suivant)
+
+
                 }
+
+
             }){
                 Text("Suivant")
             }

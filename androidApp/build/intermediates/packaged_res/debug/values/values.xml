@@ -30,7 +30,7 @@
     </string-array>
     <string-array name="enigmesSQL">
         <item>Choisissez les bons mots pour afficher les notes de Bob</item>
-        <item>Choisissez les bons mots pour afficher les notes et les noms de toutes la classes</item>
+        <item>Choisissez les bons mots pour afficher les notes et les noms de toute la classe</item>
     </string-array>
     <string-array name="phrasesacompléter">
         <item>Select 1 From 2 Join Etudiant On 2.idEtudiant = Etudiant.idEtudiant Where 3 = Bob</item>
@@ -42,19 +42,32 @@
         <item>C : 2.0 est un Integer</item>
         <item>D : 2 est un Float </item>
     </string-array>
+    <string-array name="qcmSQL">
+        <item>A : Il n\'est pas possible de lier deux tables entre elles</item>
+        <item>B : Select sert à inserer des données</item>
+        <item>C : le squelette d\'une requete SQL n\'a pas d\'ordre (Where…Select…From)</item>
+        <item>C : le squelette d\'une requete SQL n\'a pas d\'ordre (Where…Select…From)</item>
+        <item>D : * permet de selectionner tous les champs d\'une table</item>
+    </string-array>
     <string-array name="reponseQCMAlgo">
         <item>true</item>
         <item>true</item>
         <item>false</item>
         <item>false</item>
     </string-array>
+    <string-array name="reponseQCMSQL">
+        <item>false</item>
+        <item>false</item>
+        <item>false</item>
+        <item>true</item>
+    </string-array>
     <string-array name="reponses_juste">
         <item>note,Notes,nom</item>
-        <item>*,Notes,Etudiant</item>
+        <item>Notes,*,Etudiant</item>
     </string-array>
     <string-array name="réponses">
         <item>note,Notes,nom</item>
-        <item>Notes,Etudiant,*</item>
+        <item>Notes,*,Etudiant</item>
     </string-array>
     <string name="answer1">Rep1PremiereEnigme</string>
     <string name="answer2">Rep2PremiereEnigme</string>
@@ -63,6 +76,6 @@
     <string name="btnPrecedemment">Prec</string>
     <string name="btnSuivant">Suiv</string>
     <string name="enigmealgo">imagePremiereEnigme</string>
-    <string name="questionSQL"/>
+    <string name="questionSQL">test</string>
     <style name="AppTheme" parent="android:Theme.Material.NoActionBar"/>
 </resources>

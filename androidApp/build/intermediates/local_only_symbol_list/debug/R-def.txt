@@ -8,7 +8,9 @@ array enigmeOneAlgo
 array enigmesSQL
 array phrasesacompléter
 array qcmAlgo
+array qcmSQL
 array reponseQCMAlgo
+array reponseQCMSQL
 array reponses_juste
 array réponses
 drawable bdd

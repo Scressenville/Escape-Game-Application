@@ -84,10 +84,10 @@ fun EcranDeScan(controlleurNavigation: NavController,enigme1 : Ecran, enigme2 : 
                 modifier = Modifier.weight(1f)
             )
             if (code == "Enigme Algo") kotlin.run{
-                controlleurNavigation.navigate(Ecran.EcranCinématiqueIntroAlgo.route)
+                controlleurNavigation.navigate(Ecran.EcranCinematiqueIntroAlgo.route)
             }
             if (code == "Enigme SQL") kotlin.run{
-                controlleurNavigation.navigate(Ecran.EcranCinématiqueIntroSQL.route)
+                controlleurNavigation.navigate(Ecran.EcranCinematiqueIntroSQL.route)
             }
         }
     }

@@ -1,20 +1,21 @@
 package sae.escapegame.application.android
 
-import sae.escapegame.application.Greeting
-
 sealed class Ecran(val route: String){
 
     object EcranPrincipal : Ecran("ecranPrincipal")
 
-    object EcranCinématiqueRezDeChaussée : Ecran("ecranCinématiqueRezDeChaussée")
-    object EcranCinematiquePremièreEtage : Ecran("ecranCinematiquePremièreEtage")
-    object EcranCinématiqueDerniereEtage : Ecran("ecranCinématiqueDerniereEtage")
-    object EcranCinématiqueIntroAlgo : Ecran("ecranCinématiqueIntroAlgo")
-    object EcranCinématiqueIntroSQL : Ecran("CinématiqueIntroSQL")
+    object EcranCinematiqueRezDeChaussee : Ecran("ecranCinématiqueRezDeChaussée")
+    object EcranCinematiquePremierEtage : Ecran("ecranCinematiquePremièreEtage")
+    object EcranCinematiqueDerniereEtage : Ecran("ecranCinématiqueDerniereEtage")
+    object EcranCinematiqueIntroAlgo : Ecran("ecranCinématiqueIntroAlgo")
+    object EcranCinematiqueIntroSQL : Ecran("CinématiqueIntroSQL")
     object EcranLancementEnigmeAlgo : Ecran("ecranLancementEnigmeAlgo")
     object EcranLancementEnigmeSQL : Ecran("ecranLancementEnigmeSQL")
     object EcranMenuPrincipal : Ecran("ecranMenuPrincipal")
     object EcranSplash : Ecran("ecranSplash")
+
+    object EcranSQL : Ecran("QCM_SQL")
+    object EcranSQLResultat: Ecran("SQL_Resultat")
 
     object QCM : Ecran("QCM_screen")
     object ResultatQCM: Ecran("ResultatQCM")

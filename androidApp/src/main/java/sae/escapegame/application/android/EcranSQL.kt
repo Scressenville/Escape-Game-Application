@@ -41,6 +41,7 @@ fun SQL(){
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         Image(painter = painterResource(id = R.drawable.symbole_qr_code), contentDescription = null)
+        Image(painter = painterResource(id = R.drawable.bdd), contentDescription = null)
         //Titre de la question
        Text(text = enigmesTitre[suivant])
         //Phrase a compléter

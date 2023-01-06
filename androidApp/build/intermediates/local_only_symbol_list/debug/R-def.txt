@@ -11,6 +11,7 @@ array qcmAlgo
 array reponseQCMAlgo
 array reponses_juste
 array réponses
+drawable bdd
 drawable bonne_reponse
 drawable img_enigme_algo
 drawable img_enigme_sql

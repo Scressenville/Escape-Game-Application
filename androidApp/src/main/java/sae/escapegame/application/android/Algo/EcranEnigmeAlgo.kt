@@ -22,8 +22,9 @@ import kotlinx.coroutines.delay
 
 
 @Composable
-fun resoudrePremiereEnigme(controlleurNavigation : NavController){
+fun resoudrePremiereEnigme(controlleurNavigation : NavController): Boolean {
     var imageVisible  by remember { mutableStateOf(false) }
+    var reussite : Boolean=false
     val context = LocalContext.current
     Column(
         verticalArrangement = Arrangement.SpaceBetween,
@@ -76,11 +77,13 @@ fun resoudrePremiereEnigme(controlleurNavigation : NavController){
                             Toast
                                 .makeText(context, "", Toast.LENGTH_LONG).show()
                             controlleurNavigation.navigate(Ecran.EcranSplashReponseV.route)
+                            reussite=true
 
                         }
                     )
             )
         }
+    return reussite
     }
 
 

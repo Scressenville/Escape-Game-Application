@@ -1,21 +1,39 @@
 package sae.escapegame.application.android
 
+import androidx.compose.foundation.background
+import androidx.compose.foundation.border
+import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material.Text
 import androidx.compose.runtime.*
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringArrayResource
+import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
+import androidx.compose.ui.window.Popup
+import androidx.compose.ui.window.PopupProperties
 import sae.escapegame.application.android.QCM.result
 import sae.escapegame.application.android.QCM.skillTest
 import sae.escapegame.application.android.cinematics.Cinematique
 
 @Composable
 fun Navigation() {
-    var repJoueur: Array<String> by remember { mutableStateOf(Array(4){""}) }
+    var repJoueur: Array<String> by remember { mutableStateOf(Array(4) { "" }) }
+    var booleanEnigmeAlgo: Boolean by remember {
+        mutableStateOf(false)
+    }
+    var booleanEnigmeSQL: Boolean by remember {
+        mutableStateOf(false)
+    }
 
     val navController = rememberNavController()
-    NavHost(navController = navController, startDestination = Ecran.EcranPrincipal.route ) {
+    NavHost(navController = navController, startDestination = Ecran.EcranPrincipal.route) {
         composable(route = Ecran.EcranPrincipal.route) {
             EcranPrincipal(controlleurNavigation = navController)
         }
@@ -30,16 +48,16 @@ fun Navigation() {
             )
         }
 
-        composable(route = Ecran.EcranSplashReponseV.route){
+        composable(route = Ecran.EcranSplashReponseV.route) {
             EcranSplashReponseV(navController)
         }
 
-        composable(route = Ecran.EcranSplashReponseF.route){
+        composable(route = Ecran.EcranSplashReponseF.route) {
             EcranSplashReponseF(navController)
         }
 
         composable(route = Ecran.EcranMenuPrincipal.route) {
-            MenuPrincipal(Ecran.EcranCinematiqueIntroAlgo,Ecran.EcranCinematiqueIntroSQL,navController)
+            MenuPrincipal(navController,booleanEnigmeAlgo, booleanEnigmeSQL)
         }
         composable(route = Ecran.EcranCinematiqueIntroAlgo.route) {
             Cinematique(
@@ -54,26 +72,28 @@ fun Navigation() {
             SQL(navController)
         }
 
-        composable(route = Ecran.QCM.route){
-            var item = stringArrayResource(id = sae.escapegame.application.android.R.array.qcmAlgo)
-            repJoueur = skillTest(navController,item)
+        composable(route = Ecran.QCM.route) {
+            val item = stringArrayResource(id = R.array.qcmAlgo)
+            repJoueur = skillTest(navController, item)
             println(repJoueur)
         }
-        composable(route = Ecran.ResultatQCM.route){
-            var correctionQCM = stringArrayResource(id = sae.escapegame.application.android.R.array.reponseQCMAlgo)
+        composable(route = Ecran.ResultatQCM.route) {
+            val correctionQCM =
+                stringArrayResource(id = R.array.reponseQCMAlgo)
             println(correctionQCM)
-            result(repJoueur, correctionQCM,navController)
+            result(repJoueur, correctionQCM, navController)
         }
-        composable(route = Ecran.EcranSQL.route){
-            var item = stringArrayResource(id = sae.escapegame.application.android.R.array.qcmSQL)
-            repJoueur = skillTest(navController,item)
+        composable(route = Ecran.EcranSQL.route) {
+            val item = stringArrayResource(id = R.array.qcmSQL)
+            repJoueur = skillTest(navController, item)
             println(repJoueur)
         }
 
-        composable(route = Ecran.EcranSQLResultat.route){
-            var correctionQCM = stringArrayResource(id = sae.escapegame.application.android.R.array.reponseQCMSQL)
+        composable(route = Ecran.EcranSQLResultat.route) {
+            val correctionQCM =
+                stringArrayResource(id = R.array.reponseQCMSQL)
             println(correctionQCM)
-            result(repJoueur, correctionQCM,navController)
+            result(repJoueur, correctionQCM, navController)
         }
 
         composable(route = Ecran.EcranCinematiquePremierEtage.route) {
@@ -94,10 +114,11 @@ fun Navigation() {
                 navController
             )
         }
-        composable(route = Ecran.EcranLancementEnigmeAlgo.route){
+        composable(route = Ecran.EcranLancementEnigmeAlgo.route) {
             resoudrePremiereEnigme(controlleurNavigation = navController)
+            booleanEnigmeAlgo = true
         }
-        composable(route = Ecran.EcranCinematiqueIntroSQL.route){
+        composable(route = Ecran.EcranCinematiqueIntroSQL.route) {
             Cinematique(
                 painterResource(id = R.drawable.photo_r47),
                 painterResource(id = R.drawable.loggy),
@@ -105,6 +126,7 @@ fun Navigation() {
                 Ecran.EcranLancementEnigmeSQL,
                 navController
             )
+            booleanEnigmeSQL  = true
         }
 
     }

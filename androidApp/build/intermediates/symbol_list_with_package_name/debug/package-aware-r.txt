@@ -650,6 +650,7 @@ drawable btn_radio_on_to_off_mtrl_animation
 drawable evilloggy
 drawable img_enigme_algo
 drawable img_enigme_sql
+drawable localisation
 drawable loggy
 drawable mauvaise_reponse
 drawable notification_action_background

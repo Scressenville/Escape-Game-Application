@@ -1,4 +1,5 @@
 package sae.escapegame.application.android
+import androidx.activity.compose.BackHandler
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
@@ -33,6 +34,11 @@ fun SQL(controllerNavigation: NavController){
     var phrase_a_compléter : String by remember{ mutableStateOf("") }
     var reponse_juste : Array<String>
     reponse_juste = stringArrayResource(id = R.array.reponses_juste)[suivant].split(",").toTypedArray()
+
+    BackHandler(true, onBack = {
+        //do nothing
+        println("Boutton retour préssé")
+    })
 
     Column(
         modifier = Modifier

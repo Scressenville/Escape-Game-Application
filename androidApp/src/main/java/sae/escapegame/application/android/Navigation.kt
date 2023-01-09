@@ -1,5 +1,6 @@
 package sae.escapegame.application.android
 
+import androidx.activity.compose.BackHandler
 import androidx.compose.runtime.*
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
@@ -13,10 +14,14 @@ import sae.escapegame.application.android.cinematics.Cinematique
 @Composable
 fun Navigation() {
     var repJoueur: Array<String> by remember { mutableStateOf(Array(4){""}) }
-
     val navController = rememberNavController()
+    BackHandler(true, onBack = {
+        //do nothing
+        println("Boutton retour préssé")
+    })
     NavHost(navController = navController, startDestination = Ecran.EcranPrincipal.route ) {
         composable(route = Ecran.EcranPrincipal.route) {
+
             EcranPrincipal(controlleurNavigation = navController)
         }
 

@@ -1,5 +1,6 @@
 package sae.escapegame.application.android.QCM
 
+import androidx.activity.compose.BackHandler
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
@@ -16,6 +17,10 @@ import androidx.navigation.NavController
 
 @Composable
 fun result(repJoueur: Array<String>, correctionQCM: Array<String>, controllerNavigation: NavController) {
+    BackHandler(true, onBack = {
+        //do nothing
+        println("Boutton retour préssé")
+    })
     Column(
         verticalArrangement = Arrangement.SpaceBetween,
         horizontalAlignment = Alignment.CenterHorizontally,

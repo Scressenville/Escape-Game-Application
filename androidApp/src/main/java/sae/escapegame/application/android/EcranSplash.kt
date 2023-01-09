@@ -1,6 +1,7 @@
 package sae.escapegame.application.android
 
 import android.view.animation.OvershootInterpolator
+import androidx.activity.compose.BackHandler
 import androidx.compose.animation.core.tween
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -22,6 +23,10 @@ fun EcranSplashReponseV(navController: NavController) {
     val scale = remember {
         androidx.compose.animation.core.Animatable(0f)
     }
+    BackHandler(true, onBack = {
+        //do nothing
+        println("Boutton retour préssé")
+    })
 
     // AnimationEffect
     LaunchedEffect(key1 = true) {

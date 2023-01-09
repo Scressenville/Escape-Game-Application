@@ -2,6 +2,7 @@ package sae.escapegame.application.android
 
 import android.Manifest
 import android.content.pm.PackageManager
+import androidx.activity.compose.BackHandler
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.camera.core.CameraSelector
@@ -45,6 +46,11 @@ fun EcranDeScan(controlleurNavigation: NavController,enigme1 : Ecran, enigme2 : 
     LaunchedEffect(key1 = true) {
         launcher.launch(Manifest.permission.CAMERA)
     }
+
+    BackHandler(true, onBack = {
+        //do nothing
+        println("Boutton retour préssé")
+    })
 
     Column(modifier = Modifier
         .fillMaxHeight(0.9f)

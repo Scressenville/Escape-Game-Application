@@ -55,4 +55,5 @@ dependencies {
     // zxing
     implementation ("com.google.zxing:core:3.3.3")
 
+
 }

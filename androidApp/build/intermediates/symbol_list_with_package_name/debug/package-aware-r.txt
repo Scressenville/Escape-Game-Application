@@ -648,6 +648,8 @@ drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
 drawable evilloggy
+drawable fleche_droite
+drawable fleche_gauche
 drawable img_enigme_algo
 drawable img_enigme_sql
 drawable loggy

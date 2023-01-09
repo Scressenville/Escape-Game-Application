@@ -16,6 +16,8 @@ array réponses
 drawable bdd
 drawable bonne_reponse
 drawable evilloggy
+drawable fleche_droite
+drawable fleche_gauche
 drawable img_enigme_algo
 drawable img_enigme_sql
 drawable loggy

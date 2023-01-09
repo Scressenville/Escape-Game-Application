@@ -1,10 +1,8 @@
 package sae.escapegame.application.android.cinematics
 
 
-import androidx.compose.foundation.BorderStroke
-import androidx.compose.foundation.Image
-import androidx.compose.foundation.background
-import androidx.compose.foundation.border
+import androidx.activity.compose.BackHandler
+import androidx.compose.foundation.*
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.*
 import androidx.compose.runtime.*
@@ -12,11 +10,13 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.StampedPathEffectStyle.Companion.Rotate
 import androidx.compose.ui.graphics.painter.Painter
 import androidx.compose.ui.layout.ContentScale
-import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import sae.escapegame.application.android.Ecran
 import sae.escapegame.application.android.R
@@ -26,6 +26,10 @@ fun Cinematique(imageFond: Painter, imageLoggy: Painter, dialogue : Array<String
     var compteur by remember{mutableStateOf(0)}
     val gradient =
         Brush.horizontalGradient(listOf(Color.Yellow, Color.Red))
+    BackHandler(true, onBack = {
+        //do nothing
+        println("Boutton retour préssé")
+    })
     Column(
         modifier = Modifier
             .fillMaxSize()
@@ -60,10 +64,10 @@ fun Cinematique(imageFond: Painter, imageLoggy: Painter, dialogue : Array<String
                 .fillMaxSize()
                 .border(BorderStroke(5.dp, Color.Black)),
             horizontalAlignment = Alignment.CenterHorizontally,
-            verticalArrangement = Arrangement.SpaceAround
+            verticalArrangement = Arrangement.Center
         )
         {
-            Text(dialogue[compteur],textAlign = TextAlign.Center,modifier = Modifier.height(100.dp).width(400.dp))
+            Text(dialogue[compteur],textAlign = TextAlign.Center, fontSize = 20.sp,modifier = Modifier.height(100.dp).width(400.dp))
             Row(
                 modifier = Modifier.fillMaxWidth()
                     .background(Color.Black),
@@ -73,17 +77,22 @@ fun Cinematique(imageFond: Painter, imageLoggy: Painter, dialogue : Array<String
             )
             {
                 if (compteur != 0){
-                    Button(
-                        onClick = {
+                    Image(
+                        painter = painterResource(R.drawable.fleche_gauche),
+                        contentDescription = "fleche_gauche",
+                        modifier = Modifier.clickable{
                             if (0 < compteur){
                                 compteur--
                             }
                         }
-                    ) { Text(text = stringResource(R.string.btnPrecedemment))}
+                    )
                 }
-                
-                Button(
-                    onClick = {
+
+
+                Image(
+                    painter = painterResource(R.drawable.fleche_droite),
+                    contentDescription = "fleche_droite",
+                    modifier = Modifier.clickable{
                         if (dialogue.size -1> compteur){
                             compteur++
                         }
@@ -91,7 +100,7 @@ fun Cinematique(imageFond: Painter, imageLoggy: Painter, dialogue : Array<String
                             controlleurNavigation.navigate(sceneSuivante.route)
                         }
                     }
-                ) { Text(text = stringResource(R.string.btnSuivant))}
+                )
             }
         }
     }

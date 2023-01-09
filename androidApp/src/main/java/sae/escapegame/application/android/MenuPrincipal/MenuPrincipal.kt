@@ -2,6 +2,8 @@ package sae.escapegame.application.android
 
 
 import android.annotation.SuppressLint
+import android.app.Activity
+import androidx.activity.compose.BackHandler
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
@@ -34,7 +36,10 @@ fun MenuPrincipal(controlleurNavigation: NavController,booleanEnigmeAlgo : Boole
 
     val scaffoldState = rememberScaffoldState(rememberDrawerState(DrawerValue.Closed))
     val coroutineScope = rememberCoroutineScope()
-
+    BackHandler(true, onBack = {
+        //do nothing
+        println("Boutton retour préssé")
+    })
     Scaffold(
 
         // pass the scaffold state

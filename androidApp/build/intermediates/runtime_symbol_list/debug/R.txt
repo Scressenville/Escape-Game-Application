@@ -647,6 +647,8 @@ int drawable btn_radio_off_to_on_mtrl_animation 0x7f07005d
 int drawable btn_radio_on_mtrl 0x7f07005e
 int drawable btn_radio_on_to_off_mtrl_animation 0x7f07005f
 int drawable evilloggy 0x7f070060
+int drawable fleche_droite 0x7f070083
+int drawable fleche_gauche 0x7f070084
 int drawable img_enigme_algo 0x7f070061
 int drawable img_enigme_sql 0x7f070062
 int drawable localisation 0x7f070063

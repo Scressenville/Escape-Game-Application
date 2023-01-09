@@ -1,6 +1,7 @@
 package sae.escapegame.application.android
 
 import android.annotation.SuppressLint
+import androidx.activity.compose.BackHandler
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.*
@@ -16,6 +17,10 @@ import androidx.navigation.NavController
 @SuppressLint("UnusedMaterialScaffoldPaddingParameter")
 @Composable
 fun EcranPrincipal(controlleurNavigation: NavController){
+    BackHandler(true, onBack = {
+        //do nothing
+        println("Boutton retour préssé")
+    })
     Column(
         verticalArrangement = Arrangement.SpaceAround,
         horizontalAlignment = Alignment.CenterHorizontally,

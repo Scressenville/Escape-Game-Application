@@ -1,6 +1,7 @@
 package sae.escapegame.application.android
 
 import android.widget.Toast
+import androidx.activity.compose.BackHandler
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
@@ -26,6 +27,10 @@ fun resoudrePremiereEnigme(controlleurNavigation : NavController): Boolean {
     var imageVisible  by remember { mutableStateOf(false) }
     var reussite : Boolean=false
     val context = LocalContext.current
+    BackHandler(true, onBack = {
+        //do nothing
+        println("Boutton retour préssé")
+    })
     Column(
         verticalArrangement = Arrangement.SpaceBetween,
         horizontalAlignment = Alignment.CenterHorizontally,

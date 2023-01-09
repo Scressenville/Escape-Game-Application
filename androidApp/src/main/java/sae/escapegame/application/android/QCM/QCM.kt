@@ -1,5 +1,6 @@
 package sae.escapegame.application.android.QCM
 
+import androidx.activity.compose.BackHandler
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
@@ -29,6 +30,10 @@ fun skillTest(navController: NavController, item: Array<String> ): Array<String>
     var b: Boolean by remember { mutableStateOf(false) }
     var c: Boolean by remember { mutableStateOf(false) }
     var d: Boolean by remember { mutableStateOf(false) }
+    BackHandler(true, onBack = {
+        //do nothing
+        println("Boutton retour préssé")
+    })
     Column(
         verticalArrangement = Arrangement.SpaceBetween,
         horizontalAlignment = Alignment.CenterHorizontally,

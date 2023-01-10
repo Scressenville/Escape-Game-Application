@@ -37,13 +37,13 @@
         <item>L\'Algo n\'est pas un langage de programmation a proprement parlé, il sert à comprendre ce que le code doit faire, il reste donc nécessaire afin de savoir ce que l\'on veut faire. Vous avez pu vaire qu\'il est ici très simple de mettre en place l\'algo dans un vrai langage de programmation.</item>
     </string>
     <string-array name="cinematiqueSQL">
-        <item>Chain  : "Mouahaha ! Tu seras bientôt à ma merci, ce n\’est qu\’une question de temps!"</item>
-        <item>Loggy : "Mon ami.e je t\’ai laissé un fragment de mes recherches dans la salle, tu l\’as trouvé?"</item>
-        <item>Oh non!!!</item>
-        <item>Loggy : "Le langage Python s\'est malheureusement allié avec Chain, Java également, c\’est désastreux !" </item>
-        <item>Bon, dans un premier temps essayons de vaincre Python à son propre jeu. Traduisons l\’algo que je t\’ai laissé dans son langage pour le vaincre.</item>
-        <item> /!\ Item trouvé : /!\ </item>
-        <item> "recueil de notes de Loggy", "Le serment de protection"</item>
+        <item>Chain  : "Je vais te transformer en nft et t'obliger a tourner dans tout internet!"</item>
+        <item>Loggy : " Bon sang, je dois me calmer et réfléchir. Il doit y avoir un moyen de sortir d'ici.
+            </item>
+        <item>"Il faut que l'on trouve des indices et que l'on résolve les énigmes avant que le temps ne s'écoule"</item>
+        <item>Loggy : "Bob était l'un de mes precieux camarades il vient de se faire desintegrer...." </item>
+        <item>"Heureusement il nous a laissé une feuille"</item>
+        <item>"Gagnons cette enigme en sa mémoire</item>
     </string-array>
 
     <string-array name="qcmAlgo1">

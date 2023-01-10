@@ -1,25 +1,25 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\leado\OneDrive\Bureau\new\Escape-Game-Application\shared\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest17136508144991182475.xml:2:13-83
-INJECTED from C:\Users\leado\OneDrive\Bureau\new\Escape-Game-Application\shared\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest17136508144991182475.xml:2:13-83
-INJECTED from C:\Users\leado\OneDrive\Bureau\new\Escape-Game-Application\shared\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest17136508144991182475.xml:2:13-83
+ADDED from C:\Users\leado\OneDrive\Bureau\new\Escape-Game-Application\shared\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest13611432754801253088.xml:2:13-83
+INJECTED from C:\Users\leado\OneDrive\Bureau\new\Escape-Game-Application\shared\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest13611432754801253088.xml:2:13-83
+INJECTED from C:\Users\leado\OneDrive\Bureau\new\Escape-Game-Application\shared\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest13611432754801253088.xml:2:13-83
 	package
-		INJECTED from C:\Users\leado\OneDrive\Bureau\new\Escape-Game-Application\shared\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest17136508144991182475.xml
-		ADDED from C:\Users\leado\OneDrive\Bureau\new\Escape-Game-Application\shared\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest17136508144991182475.xml:2:13-83
-		INJECTED from C:\Users\leado\OneDrive\Bureau\new\Escape-Game-Application\shared\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest17136508144991182475.xml
+		INJECTED from C:\Users\leado\OneDrive\Bureau\new\Escape-Game-Application\shared\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest13611432754801253088.xml
+		ADDED from C:\Users\leado\OneDrive\Bureau\new\Escape-Game-Application\shared\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest13611432754801253088.xml:2:13-83
+		INJECTED from C:\Users\leado\OneDrive\Bureau\new\Escape-Game-Application\shared\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest13611432754801253088.xml
 	xmlns:android
-		ADDED from C:\Users\leado\OneDrive\Bureau\new\Escape-Game-Application\shared\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest17136508144991182475.xml:2:23-81
+		ADDED from C:\Users\leado\OneDrive\Bureau\new\Escape-Game-Application\shared\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest13611432754801253088.xml:2:23-81
 uses-sdk
-INJECTED from C:\Users\leado\OneDrive\Bureau\new\Escape-Game-Application\shared\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest17136508144991182475.xml reason: use-sdk injection requested
-INJECTED from C:\Users\leado\OneDrive\Bureau\new\Escape-Game-Application\shared\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest17136508144991182475.xml
-INJECTED from C:\Users\leado\OneDrive\Bureau\new\Escape-Game-Application\shared\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest17136508144991182475.xml
-INJECTED from C:\Users\leado\OneDrive\Bureau\new\Escape-Game-Application\shared\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest17136508144991182475.xml
-INJECTED from C:\Users\leado\OneDrive\Bureau\new\Escape-Game-Application\shared\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest17136508144991182475.xml
+INJECTED from C:\Users\leado\OneDrive\Bureau\new\Escape-Game-Application\shared\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest13611432754801253088.xml reason: use-sdk injection requested
+INJECTED from C:\Users\leado\OneDrive\Bureau\new\Escape-Game-Application\shared\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest13611432754801253088.xml
+INJECTED from C:\Users\leado\OneDrive\Bureau\new\Escape-Game-Application\shared\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest13611432754801253088.xml
+INJECTED from C:\Users\leado\OneDrive\Bureau\new\Escape-Game-Application\shared\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest13611432754801253088.xml
+INJECTED from C:\Users\leado\OneDrive\Bureau\new\Escape-Game-Application\shared\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest13611432754801253088.xml
 	android:targetSdkVersion
-		INJECTED from C:\Users\leado\OneDrive\Bureau\new\Escape-Game-Application\shared\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest17136508144991182475.xml
-		ADDED from C:\Users\leado\OneDrive\Bureau\new\Escape-Game-Application\shared\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest17136508144991182475.xml
-		INJECTED from C:\Users\leado\OneDrive\Bureau\new\Escape-Game-Application\shared\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest17136508144991182475.xml
+		INJECTED from C:\Users\leado\OneDrive\Bureau\new\Escape-Game-Application\shared\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest13611432754801253088.xml
+		ADDED from C:\Users\leado\OneDrive\Bureau\new\Escape-Game-Application\shared\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest13611432754801253088.xml
+		INJECTED from C:\Users\leado\OneDrive\Bureau\new\Escape-Game-Application\shared\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest13611432754801253088.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\leado\OneDrive\Bureau\new\Escape-Game-Application\shared\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest17136508144991182475.xml
-		ADDED from C:\Users\leado\OneDrive\Bureau\new\Escape-Game-Application\shared\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest17136508144991182475.xml
-		INJECTED from C:\Users\leado\OneDrive\Bureau\new\Escape-Game-Application\shared\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest17136508144991182475.xml
+		INJECTED from C:\Users\leado\OneDrive\Bureau\new\Escape-Game-Application\shared\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest13611432754801253088.xml
+		ADDED from C:\Users\leado\OneDrive\Bureau\new\Escape-Game-Application\shared\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest13611432754801253088.xml
+		INJECTED from C:\Users\leado\OneDrive\Bureau\new\Escape-Game-Application\shared\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest13611432754801253088.xml

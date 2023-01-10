@@ -59,7 +59,6 @@ fun Navigation() {
 
         composable(route = Ecran.EcranMenuPrincipal.route) {
             compteurQCM = 0
-            MenuPrincipal(navController,Ecran.EcranCinematiqueIntroAlgo,Ecran.EcranCinematiqueIntroSQL)
             println("Algo:"+booleanEnigmeAlgo)
             println("=============================")
             println("SQL"+booleanEnigmeSQL)

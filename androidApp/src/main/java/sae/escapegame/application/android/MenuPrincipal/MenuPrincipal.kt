@@ -2,7 +2,6 @@ package sae.escapegame.application.android
 
 
 import android.annotation.SuppressLint
-import android.app.Activity
 import androidx.activity.compose.BackHandler
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -32,7 +31,9 @@ import sae.escapegame.application.android.QRCodeScan.EcranDeScanSQL
 
 @SuppressLint("UnusedMaterialScaffoldPaddingParameter")
 @Composable
-fun MenuPrincipal(controlleurNavigation: NavController,enigme1 : Ecran, enigme2 : Ecran,booleanEnigmeAlgo : Boolean, booleanEnigmeSQL : Boolean, planActuel : Painter) {
+fun MenuPrincipal(
+    controlleurNavigation: NavController,
+    booleanEnigmeAlgo: Boolean, booleanEnigmeSQL: Boolean, planActuel: Painter) {
 
     var qrcode by remember{ mutableStateOf(false) }
 

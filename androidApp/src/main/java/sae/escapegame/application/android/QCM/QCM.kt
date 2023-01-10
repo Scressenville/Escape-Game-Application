@@ -11,13 +11,13 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import sae.escapegame.application.android.Ecran
 
 @Composable
-fun skillTest(navController: NavController, item: Array<String> ): Array<String> {
-// apres on compare les reponses
+fun skillTest(navController: NavController, liste_qcm: Array<String>,liste_reponse_qcm: Array<String> ): Array<String> {
     var selectedA by remember { mutableStateOf(false) }
     var selectedB by remember { mutableStateOf(false) }
     var selectedC by remember { mutableStateOf(false) }
@@ -30,6 +30,8 @@ fun skillTest(navController: NavController, item: Array<String> ): Array<String>
     var b: Boolean by remember { mutableStateOf(false) }
     var c: Boolean by remember { mutableStateOf(false) }
     var d: Boolean by remember { mutableStateOf(false) }
+    var repJoueur: Array<String> by remember { mutableStateOf(Array(5){""})}
+    var valider : Boolean by remember {mutableStateOf(false)}
     BackHandler(true, onBack = {
         //do nothing
         println("Boutton retour préssé")
@@ -45,8 +47,7 @@ fun skillTest(navController: NavController, item: Array<String> ): Array<String>
         Column(
             modifier = Modifier
                 .fillMaxHeight(0.9f)
-                .fillMaxWidth()
-                , verticalArrangement = Arrangement.SpaceAround
+                .fillMaxWidth(), verticalArrangement = Arrangement.SpaceAround
         ) {
             Column(
                 modifier = Modifier
@@ -54,7 +55,7 @@ fun skillTest(navController: NavController, item: Array<String> ): Array<String>
             ) {
                 Text("Test de connaissances : ")
                 Text("Selectionne la/les reponse.s juste.s ! ")
-                Text("Rouge = Faux  Vert = Vrai")
+                Text(liste_qcm[0])
             }
             Column(
                 modifier = Modifier
@@ -65,7 +66,8 @@ fun skillTest(navController: NavController, item: Array<String> ): Array<String>
                 Button(
                     modifier = Modifier
                         .padding(15.dp, 15.dp)
-                        .height(60.dp).width(500.dp),
+                        .height(60.dp)
+                        .width(500.dp),
                     onClick = {//quand carte cliquée changer couleur
                         selectedA = !selectedA
                         // on change valeur
@@ -74,14 +76,15 @@ fun skillTest(navController: NavController, item: Array<String> ): Array<String>
                     border = BorderStroke(1.dp, Color.Red),
                     colors = ButtonDefaults.outlinedButtonColors(backgroundColor = colorA)
                 ) {
-                    Text(text = item[0], color = Color.DarkGray)
+                    Text(text = liste_qcm[1], color = Color.DarkGray)
 
                 }
 
                 Button(
                     modifier = Modifier
                         .padding(15.dp, 15.dp)
-                        .height(60.dp).width(500.dp),
+                        .height(60.dp)
+                        .width(500.dp),
                     onClick = {
                         selectedB = !selectedB
                         b = !b
@@ -89,13 +92,15 @@ fun skillTest(navController: NavController, item: Array<String> ): Array<String>
                     border = BorderStroke(1.dp, Color.Red),
                     colors = ButtonDefaults.outlinedButtonColors(backgroundColor = colorB)
                 ) {
-                    Text(text = item[1], color = Color.DarkGray)
+
+                    Text(text = liste_qcm[2], color = Color.DarkGray)
                 }
 
                 Button(
                     modifier = Modifier
                         .padding(15.dp, 15.dp)
-                        .height(60.dp).width(500.dp),
+                        .height(60.dp)
+                        .width(500.dp),
 
                     onClick = {
                         selectedC = !selectedC
@@ -104,13 +109,15 @@ fun skillTest(navController: NavController, item: Array<String> ): Array<String>
                     border = BorderStroke(1.dp, Color.Red),
                     colors = ButtonDefaults.outlinedButtonColors(backgroundColor = colorC)
                 ) {
-                    Text(text = item[2], color = Color.DarkGray)
+
+                    Text(text = liste_qcm[3], color = Color.DarkGray)
                 }
 
                 Button(
                     modifier = Modifier
                         .padding(15.dp, 15.dp)
-                        .height(60.dp).width(500.dp),
+                        .height(60.dp)
+                        .width(500.dp),
                     onClick = {
                         selectedD = !selectedD
                         d = !d
@@ -118,25 +125,31 @@ fun skillTest(navController: NavController, item: Array<String> ): Array<String>
                     border = BorderStroke(1.dp, Color.Red),
                     colors = ButtonDefaults.outlinedButtonColors(backgroundColor = colorD)
                 ) {
-                    Text(text = item[3], color = Color.DarkGray)
+                    Text(text = liste_qcm[4], color = Color.DarkGray)
                 }
                 Button(
                     modifier = Modifier
                         .padding(15.dp, 15.dp)
-                        .height(60.dp).width(500.dp),
+                        .height(60.dp)
+                        .width(500.dp),
                     onClick = {
-                        navController.navigate(Ecran.ResultatQCM.route)
+                        valider = true
                     },
                     border = BorderStroke(1.dp, Color.Red),
                     colors = ButtonDefaults.outlinedButtonColors(backgroundColor = Color.Gray)
-                ) {
-                    Text(text = "valider", color = Color.DarkGray)
+                )
+                {
+                    Text(text = "Valider", color = Color.DarkGray)
+                }
+                if (valider == true){
+                    repJoueur = arrayOf(a.toString(),b.toString(),c.toString(),d.toString())
+                    println(a.toString()+b.toString()+c.toString()+d.toString())
+                    navController.navigate(Ecran.EcranFonctionResultatQCM.route)
                 }
             }
         }
-    }; var repJoueur: Array<String> = arrayOf(a.toString(),b.toString(),c.toString(),d.toString())
-        println(a.toString()+b.toString()+c.toString()+d.toString())
-
+    }
     return repJoueur
 }
+
 

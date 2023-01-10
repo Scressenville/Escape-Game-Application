@@ -55,5 +55,6 @@ string btnLangue
 string btnPrecedemment
 string btnSuivant
 string enigmealgo
+string explicationEnigmeAlgo
 string questionSQL
 style AppTheme

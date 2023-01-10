@@ -13,7 +13,7 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.navigation.NavController
 
 @Composable
-fun AlerteDialogue(navController: NavController) {
+fun AlerteDialogueParticipation(navController: NavController) {
 
     val context = LocalContext
         .current

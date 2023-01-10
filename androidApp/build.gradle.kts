@@ -55,5 +55,7 @@ dependencies {
     // zxing
     implementation ("com.google.zxing:core:3.3.3")
 
+    implementation ("com.google.accompanist:accompanist-systemuicontroller:0.17.0")
+
 
 }

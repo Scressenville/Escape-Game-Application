@@ -112,6 +112,9 @@
     <string name="btnPrecedemment">Prec</string>
     <string name="btnSuivant">Suiv</string>
     <string name="enigmealgo">imagePremiereEnigme</string>
+    <string name="explicationEnigmeAlgo">
+        <item>L\'Algo n\'est pas un langage de programmation a proprement parlé, il sert à comprendre ce que le code doit faire, il reste donc nécessaire afin de savoir ce que l\'on veut faire. Vous avez pu vaire qu\'il est ici très simple de mettre en place l\'algo dans un vrai langage de programmation.</item>
+    </string>
     <string name="questionSQL">test</string>
     <style name="AppTheme" parent="android:Theme.Material.NoActionBar"/>
 </resources>

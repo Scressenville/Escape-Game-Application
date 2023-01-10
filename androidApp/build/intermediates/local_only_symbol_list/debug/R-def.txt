@@ -7,9 +7,15 @@ array cinematic3
 array enigmeOneAlgo
 array enigmesSQL
 array phrasesacompléter
-array qcmAlgo
+array qcmAlgo1
+array qcmAlgo2
+array qcmAlgo3
+array qcmAlgo4
 array qcmSQL
 array reponseQCMAlgo
+array reponseQCMAlgo2
+array reponseQCMAlgo3
+array reponseQCMAlgo4
 array reponseQCMSQL
 array reponses_juste
 array réponses

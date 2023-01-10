@@ -1,10 +1,11 @@
 R_DEF: Internal format may change without notice
 local
 array choix_enigmes1_nom
-array cinematic1
-array cinematic2
-array cinematic3
-array enigmeOneAlgo
+array cinematiqueAlgo
+array cinematiqueDeuxiemeEtage
+array cinematiquePremiereEtage
+array cinematiqueRezDeChaussée
+array cinematiqueSQL
 array enigmesSQL
 array phrasesacompléter
 array qcmAlgo1
@@ -50,5 +51,6 @@ string btnLangue
 string btnPrecedemment
 string btnSuivant
 string enigmealgo
+string explicationEnigmeAlgo
 string questionSQL
 style AppTheme

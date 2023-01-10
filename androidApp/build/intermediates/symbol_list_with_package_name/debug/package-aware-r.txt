@@ -972,6 +972,7 @@ string default_error_message
 string default_popup_window_title
 string dropdown_menu
 string enigmealgo
+string explicationEnigmeAlgo
 string in_progress
 string indeterminate
 string navigation_menu

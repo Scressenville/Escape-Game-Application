@@ -103,8 +103,6 @@ fun EnigmeSQL(controllerNavigation: NavController){
 
 
                 }
-
-
             }){
                 Text("Suivant")
             }

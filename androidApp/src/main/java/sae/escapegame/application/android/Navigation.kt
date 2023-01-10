@@ -1,16 +1,25 @@
 package sae.escapegame.application.android
 
+import android.annotation.SuppressLint
 import androidx.activity.compose.BackHandler
+import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.runtime.*
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringArrayResource
+import sae.escapegame.application.android.Algo.DragableScreen
+import sae.escapegame.application.android.Algo.MainScreen
+import sae.escapegame.application.android.Algo.MainViewModel
 import sae.escapegame.application.android.QCM.result
 import sae.escapegame.application.android.QCM.verificationCapacite
 import sae.escapegame.application.android.cinematics.Cinematique
 
+@SuppressLint("SuspiciousIndentation")
 @Composable
 fun Navigation() {
     var repJoueur: Array<String> by remember { mutableStateOf(Array(4){""}) }
@@ -22,6 +31,8 @@ fun Navigation() {
         //do nothing
         println("Boutton retour préssé")
     })
+    var booleanEnigmeAlgo = false
+    var booleanEnigmeSQL = false
     NavHost(navController = navController, startDestination = Ecran.EcranPrincipal.route ) {
         composable(route = Ecran.EcranPrincipal.route) {
 
@@ -48,7 +59,7 @@ fun Navigation() {
 
         composable(route = Ecran.EcranMenuPrincipal.route) {
             compteurQCM = 0
-            MenuPrincipal(navController,Ecran.EcranCinematiqueIntroAlgo,Ecran.EcranCinematiqueIntroSQL)
+            MenuPrincipal(navController, booleanEnigmeAlgo,booleanEnigmeSQL )
         }
         composable(route = Ecran.EcranCinematiqueIntroAlgo.route) {
             Cinematique(
@@ -58,6 +69,7 @@ fun Navigation() {
                 Ecran.EcranLancementEnigmeAlgo,
                 navController
             )
+            booleanEnigmeAlgo = true
         }
         composable(route = Ecran.EcranLancementEnigmeSQL.route) {
             EnigmeSQL(navController)
@@ -116,7 +128,14 @@ fun Navigation() {
             )
         }
         composable(route = Ecran.EcranLancementEnigmeAlgo.route){
-            resoudrePremiereEnigme(controlleurNavigation = navController)
+            val viewModel = MainViewModel()
+                DragableScreen(
+                    modifier = Modifier
+                        .fillMaxSize()
+                        .background(Color(120, 96, 124, 255))
+                ) {
+                    MainScreen(viewModel,navController)
+                }
         }
         composable(route = Ecran.EcranCinematiqueIntroSQL.route){
             Cinematique(
@@ -126,6 +145,7 @@ fun Navigation() {
                 Ecran.EcranLancementEnigmeSQL,
                 navController
             )
+            booleanEnigmeSQL = true
         }
 
     }

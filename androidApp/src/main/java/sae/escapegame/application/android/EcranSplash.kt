@@ -38,7 +38,7 @@ fun EcranSplashReponseV(navController: NavController) {
                     OvershootInterpolator(4f).getInterpolation(it)
                 })
         )
-        delay(3000L)
+        delay(300L)
         navController.navigate("QCM_screen")
     }
 
@@ -68,7 +68,7 @@ fun EcranSplashReponseF(navController: NavController) {
                     OvershootInterpolator(4f).getInterpolation(it)
                 })
         )
-        delay(3000L)
+        delay(300L)
         navController.navigate("ecranLancementEnigmeAlgo")
     }
 

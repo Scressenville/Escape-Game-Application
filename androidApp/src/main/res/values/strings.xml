@@ -33,6 +33,9 @@
         <item> /!\ Item trouvé : /!\ </item>
         <item> "recueil de notes de Loggy", "Le serment de protection"</item>
     </string-array>
+    <string name="explicationEnigmeAlgo">
+        <item>L\'Algo n\'est pas un langage de programmation a proprement parlé, il sert à comprendre ce que le code doit faire, il reste donc nécessaire afin de savoir ce que l\'on veut faire. Vous avez pu vaire qu\'il est ici très simple de mettre en place l\'algo dans un vrai langage de programmation.</item>
+    </string>
     <string-array name="cinematiqueSQL">
         <item>Chain  : "Mouahaha ! Tu seras bientôt à ma merci, ce n\’est qu\’une question de temps!"</item>
         <item>Loggy : "Mon ami.e je t\’ai laissé un fragment de mes recherches dans la salle, tu l\’as trouvé?"</item>

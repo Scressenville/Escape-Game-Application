@@ -15,6 +15,7 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.painter.Painter
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
@@ -31,7 +32,7 @@ import sae.escapegame.application.android.QRCodeScan.EcranDeScanSQL
 
 @SuppressLint("UnusedMaterialScaffoldPaddingParameter")
 @Composable
-fun MenuPrincipal(controlleurNavigation: NavController,enigme1 : Ecran, enigme2 : Ecran) {
+fun MenuPrincipal(controlleurNavigation: NavController,enigme1 : Ecran, enigme2 : Ecran,booleanEnigmeAlgo : Boolean, booleanEnigmeSQL : Boolean, planActuel : Painter) {
     var qrcode by remember{ mutableStateOf(false) }
 
     val scaffoldState = rememberScaffoldState(rememberDrawerState(DrawerValue.Closed))
@@ -106,7 +107,7 @@ fun MenuPrincipal(controlleurNavigation: NavController,enigme1 : Ecran, enigme2 
                                 verticalArrangement = Arrangement.SpaceBetween
                             ) {
                                 Image(
-                                    painter = painterResource(R.drawable.plan_rdc),
+                                    painter = planActuel,
                                     contentDescription = "Image de l'étage",
                                     modifier = Modifier
                                         .fillMaxWidth()

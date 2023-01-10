@@ -21,7 +21,7 @@ import androidx.navigation.NavController
 import sae.escapegame.application.android.QRCodeScan.QRCodeAnalyzer
 
 @Composable
-fun EcranDeScan(controlleurNavigation: NavController,enigme1 : Ecran, enigme2 : Ecran) {
+fun EcranDeScan(): String {
 
     val context = LocalContext.current
     val lifecycleOwner = LocalLifecycleOwner.current
@@ -89,12 +89,7 @@ fun EcranDeScan(controlleurNavigation: NavController,enigme1 : Ecran, enigme2 : 
                 },
                 modifier = Modifier.weight(1f)
             )
-            if (code == "Enigme Algo") kotlin.run{
-                controlleurNavigation.navigate(Ecran.EcranCinematiqueIntroAlgo.route)
-            }
-            if (code == "Enigme SQL") kotlin.run{
-                controlleurNavigation.navigate(Ecran.EcranCinematiqueIntroSQL.route)
-            }
         }
     }
+    return code
 }

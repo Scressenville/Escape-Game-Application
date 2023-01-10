@@ -4,22 +4,31 @@
         <item>Python</item>
         <item>SQL</item>
     </string-array>
-    <string-array name="cinematic1">
-        <item>Ouuuups</item>
-        <item>Il semblerait que tu sois bloqué à l\'intérieur du bâtiment !</item>
-        <item>C\'est à cause de l\'horrible Chain !</item>
+    <string-array name="cinematiqueAlgo">
+        <item>Chain  : "Mouahaha ! Tu seras bientôt à ma merci, ce n\’est qu\’une question de temps!"</item>
+        <item>Loggy : "Mon ami.e je t\’ai laissé un fragment de mes recherches dans la salle, tu l\’as trouvé?"</item>
+        <item>Oh non!!!</item>
+        <item>Loggy : "Le langage Python s\'est malheureusement allié avec Chain, Java également, c\’est désastreux !" </item>
+        <item>Bon, dans un premier temps essayons de vaincre Python à son propre jeu. Traduisons l\’algo que je t\’ai laissé dans son langage pour le vaincre.</item>
+        <item> /!\ Item trouvé : /!\ </item>
+        <item> "recueil de notes de Loggy", "Le serment de protection"</item>
     </string-array>
-    <string-array name="cinematic2">
-        <item>Très bien, on a réussi à passer le rez-de-chaussée</item>
-        <item>Il faut maintenant réussir à passer le premier étage !</item>
-        <item>Je crois en toi, on va y arriver !</item>
-    </string-array>
-    <string-array name="cinematic3">
+    <string-array name="cinematiqueDeuxiemeEtage">
         <item>Nous y sommes ! Le dernier étage !</item>
         <item>Cela fut difficile, mais maintenant nous allons enfin pouvoir en découdre avec Chain !</item>
         <item>Il est temps que cette mascarade se termine !</item>
     </string-array>
-    <string-array name="enigmeOneAlgo">
+    <string-array name="cinematiquePremiereEtage">
+        <item>Très bien, on a réussi à passer le rez-de-chaussée</item>
+        <item>Il faut maintenant réussir à passer le premier étage !</item>
+        <item>Je crois en toi, on va y arriver !</item>
+    </string-array>
+    <string-array name="cinematiqueRezDeChaussée">
+        <item>Ouuuups</item>
+        <item>Il semblerait que tu sois bloqué à l\'intérieur du bâtiment !</item>
+        <item>C\'est à cause de l\'horrible Chain !</item>
+    </string-array>
+    <string-array name="cinematiqueSQL">
         <item>Chain  : "Mouahaha ! Tu seras bientôt à ma merci, ce n\’est qu\’une question de temps!"</item>
         <item>Loggy : "Mon ami.e je t\’ai laissé un fragment de mes recherches dans la salle, tu l\’as trouvé?"</item>
         <item>Oh non!!!</item>
@@ -58,7 +67,7 @@
         <item>D : From</item>
     </string-array>
     <string-array name="qcmSQL2">
-        <item>D\'après l\'épreuve qque vous venez de passer le SQL sert à : </item>
+        <item>D\'après l\'épreuve que vous venez de passer le SQL sert à : </item>
         <item>A : Développé des intelligences artificielles</item>
         <item>B : Créer des tables de données et gérer des bases de données</item>
         <item>C : Faire des jeux vidéos</item>

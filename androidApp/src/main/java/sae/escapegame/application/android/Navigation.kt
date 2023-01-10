@@ -22,6 +22,8 @@ fun Navigation() {
         //do nothing
         println("Boutton retour préssé")
     })
+    var booleanEnigmeAlgo = false
+    var booleanEnigmeSQL = false
     NavHost(navController = navController, startDestination = Ecran.EcranPrincipal.route ) {
         composable(route = Ecran.EcranPrincipal.route) {
 
@@ -49,6 +51,26 @@ fun Navigation() {
         composable(route = Ecran.EcranMenuPrincipal.route) {
             compteurQCM = 0
             MenuPrincipal(navController,Ecran.EcranCinematiqueIntroAlgo,Ecran.EcranCinematiqueIntroSQL)
+            println("Algo:"+booleanEnigmeAlgo)
+            println("=============================")
+            println("SQL"+booleanEnigmeSQL)
+            if(booleanEnigmeAlgo==true && booleanEnigmeSQL==false){
+                MenuPrincipal(navController,booleanEnigmeAlgo,booleanEnigmeSQL,  painterResource(id = R.drawable.plan_rdc_r47_ok))
+            }
+            if(booleanEnigmeAlgo==false && booleanEnigmeSQL==true){
+                MenuPrincipal(navController,booleanEnigmeAlgo,booleanEnigmeSQL,  painterResource(id = R.drawable.plan_rdc_r50_ok))
+            }
+            if(booleanEnigmeAlgo==true && booleanEnigmeSQL==true){
+                MenuPrincipal(navController,booleanEnigmeAlgo,booleanEnigmeSQL,  painterResource(id = R.drawable.plan_rdc_r47_r50_ok))
+            }
+            if(booleanEnigmeAlgo==false && booleanEnigmeAlgo == false){
+                MenuPrincipal(
+                    navController,
+                    booleanEnigmeAlgo,
+                    booleanEnigmeSQL,
+                    painterResource(id = R.drawable.plan_rdc_rienvalide)
+                )
+            }
         }
         composable(route = Ecran.EcranCinematiqueIntroAlgo.route) {
             Cinematique(
@@ -58,6 +80,7 @@ fun Navigation() {
                 Ecran.EcranLancementEnigmeAlgo,
                 navController
             )
+            booleanEnigmeAlgo = true
         }
         composable(route = Ecran.EcranLancementEnigmeSQL.route) {
             EnigmeSQL(navController)
@@ -126,6 +149,7 @@ fun Navigation() {
                 Ecran.EcranLancementEnigmeSQL,
                 navController
             )
+            booleanEnigmeSQL = true
         }
 
     }

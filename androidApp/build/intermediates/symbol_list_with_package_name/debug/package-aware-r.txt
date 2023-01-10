@@ -679,6 +679,10 @@ drawable photo_hall
 drawable photo_r47
 drawable photo_rdc
 drawable plan_rdc
+drawable plan_rdc_r47_ok
+drawable plan_rdc_r47_r50_ok
+drawable plan_rdc_r50_ok
+drawable plan_rdc_rienvalide
 drawable python_algo
 drawable python_reponse_1
 drawable python_reponse_2

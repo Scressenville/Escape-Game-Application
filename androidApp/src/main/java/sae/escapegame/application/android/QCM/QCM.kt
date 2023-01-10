@@ -11,13 +11,12 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import sae.escapegame.application.android.Ecran
 
 @Composable
-fun skillTest(navController: NavController, liste_qcm: Array<String>,liste_reponse_qcm: Array<String> ): Array<String> {
+fun verificationCapacite(navController: NavController, liste_qcm: Array<String>, liste_reponse_qcm: Array<String> ): Array<String> {
     var selectedA by remember { mutableStateOf(false) }
     var selectedB by remember { mutableStateOf(false) }
     var selectedC by remember { mutableStateOf(false) }

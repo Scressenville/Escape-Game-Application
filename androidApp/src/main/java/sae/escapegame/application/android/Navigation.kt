@@ -8,7 +8,7 @@ import androidx.navigation.compose.rememberNavController
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringArrayResource
 import sae.escapegame.application.android.QCM.result
-import sae.escapegame.application.android.QCM.skillTest
+import sae.escapegame.application.android.QCM.verificationCapacite
 import sae.escapegame.application.android.cinematics.Cinematique
 
 @Composable
@@ -48,7 +48,7 @@ fun Navigation() {
 
         composable(route = Ecran.EcranMenuPrincipal.route) {
             compteurQCM = 0
-            MenuPrincipal(Ecran.EcranCinematiqueIntroAlgo,Ecran.EcranCinematiqueIntroSQL,navController)
+            MenuPrincipal(navController,Ecran.EcranCinematiqueIntroAlgo,Ecran.EcranCinematiqueIntroSQL)
         }
         composable(route = Ecran.EcranCinematiqueIntroAlgo.route) {
             Cinematique(
@@ -60,7 +60,7 @@ fun Navigation() {
             )
         }
         composable(route = Ecran.EcranLancementEnigmeSQL.route) {
-            SQL(navController)
+            EnigmeSQL(navController)
         }
 
         composable(route = Ecran.EcranQCMAlgo.route){
@@ -70,7 +70,7 @@ fun Navigation() {
             var correctionQCM1Algo = stringArrayResource(id = sae.escapegame.application.android.R.array.reponseQCMAlgo1)
             var correctionQCM2Algo = stringArrayResource(id = sae.escapegame.application.android.R.array.reponseQCMAlgo2)
             liste_reponse_qcm = arrayOf(correctionQCM1Algo,correctionQCM2Algo)
-            repJoueur = skillTest(navController,liste_qcm[compteurQCM],liste_reponse_qcm[compteurQCM])
+            repJoueur = verificationCapacite(navController,liste_qcm[compteurQCM],liste_reponse_qcm[compteurQCM])
         }
         composable(route = Ecran.EcranAiguillageQCM.route){
             compteurQCM += 1
@@ -93,7 +93,7 @@ fun Navigation() {
             var correctionQCM1SQL = stringArrayResource(id = sae.escapegame.application.android.R.array.reponseQCMSQL1)
             var correctionQCM2SQL = stringArrayResource(id = sae.escapegame.application.android.R.array.reponseQCMSQL2)
             liste_reponse_qcm = arrayOf(correctionQCM1SQL,correctionQCM2SQL)
-            repJoueur = skillTest(navController,liste_qcm[compteurQCM], liste_reponse_qcm[compteurQCM])
+            repJoueur = verificationCapacite(navController,liste_qcm[compteurQCM], liste_reponse_qcm[compteurQCM])
         }
 
 

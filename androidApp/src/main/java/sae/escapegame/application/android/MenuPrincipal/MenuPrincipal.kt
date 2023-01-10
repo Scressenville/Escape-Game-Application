@@ -31,7 +31,7 @@ import sae.escapegame.application.android.QRCodeScan.EcranDeScanSQL
 
 @SuppressLint("UnusedMaterialScaffoldPaddingParameter")
 @Composable
-fun MenuPrincipal(controlleurNavigation: NavController,booleanEnigmeAlgo : Boolean, booleanEnigmeSQL : Boolean) {
+fun MenuPrincipal(controlleurNavigation: NavController,enigme1 : Ecran, enigme2 : Ecran) {
     var qrcode by remember{ mutableStateOf(false) }
 
     val scaffoldState = rememberScaffoldState(rememberDrawerState(DrawerValue.Closed))
@@ -115,13 +115,13 @@ fun MenuPrincipal(controlleurNavigation: NavController,booleanEnigmeAlgo : Boole
                             }
 
                 } else {
-                    var code = EcranDeScan(controlleurNavigation = controlleurNavigation)
+                    var code = EcranDeScan(controlleurNavigation = controlleurNavigation,enigme1,enigme2)
 
-                    if (code == "Enigme Algo") {
-                        EcranDeScanAlgo(controlleurNavigation = controlleurNavigation, booleanEnigmeAlgo)
+                    if (code.toString() == "Enigme Algo") {
+                        EcranDeScanAlgo(controlleurNavigation = controlleurNavigation, true)
                     }
-                    if (code == "Enigme SQL") kotlin.run{
-                        EcranDeScanSQL(controlleurNavigation = controlleurNavigation, booleanEnigmeSQL = booleanEnigmeSQL)
+                    if (code.toString() == "Enigme SQL") kotlin.run{
+                        EcranDeScanSQL(controlleurNavigation = controlleurNavigation, booleanEnigmeSQL = true)
                     }
                 }
         }

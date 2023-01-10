@@ -15,7 +15,7 @@ import androidx.navigation.NavController
 
 
 @Composable
-fun SQL(controllerNavigation: NavController){
+fun EnigmeSQL(controllerNavigation: NavController){
 
     var suivant by remember{ mutableStateOf(0) }
     var compteur1 : Int by remember{mutableStateOf(0)}

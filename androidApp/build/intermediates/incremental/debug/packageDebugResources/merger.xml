@@ -1,17 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\Leo\Desktop\travail\A2 BUT INFO\SAE\SAE-Escape-Game\Escape-Game-Application\androidApp\src\main\res"/><source path="C:\Users\Leo\Desktop\travail\A2 BUT INFO\SAE\SAE-Escape-Game\Escape-Game-Application\androidApp\build\generated\res\rs\debug"/><source path="C:\Users\Leo\Desktop\travail\A2 BUT INFO\SAE\SAE-Escape-Game\Escape-Game-Application\androidApp\build\generated\res\resValues\debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main" generated-set="main$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\Leo\Desktop\travail\A2 BUT INFO\SAE\SAE-Escape-Game\Escape-Game-Application\androidApp\src\main\res"><file name="bdd" path="C:\Users\Leo\Desktop\travail\A2 BUT INFO\SAE\SAE-Escape-Game\Escape-Game-Application\androidApp\src\main\res\drawable\bdd.png" qualifiers="" type="drawable"/><file name="bonne_reponse" path="C:\Users\Leo\Desktop\travail\A2 BUT INFO\SAE\SAE-Escape-Game\Escape-Game-Application\androidApp\src\main\res\drawable\bonne_reponse.jpg" qualifiers="" type="drawable"/><file name="evilloggy" path="C:\Users\Leo\Desktop\travail\A2 BUT INFO\SAE\SAE-Escape-Game\Escape-Game-Application\androidApp\src\main\res\drawable\evilloggy.png" qualifiers="" type="drawable"/><file name="fleche_droite" path="C:\Users\Leo\Desktop\travail\A2 BUT INFO\SAE\SAE-Escape-Game\Escape-Game-Application\androidApp\src\main\res\drawable\fleche_droite.png" qualifiers="" type="drawable"/><file name="fleche_gauche" path="C:\Users\Leo\Desktop\travail\A2 BUT INFO\SAE\SAE-Escape-Game\Escape-Game-Application\androidApp\src\main\res\drawable\fleche_gauche.png" qualifiers="" type="drawable"/><file name="img_enigme_algo" path="C:\Users\Leo\Desktop\travail\A2 BUT INFO\SAE\SAE-Escape-Game\Escape-Game-Application\androidApp\src\main\res\drawable\img_enigme_algo.gif" qualifiers="" type="drawable"/><file name="img_enigme_sql" path="C:\Users\Leo\Desktop\travail\A2 BUT INFO\SAE\SAE-Escape-Game\Escape-Game-Application\androidApp\src\main\res\drawable\img_enigme_sql.gif" qualifiers="" type="drawable"/><file name="loggy" path="C:\Users\Leo\Desktop\travail\A2 BUT INFO\SAE\SAE-Escape-Game\Escape-Game-Application\androidApp\src\main\res\drawable\loggy.png" qualifiers="" type="drawable"/><file name="mauvaise_reponse" path="C:\Users\Leo\Desktop\travail\A2 BUT INFO\SAE\SAE-Escape-Game\Escape-Game-Application\androidApp\src\main\res\drawable\mauvaise_reponse.jpg" qualifiers="" type="drawable"/><file name="photo_escalier1" path="C:\Users\Leo\Desktop\travail\A2 BUT INFO\SAE\SAE-Escape-Game\Escape-Game-Application\androidApp\src\main\res\drawable\photo_escalier1.jpg" qualifiers="" type="drawable"/><file name="photo_escalier2" path="C:\Users\Leo\Desktop\travail\A2 BUT INFO\SAE\SAE-Escape-Game\Escape-Game-Application\androidApp\src\main\res\drawable\photo_escalier2.jpg" qualifiers="" type="drawable"/><file name="photo_etage1" path="C:\Users\Leo\Desktop\travail\A2 BUT INFO\SAE\SAE-Escape-Game\Escape-Game-Application\androidApp\src\main\res\drawable\photo_etage1.jpg" qualifiers="" type="drawable"/><file name="photo_hall" path="C:\Users\Leo\Desktop\travail\A2 BUT INFO\SAE\SAE-Escape-Game\Escape-Game-Application\androidApp\src\main\res\drawable\photo_hall.png" qualifiers="" type="drawable"/><file name="photo_r47" path="C:\Users\Leo\Desktop\travail\A2 BUT INFO\SAE\SAE-Escape-Game\Escape-Game-Application\androidApp\src\main\res\drawable\photo_r47.jpg" qualifiers="" type="drawable"/><file name="photo_rdc" path="C:\Users\Leo\Desktop\travail\A2 BUT INFO\SAE\SAE-Escape-Game\Escape-Game-Application\androidApp\src\main\res\drawable\photo_rdc.jpg" qualifiers="" type="drawable"/><file name="plan_rdc" path="C:\Users\Leo\Desktop\travail\A2 BUT INFO\SAE\SAE-Escape-Game\Escape-Game-Application\androidApp\src\main\res\drawable\plan_rdc.png" qualifiers="" type="drawable"/><file name="python_algo" path="C:\Users\Leo\Desktop\travail\A2 BUT INFO\SAE\SAE-Escape-Game\Escape-Game-Application\androidApp\src\main\res\drawable\python_algo.png" qualifiers="" type="drawable"/><file name="python_reponse_1" path="C:\Users\Leo\Desktop\travail\A2 BUT INFO\SAE\SAE-Escape-Game\Escape-Game-Application\androidApp\src\main\res\drawable\python_reponse_1.png" qualifiers="" type="drawable"/><file name="python_reponse_2" path="C:\Users\Leo\Desktop\travail\A2 BUT INFO\SAE\SAE-Escape-Game\Escape-Game-Application\androidApp\src\main\res\drawable\python_reponse_2.png" qualifiers="" type="drawable"/><file name="symbole_aide" path="C:\Users\Leo\Desktop\travail\A2 BUT INFO\SAE\SAE-Escape-Game\Escape-Game-Application\androidApp\src\main\res\drawable\symbole_aide.png" qualifiers="" type="drawable"/><file name="symbole_ecran_principal" path="C:\Users\Leo\Desktop\travail\A2 BUT INFO\SAE\SAE-Escape-Game\Escape-Game-Application\androidApp\src\main\res\drawable\symbole_ecran_principal.png" qualifiers="" type="drawable"/><file name="symbole_inventaire" path="C:\Users\Leo\Desktop\travail\A2 BUT INFO\SAE\SAE-Escape-Game\Escape-Game-Application\androidApp\src\main\res\drawable\symbole_inventaire.png" qualifiers="" type="drawable"/><file name="symbole_qr_code" path="C:\Users\Leo\Desktop\travail\A2 BUT INFO\SAE\SAE-Escape-Game\Escape-Game-Application\androidApp\src\main\res\drawable\symbole_qr_code.png" qualifiers="" type="drawable"/><file name="symbole_sauvegarde" path="C:\Users\Leo\Desktop\travail\A2 BUT INFO\SAE\SAE-Escape-Game\Escape-Game-Application\androidApp\src\main\res\drawable\symbole_sauvegarde.png" qualifiers="" type="drawable"/><file name="titre_escape_game" path="C:\Users\Leo\Desktop\travail\A2 BUT INFO\SAE\SAE-Escape-Game\Escape-Game-Application\androidApp\src\main\res\drawable\titre_escape_game.png" qualifiers="" type="drawable"/><file path="C:\Users\Leo\Desktop\travail\A2 BUT INFO\SAE\SAE-Escape-Game\Escape-Game-Application\androidApp\src\main\res\values\strings.xml" qualifiers=""><string name="btnJouer">Jouer</string><string name="btnSuivant">Suiv</string><string name="btnPrecedemment">Prec</string><string name="btnLangue">fr</string><string name="enigmealgo">imagePremiereEnigme</string><string name="answer1">Rep1PremiereEnigme</string><string name="answer2">Rep2PremiereEnigme</string><string name="questionSQL">test</string><string-array name="cinematic1">
+<merger version="3"><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\Leo\Desktop\travail\A2 BUT INFO\SAE\SAE-Escape-Game\Escape-Game-Application\androidApp\src\main\res"/><source path="C:\Users\Leo\Desktop\travail\A2 BUT INFO\SAE\SAE-Escape-Game\Escape-Game-Application\androidApp\build\generated\res\rs\debug"/><source path="C:\Users\Leo\Desktop\travail\A2 BUT INFO\SAE\SAE-Escape-Game\Escape-Game-Application\androidApp\build\generated\res\resValues\debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main" generated-set="main$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\Leo\Desktop\travail\A2 BUT INFO\SAE\SAE-Escape-Game\Escape-Game-Application\androidApp\src\main\res"><file name="bdd" path="C:\Users\Leo\Desktop\travail\A2 BUT INFO\SAE\SAE-Escape-Game\Escape-Game-Application\androidApp\src\main\res\drawable\bdd.png" qualifiers="" type="drawable"/><file name="bonne_reponse" path="C:\Users\Leo\Desktop\travail\A2 BUT INFO\SAE\SAE-Escape-Game\Escape-Game-Application\androidApp\src\main\res\drawable\bonne_reponse.jpg" qualifiers="" type="drawable"/><file name="evilloggy" path="C:\Users\Leo\Desktop\travail\A2 BUT INFO\SAE\SAE-Escape-Game\Escape-Game-Application\androidApp\src\main\res\drawable\evilloggy.png" qualifiers="" type="drawable"/><file name="fleche_droite" path="C:\Users\Leo\Desktop\travail\A2 BUT INFO\SAE\SAE-Escape-Game\Escape-Game-Application\androidApp\src\main\res\drawable\fleche_droite.png" qualifiers="" type="drawable"/><file name="fleche_gauche" path="C:\Users\Leo\Desktop\travail\A2 BUT INFO\SAE\SAE-Escape-Game\Escape-Game-Application\androidApp\src\main\res\drawable\fleche_gauche.png" qualifiers="" type="drawable"/><file name="img_enigme_algo" path="C:\Users\Leo\Desktop\travail\A2 BUT INFO\SAE\SAE-Escape-Game\Escape-Game-Application\androidApp\src\main\res\drawable\img_enigme_algo.gif" qualifiers="" type="drawable"/><file name="img_enigme_sql" path="C:\Users\Leo\Desktop\travail\A2 BUT INFO\SAE\SAE-Escape-Game\Escape-Game-Application\androidApp\src\main\res\drawable\img_enigme_sql.gif" qualifiers="" type="drawable"/><file name="localisation" path="C:\Users\Leo\Desktop\travail\A2 BUT INFO\SAE\SAE-Escape-Game\Escape-Game-Application\androidApp\src\main\res\drawable\localisation.jpg" qualifiers="" type="drawable"/><file name="loggy" path="C:\Users\Leo\Desktop\travail\A2 BUT INFO\SAE\SAE-Escape-Game\Escape-Game-Application\androidApp\src\main\res\drawable\loggy.png" qualifiers="" type="drawable"/><file name="mauvaise_reponse" path="C:\Users\Leo\Desktop\travail\A2 BUT INFO\SAE\SAE-Escape-Game\Escape-Game-Application\androidApp\src\main\res\drawable\mauvaise_reponse.jpg" qualifiers="" type="drawable"/><file name="photo_escalier1" path="C:\Users\Leo\Desktop\travail\A2 BUT INFO\SAE\SAE-Escape-Game\Escape-Game-Application\androidApp\src\main\res\drawable\photo_escalier1.jpg" qualifiers="" type="drawable"/><file name="photo_escalier2" path="C:\Users\Leo\Desktop\travail\A2 BUT INFO\SAE\SAE-Escape-Game\Escape-Game-Application\androidApp\src\main\res\drawable\photo_escalier2.jpg" qualifiers="" type="drawable"/><file name="photo_etage1" path="C:\Users\Leo\Desktop\travail\A2 BUT INFO\SAE\SAE-Escape-Game\Escape-Game-Application\androidApp\src\main\res\drawable\photo_etage1.jpg" qualifiers="" type="drawable"/><file name="photo_hall" path="C:\Users\Leo\Desktop\travail\A2 BUT INFO\SAE\SAE-Escape-Game\Escape-Game-Application\androidApp\src\main\res\drawable\photo_hall.png" qualifiers="" type="drawable"/><file name="photo_r47" path="C:\Users\Leo\Desktop\travail\A2 BUT INFO\SAE\SAE-Escape-Game\Escape-Game-Application\androidApp\src\main\res\drawable\photo_r47.jpg" qualifiers="" type="drawable"/><file name="photo_rdc" path="C:\Users\Leo\Desktop\travail\A2 BUT INFO\SAE\SAE-Escape-Game\Escape-Game-Application\androidApp\src\main\res\drawable\photo_rdc.jpg" qualifiers="" type="drawable"/><file name="plan_rdc" path="C:\Users\Leo\Desktop\travail\A2 BUT INFO\SAE\SAE-Escape-Game\Escape-Game-Application\androidApp\src\main\res\drawable\plan_rdc.png" qualifiers="" type="drawable"/><file name="python_algo" path="C:\Users\Leo\Desktop\travail\A2 BUT INFO\SAE\SAE-Escape-Game\Escape-Game-Application\androidApp\src\main\res\drawable\python_algo.png" qualifiers="" type="drawable"/><file name="python_reponse_1" path="C:\Users\Leo\Desktop\travail\A2 BUT INFO\SAE\SAE-Escape-Game\Escape-Game-Application\androidApp\src\main\res\drawable\python_reponse_1.png" qualifiers="" type="drawable"/><file name="python_reponse_2" path="C:\Users\Leo\Desktop\travail\A2 BUT INFO\SAE\SAE-Escape-Game\Escape-Game-Application\androidApp\src\main\res\drawable\python_reponse_2.png" qualifiers="" type="drawable"/><file name="symbole_aide" path="C:\Users\Leo\Desktop\travail\A2 BUT INFO\SAE\SAE-Escape-Game\Escape-Game-Application\androidApp\src\main\res\drawable\symbole_aide.png" qualifiers="" type="drawable"/><file name="symbole_ecran_principal" path="C:\Users\Leo\Desktop\travail\A2 BUT INFO\SAE\SAE-Escape-Game\Escape-Game-Application\androidApp\src\main\res\drawable\symbole_ecran_principal.png" qualifiers="" type="drawable"/><file name="symbole_inventaire" path="C:\Users\Leo\Desktop\travail\A2 BUT INFO\SAE\SAE-Escape-Game\Escape-Game-Application\androidApp\src\main\res\drawable\symbole_inventaire.png" qualifiers="" type="drawable"/><file name="symbole_qr_code" path="C:\Users\Leo\Desktop\travail\A2 BUT INFO\SAE\SAE-Escape-Game\Escape-Game-Application\androidApp\src\main\res\drawable\symbole_qr_code.png" qualifiers="" type="drawable"/><file name="symbole_sauvegarde" path="C:\Users\Leo\Desktop\travail\A2 BUT INFO\SAE\SAE-Escape-Game\Escape-Game-Application\androidApp\src\main\res\drawable\symbole_sauvegarde.png" qualifiers="" type="drawable"/><file name="titre_escape_game" path="C:\Users\Leo\Desktop\travail\A2 BUT INFO\SAE\SAE-Escape-Game\Escape-Game-Application\androidApp\src\main\res\drawable\titre_escape_game.png" qualifiers="" type="drawable"/><file path="C:\Users\Leo\Desktop\travail\A2 BUT INFO\SAE\SAE-Escape-Game\Escape-Game-Application\androidApp\src\main\res\values\strings.xml" qualifiers=""><string name="btnJouer">Jouer</string><string name="btnSuivant">Suiv</string><string name="btnPrecedemment">Prec</string><string name="btnLangue">fr</string><string name="enigmealgo">imagePremiereEnigme</string><string name="answer1">Rep1PremiereEnigme</string><string name="answer2">Rep2PremiereEnigme</string><string name="questionSQL">test</string><string-array name="cinematiqueRezDeChaussée">
         <item>Ouuuups</item>
         <item>Il semblerait que tu sois bloqué à l\'intérieur du bâtiment !</item>
         <item>C\'est à cause de l\'horrible Chain !</item>
-    </string-array><string-array name="cinematic2">
+    </string-array><string-array name="cinematiquePremiereEtage">
         <item>Très bien, on a réussi à passer le rez-de-chaussée</item>
         <item>Il faut maintenant réussir à passer le premier étage !</item>
         <item>Je crois en toi, on va y arriver !</item>
-    </string-array><string-array name="cinematic3">
+    </string-array><string-array name="cinematiqueDeuxiemeEtage">
         <item>Nous y sommes ! Le dernier étage !</item>
         <item>Cela fut difficile, mais maintenant nous allons enfin pouvoir en découdre avec Chain !</item>
         <item>Il est temps que cette mascarade se termine !</item>
-    </string-array><string-array name="enigmeOneAlgo">
+    </string-array><string-array name="cinematiqueSQL">
+        <item>Chain  : "Mouahaha ! Tu seras bientôt à ma merci, ce n\’est qu\’une question de temps!"</item>
+        <item>Loggy : "Mon ami.e je t\’ai laissé un fragment de mes recherches dans la salle, tu l\’as trouvé?"</item>
+        <item>Oh non!!!</item>
+        <item>Loggy : "Le langage Python s\'est malheureusement allié avec Chain, Java également, c\’est désastreux !" </item>
+        <item>Bon, dans un premier temps essayons de vaincre Python à son propre jeu. Traduisons l\’algo que je t\’ai laissé dans son langage pour le vaincre.</item>
+        <item> /!\ Item trouvé : /!\ </item>
+        <item> "recueil de notes de Loggy", "Le serment de protection"</item>
+    </string-array><string-array name="cinematiqueAlgo">
         <item>Chain  : "Mouahaha ! Tu seras bientôt à ma merci, ce n\’est qu\’une question de temps!"</item>
         <item>Loggy : "Mon ami.e je t\’ai laissé un fragment de mes recherches dans la salle, tu l\’as trouvé?"</item>
         <item>Oh non!!!</item>
@@ -25,18 +33,40 @@
         <item>B : une Procédure </item>
         <item>C : une fonction Booléenne</item>
         <item>D : une fonction Arithmétique </item>
-    </string-array><string-array name="reponseQCMAlgo1">
-        <item>true</item>
-        <item>false</item>
-        <item>false</item>
-        <item>false</item>
     </string-array><string-array name="qcmAlgo2">
         <item>Le type de données permettant d\'écrire du texte se nomme : </item>
         <item>A : Int </item>
         <item>B : String </item>
         <item>C : Bool</item>
         <item>D : Float</item>
+    </string-array><string-array name="reponseQCMAlgo1">
+        <item>true</item>
+        <item>false</item>
+        <item>false</item>
+        <item>false</item>
     </string-array><string-array name="reponseQCMAlgo2">
+        <item>false</item>
+        <item>true</item>
+        <item>false</item>
+        <item>false</item>
+    </string-array><string-array name="qcmSQL1">
+        <item>Afin de sélectionner un élément dans une table on utilise</item>
+        <item>A : Select</item>
+        <item>B : Having</item>
+        <item>C : Where</item>
+        <item>D : From</item>
+    </string-array><string-array name="qcmSQL2">
+        <item>D\'après l\'épreuve que vous venez de passer le SQL sert à : </item>
+        <item>A : Développé des intelligences artificielles</item>
+        <item>B : Créer des tables de données et gérer des bases de données</item>
+        <item>C : Faire des jeux vidéos</item>
+        <item>D : Etablir des connexions entre des machines</item>
+    </string-array><string-array name="reponseQCMSQL1">
+        <item>true</item>
+        <item>false</item>
+        <item>false</item>
+        <item>false</item>
+    </string-array><string-array name="reponseQCMSQL2">
         <item>false</item>
         <item>true</item>
         <item>false</item>
@@ -56,26 +86,4 @@
     </string-array><string-array name="reponses_juste">
         <item>note,Notes,nom</item>
         <item>Notes,*,Etudiant</item>
-    </string-array><string-array name="qcmSQL2">
-        <item>D\'après l\'épreuve qque vous venez de passer le SQL sert à : </item>
-        <item>A : Développé des intelligences artificielles</item>
-        <item>B : Créer des tables de données et gérer des bases de données</item>
-        <item>C : Faire des jeux vidéos</item>
-        <item>D : Etablir des connexions entre des machines</item>
-    </string-array><string-array name="qcmSQL1">
-        <item>Afin de sélectionner un élément dans une table on utilise</item>
-        <item>A : Select</item>
-        <item>B : Having</item>
-        <item>C : Where</item>
-        <item>D : From</item>
-    </string-array><string-array name="reponseQCMSQL2">
-        <item>false</item>
-        <item>true</item>
-        <item>false</item>
-        <item>false</item>
-    </string-array><string-array name="reponseQCMSQL1">
-        <item>true</item>
-        <item>false</item>
-        <item>false</item>
-        <item>false</item>
     </string-array></file><file path="C:\Users\Leo\Desktop\travail\A2 BUT INFO\SAE\SAE-Escape-Game\Escape-Game-Application\androidApp\src\main\res\values\styles.xml" qualifiers=""><style name="AppTheme" parent="android:Theme.Material.NoActionBar"/></file></source><source path="C:\Users\Leo\Desktop\travail\A2 BUT INFO\SAE\SAE-Escape-Game\Escape-Game-Application\androidApp\build\generated\res\rs\debug"/><source path="C:\Users\Leo\Desktop\travail\A2 BUT INFO\SAE\SAE-Escape-Game\Escape-Game-Application\androidApp\build\generated\res\resValues\debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\Leo\Desktop\travail\A2 BUT INFO\SAE\SAE-Escape-Game\Escape-Game-Application\androidApp\src\debug\res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug" generated-set="debug$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\Leo\Desktop\travail\A2 BUT INFO\SAE\SAE-Escape-Game\Escape-Game-Application\androidApp\src\debug\res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="generated$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"/><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="generated" generated-set="generated$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"/><mergedItems/></merger>

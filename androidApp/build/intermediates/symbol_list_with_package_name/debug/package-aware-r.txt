@@ -24,10 +24,11 @@ anim btn_radio_to_on_mtrl_dot_group_animation
 anim btn_radio_to_on_mtrl_ring_outer_animation
 anim btn_radio_to_on_mtrl_ring_outer_path_animation
 array choix_enigmes1_nom
-array cinematic1
-array cinematic2
-array cinematic3
-array enigmeOneAlgo
+array cinematiqueAlgo
+array cinematiqueDeuxiemeEtage
+array cinematiquePremiereEtage
+array cinematiqueRezDeChaussée
+array cinematiqueSQL
 array enigmesSQL
 array phrasesacompléter
 array qcmAlgo1

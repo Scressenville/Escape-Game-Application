@@ -19,6 +19,7 @@ import sae.escapegame.application.android.QCM.result
 import sae.escapegame.application.android.QCM.verificationCapacite
 import sae.escapegame.application.android.cinematics.Cinematique
 
+
 @SuppressLint("SuspiciousIndentation")
 @Composable
 fun Navigation() {
@@ -56,6 +57,7 @@ fun Navigation() {
         composable(route = Ecran.EcranSplashReponseF.route){
             EcranSplashReponseF(navController)
         }
+
 
         composable(route = Ecran.EcranMenuPrincipal.route) {
             compteurQCM = 0

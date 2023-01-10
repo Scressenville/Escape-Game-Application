@@ -14,12 +14,13 @@ sealed class Ecran(val route: String){
     object EcranMenuPrincipal : Ecran("ecranMenuPrincipal")
     object EcranSplashReponseV : Ecran("ecranSplashReponseV")
     object EcranSplashReponseF : Ecran("ecranSplashReponseF")
+    object EcranFonctionResultatQCM : Ecran("ecranFonctionResultatQCM")
 
-    object EcranSQL : Ecran("QCM_SQL")
+    object EcranQCMSQL : Ecran("QCM_SQL")
     object EcranSQLResultat: Ecran("SQL_Resultat")
 
-    object QCM : Ecran("QCM_screen")
-    object ResultatQCM: Ecran("ResultatQCM")
+    object EcranQCMAlgo : Ecran("QCM_screen")
+    object EcranAiguillageQCM: Ecran("EcranAiguillageQCM")
 
     fun avecArguments(vararg args: String): String {
         return buildString {

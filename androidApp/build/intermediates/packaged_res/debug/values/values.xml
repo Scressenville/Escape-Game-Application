@@ -36,30 +36,57 @@
         <item>Select 1 From 2 Join Etudiant On 2.idEtudiant = Etudiant.idEtudiant Where 3 = Bob</item>
         <item>Select 1 From 2 Join 3 On 2.idEtudiant = 3.idEtudiant </item>
     </string-array>
-    <string-array name="qcmAlgo">
-        <item>A : Les variables peuvent contenir différents types de données </item>
-        <item>B : un Booléen représente une valeur logique binaire </item>
-        <item>C : 2.0 est un Integer</item>
-        <item>D : 2 est un Float </item>
+    <string-array name="qcmAlgo1">
+        <item>Une fonction qui s\'appelle toute seule est :</item>
+        <item>A : une fonction Récursive </item>
+        <item>B : une Procédure </item>
+        <item>C : une fonction Booléenne</item>
+        <item>D : une fonction Arithmétique </item>
     </string-array>
-    <string-array name="qcmSQL">
-        <item>A : Il n\'est pas possible de lier deux tables entre elles</item>
-        <item>B : Select sert à inserer des données</item>
-        <item>C : le squelette d\'une requete SQL n\'a pas d\'ordre (Where…Select…From)</item>
-        <item>C : le squelette d\'une requete SQL n\'a pas d\'ordre (Where…Select…From)</item>
-        <item>D : * permet de selectionner tous les champs d\'une table</item>
+    <string-array name="qcmAlgo2">
+        <item>Le type de données permettant d\'écrire du texte se nomme : </item>
+        <item>A : Int </item>
+        <item>B : String </item>
+        <item>C : Bool</item>
+        <item>D : Float</item>
     </string-array>
-    <string-array name="reponseQCMAlgo">
+    <string-array name="qcmSQL1">
+        <item>Afin de sélectionner un élément dans une table on utilise</item>
+        <item>A : Select</item>
+        <item>B : Having</item>
+        <item>C : Where</item>
+        <item>D : From</item>
+    </string-array>
+    <string-array name="qcmSQL2">
+        <item>D\'après l\'épreuve qque vous venez de passer le SQL sert à : </item>
+        <item>A : Développé des intelligences artificielles</item>
+        <item>B : Créer des tables de données et gérer des bases de données</item>
+        <item>C : Faire des jeux vidéos</item>
+        <item>D : Etablir des connexions entre des machines</item>
+    </string-array>
+    <string-array name="reponseQCMAlgo1">
         <item>true</item>
+        <item>false</item>
+        <item>false</item>
+        <item>false</item>
+    </string-array>
+    <string-array name="reponseQCMAlgo2">
+        <item>false</item>
         <item>true</item>
         <item>false</item>
         <item>false</item>
     </string-array>
-    <string-array name="reponseQCMSQL">
+    <string-array name="reponseQCMSQL1">
+        <item>true</item>
         <item>false</item>
         <item>false</item>
+        <item>false</item>
+    </string-array>
+    <string-array name="reponseQCMSQL2">
         <item>false</item>
         <item>true</item>
+        <item>false</item>
+        <item>false</item>
     </string-array>
     <string-array name="reponses_juste">
         <item>note,Notes,nom</item>

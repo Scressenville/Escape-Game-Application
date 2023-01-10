@@ -16,7 +16,7 @@ import androidx.compose.material.Button
 import androidx.navigation.NavController
 
 @Composable
-fun result(repJoueur: Array<String>, correctionQCM: Array<String>, controllerNavigation: NavController) {
+fun result(repJoueur: Array<String>, correctionQCM: Array<String>,controllerNavigation: NavController) {
     BackHandler(true, onBack = {
         //do nothing
         println("Boutton retour préssé")
@@ -46,12 +46,12 @@ fun result(repJoueur: Array<String>, correctionQCM: Array<String>, controllerNav
                         .padding(15.dp, 15.dp)
                         .height(60.dp).width(500.dp),
                     onClick = {
-                        controllerNavigation.navigate(Ecran.EcranMenuPrincipal.route)
+                        controllerNavigation.navigate(Ecran.EcranAiguillageQCM.route)
                     },
                     border = BorderStroke(1.dp, Color.Red),
                     colors = ButtonDefaults.outlinedButtonColors(backgroundColor = Color.Gray)
                 ) {
-                    Text(text = "HOME", color = Color.DarkGray)
+                    Text(text = "Suivant", color = Color.DarkGray)
                 }
 
 
@@ -61,7 +61,7 @@ fun result(repJoueur: Array<String>, correctionQCM: Array<String>, controllerNav
     }
     //debug console
     for (i in 0..3) {
-       println(repJoueur[i])
+        println(repJoueur[i])
         println("---- comparaison----------")
         println(correctionQCM[i])
         println("###### ligne suivante #####")

@@ -14,7 +14,10 @@ import sae.escapegame.application.android.cinematics.Cinematique
 @Composable
 fun Navigation() {
     var repJoueur: Array<String> by remember { mutableStateOf(Array(4){""}) }
+    var compteurQCM : Int by remember { mutableStateOf(0)}
     val navController = rememberNavController()
+    var liste_qcm : Array<Array<String>> by remember { mutableStateOf(Array(3){Array(5){""} }) }
+    var liste_reponse_qcm : Array<Array<String>> by remember { mutableStateOf(Array(3){Array(4){""} }) }
     BackHandler(true, onBack = {
         //do nothing
         println("Boutton retour préssé")
@@ -29,7 +32,7 @@ fun Navigation() {
             Cinematique(
                 painterResource(id = R.drawable.photo_hall),
                 painterResource(id = R.drawable.loggy),
-                stringArrayResource(id = R.array.cinematic1),
+                stringArrayResource(id = R.array.cinematiqueRezDeChaussée),
                 Ecran.EcranMenuPrincipal,
                 navController
             )
@@ -44,13 +47,14 @@ fun Navigation() {
         }
 
         composable(route = Ecran.EcranMenuPrincipal.route) {
+            compteurQCM = 0
             MenuPrincipal(Ecran.EcranCinematiqueIntroAlgo,Ecran.EcranCinematiqueIntroSQL,navController)
         }
         composable(route = Ecran.EcranCinematiqueIntroAlgo.route) {
             Cinematique(
                 painterResource(id = R.drawable.photo_rdc),
                 painterResource(id = R.drawable.loggy),
-                stringArrayResource(id = R.array.enigmeOneAlgo),
+                stringArrayResource(id = R.array.cinematiqueAlgo),
                 Ecran.EcranLancementEnigmeAlgo,
                 navController
             )
@@ -59,33 +63,45 @@ fun Navigation() {
             SQL(navController)
         }
 
-        composable(route = Ecran.QCM.route){
-            var item = stringArrayResource(id = sae.escapegame.application.android.R.array.qcmAlgo)
-            repJoueur = skillTest(navController,item)
-            println(repJoueur)
+        composable(route = Ecran.EcranQCMAlgo.route){
+            var qcm1 = stringArrayResource(id = sae.escapegame.application.android.R.array.qcmAlgo1)
+            var qcm2 = stringArrayResource(id = sae.escapegame.application.android.R.array.qcmAlgo2)
+            liste_qcm = arrayOf(qcm1,qcm2)
+            var correctionQCM1Algo = stringArrayResource(id = sae.escapegame.application.android.R.array.reponseQCMAlgo1)
+            var correctionQCM2Algo = stringArrayResource(id = sae.escapegame.application.android.R.array.reponseQCMAlgo2)
+            liste_reponse_qcm = arrayOf(correctionQCM1Algo,correctionQCM2Algo)
+            repJoueur = skillTest(navController,liste_qcm[compteurQCM],liste_reponse_qcm[compteurQCM])
         }
-        composable(route = Ecran.ResultatQCM.route){
-            var correctionQCM = stringArrayResource(id = sae.escapegame.application.android.R.array.reponseQCMAlgo)
-            println(correctionQCM)
-            result(repJoueur, correctionQCM,navController)
+        composable(route = Ecran.EcranAiguillageQCM.route){
+            compteurQCM += 1
+            if (compteurQCM<liste_qcm.size){
+                navController.navigate(Ecran.EcranQCMAlgo.route)
+            }
+            else{
+                compteurQCM = 0
+                navController.navigate(Ecran.EcranMenuPrincipal.route)
+            }
+
         }
-        composable(route = Ecran.EcranSQL.route){
-            var item = stringArrayResource(id = sae.escapegame.application.android.R.array.qcmSQL)
-            repJoueur = skillTest(navController,item)
-            println(repJoueur)
+        composable(route = Ecran.EcranFonctionResultatQCM.route){
+            result(repJoueur, liste_reponse_qcm[compteurQCM],navController)
+        }
+        composable(route = Ecran.EcranQCMSQL.route){
+            var qcm1 = stringArrayResource(id = sae.escapegame.application.android.R.array.qcmSQL1)
+            var qcm2 = stringArrayResource(id = sae.escapegame.application.android.R.array.qcmSQL2)
+            liste_qcm = arrayOf(qcm1,qcm2)
+            var correctionQCM1SQL = stringArrayResource(id = sae.escapegame.application.android.R.array.reponseQCMSQL1)
+            var correctionQCM2SQL = stringArrayResource(id = sae.escapegame.application.android.R.array.reponseQCMSQL2)
+            liste_reponse_qcm = arrayOf(correctionQCM1SQL,correctionQCM2SQL)
+            repJoueur = skillTest(navController,liste_qcm[compteurQCM], liste_reponse_qcm[compteurQCM])
         }
 
-        composable(route = Ecran.EcranSQLResultat.route){
-            var correctionQCM = stringArrayResource(id = sae.escapegame.application.android.R.array.reponseQCMSQL)
-            println(correctionQCM)
-            result(repJoueur, correctionQCM,navController)
-        }
 
         composable(route = Ecran.EcranCinematiquePremierEtage.route) {
             Cinematique(
                 painterResource(id = R.drawable.photo_hall),
                 painterResource(id = R.drawable.loggy),
-                stringArrayResource(id = R.array.cinematic2),
+                stringArrayResource(id = R.array.cinematiquePremiereEtage),
                 Ecran.EcranCinematiqueDerniereEtage,
                 navController
             )
@@ -94,7 +110,7 @@ fun Navigation() {
             Cinematique(
                 painterResource(id = R.drawable.photo_hall),
                 painterResource(id = R.drawable.loggy),
-                stringArrayResource(id = R.array.cinematic3),
+                stringArrayResource(id = R.array.cinematiqueDeuxiemeEtage),
                 Ecran.EcranPrincipal,
                 navController
             )
@@ -106,7 +122,7 @@ fun Navigation() {
             Cinematique(
                 painterResource(id = R.drawable.photo_r47),
                 painterResource(id = R.drawable.loggy),
-                stringArrayResource(id = R.array.cinematic1),
+                stringArrayResource(id = R.array.cinematiqueSQL),
                 Ecran.EcranLancementEnigmeSQL,
                 navController
             )

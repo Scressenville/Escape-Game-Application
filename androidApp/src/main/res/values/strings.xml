@@ -8,23 +8,32 @@
     <string name="answer2">Rep2PremiereEnigme</string>
     <string name="questionSQL">test</string>
 
-    <string-array name="cinematic1">
+    <string-array name="cinematiqueRezDeChaussée">
         <item>Ouuuups</item>
         <item>Il semblerait que tu sois bloqué à l\'intérieur du bâtiment !</item>
         <item>C\'est à cause de l\'horrible Chain !</item>
     </string-array>
 
-    <string-array name="cinematic2">
+    <string-array name="cinematiquePremiereEtage">
         <item>Très bien, on a réussi à passer le rez-de-chaussée</item>
         <item>Il faut maintenant réussir à passer le premier étage !</item>
         <item>Je crois en toi, on va y arriver !</item>
     </string-array>
-    <string-array name="cinematic3">
+    <string-array name="cinematiqueDeuxiemeEtage">
         <item>Nous y sommes ! Le dernier étage !</item>
         <item>Cela fut difficile, mais maintenant nous allons enfin pouvoir en découdre avec Chain !</item>
         <item>Il est temps que cette mascarade se termine !</item>
     </string-array>
-    <string-array name="enigmeOneAlgo">
+    <string-array name="cinematiqueAlgo">
+        <item>Chain  : "Mouahaha ! Tu seras bientôt à ma merci, ce n\’est qu\’une question de temps!"</item>
+        <item>Loggy : "Mon ami.e je t\’ai laissé un fragment de mes recherches dans la salle, tu l\’as trouvé?"</item>
+        <item>Oh non!!!</item>
+        <item>Loggy : "Le langage Python s\'est malheureusement allié avec Chain, Java également, c\’est désastreux !" </item>
+        <item>Bon, dans un premier temps essayons de vaincre Python à son propre jeu. Traduisons l\’algo que je t\’ai laissé dans son langage pour le vaincre.</item>
+        <item> /!\ Item trouvé : /!\ </item>
+        <item> "recueil de notes de Loggy", "Le serment de protection"</item>
+    </string-array>
+    <string-array name="cinematiqueSQL">
         <item>Chain  : "Mouahaha ! Tu seras bientôt à ma merci, ce n\’est qu\’une question de temps!"</item>
         <item>Loggy : "Mon ami.e je t\’ai laissé un fragment de mes recherches dans la salle, tu l\’as trouvé?"</item>
         <item>Oh non!!!</item>
@@ -35,70 +44,56 @@
     </string-array>
 
     <string-array name="qcmAlgo1">
-        <item>Qu\'est-ce qu\'un algorithme ?</item>
-        <item>A : Un ensemble d\'instructions pour résoudre un problème </item>
-        <item>B : Un type de matériel informatique</item>
-        <item>C :  Un langage de programmation</item>
-        <item>D :  Un système de gestion de base de données</item>
+        <item>Une fonction qui s\'appelle toute seule est :</item>
+        <item>A : une fonction Récursive </item>
+        <item>B : une Procédure </item>
+        <item>C : une fonction Booléenne</item>
+        <item>D : une fonction Arithmétique </item>
     </string-array>
-    <string-array name="reponseQCMAlgo">
+    <string-array name="reponseQCMAlgo1">
         <item>true</item>
         <item>false</item>
         <item>false</item>
         <item>false</item>
     </string-array>
     <string-array name="qcmAlgo2">
-        <item>Quel est le but principal d\'un algorithme ?</item>
-        <item>A : Résoudre un problème spécifique ou atteindre un objectif souhaité </item>
-        <item>B : Faire fonctionner un ordinateur plus rapidement</item>
-        <item>C :  Créer une interface utilisateur</item>
-        <item>D : Stocker des données</item>
+        <item>Le type de données permettant d\'écrire du texte se nomme : </item>
+        <item>A : Int </item>
+        <item>B : String </item>
+        <item>C : Bool</item>
+        <item>D : Float</item>
     </string-array>
     <string-array name="reponseQCMAlgo2">
+        <item>false</item>
+        <item>true</item>
+        <item>false</item>
+        <item>false</item>
+    </string-array>
+    <string-array name="qcmSQL1">
+        <item>Afin de sélectionner un élément dans une table on utilise</item>
+        <item>A : Select</item>
+        <item>B : Having</item>
+        <item>C : Where</item>
+        <item>D : From</item>
+    </string-array>
+    <string-array name="qcmSQL2">
+        <item>D\'après l\'épreuve que vous venez de passer le SQL sert à : </item>
+        <item>A : Développé des intelligences artificielles</item>
+        <item>B : Créer des tables de données et gérer des bases de données</item>
+        <item>C : Faire des jeux vidéos</item>
+        <item>D : Etablir des connexions entre des machines</item>
+    </string-array>
+    <string-array name="reponseQCMSQL1">
         <item>true</item>
         <item>false</item>
         <item>false</item>
         <item>false</item>
     </string-array>
-    <string-array name="qcmAlgo3">
-        <item>Comment un algorithme est-il généralement représenté ?</item>
-        <item>A : Sous forme d\'une série d\'instructions </item>
-        <item>B : Sous forme de diagramme de flux</item>
-        <item>C :  Sous forme d\'un bloc de code dans un langage de programmation</item>
-        <item>D :  Sous forme d\'une représentation graphique</item>
-    </string-array>
-    <string-array name="reponseQCMAlgo3">
-        <item>false</item>
+    <string-array name="reponseQCMSQL2">
         <item>false</item>
         <item>true</item>
         <item>false</item>
-    </string-array>
-    <string-array name="qcmAlgo4">
-        <item>Lequel des éléments suivants N\'EST PAS une caractéristique d'un bon algorithme ?</item>
-        <item>La correction</item>
-        <item>L\'efficacité</item>
-        <item>La généralité</item>
-        <item>La complexité</item>
-    </string-array>
-    <string-array name="reponseQCMAlgo4">
         <item>false</item>
-        <item>false</item>
-        <item>false</item>
-        <item>true</item>
-    </string-array>
-
-    <string-array name="qcmSQL">
-        <item>A : Il n\'est pas possible de lier deux tables entre elles</item>
-        <item>B : Select sert à inserer des données</item>
-        <item>C : le squelette d\'une requete SQL n\'a pas d\'ordre (Where…Select…From)</item>
-        <item>C : le squelette d\'une requete SQL n\'a pas d\'ordre (Where…Select…From)</item>
-        <item>D : * permet de selectionner tous les champs d\'une table</item>
-    </string-array>
-    <string-array name="reponseQCMSQL">
-        <item>false</item>
-        <item>false</item>
-        <item>false</item>
-        <item>true</item>
     </string-array>
 
 

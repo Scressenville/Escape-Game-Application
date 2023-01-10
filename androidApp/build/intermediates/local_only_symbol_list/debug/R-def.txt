@@ -1,16 +1,21 @@
 R_DEF: Internal format may change without notice
 local
 array choix_enigmes1_nom
-array cinematic1
-array cinematic2
-array cinematic3
-array enigmeOneAlgo
+array cinematiqueAlgo
+array cinematiqueDeuxiemeEtage
+array cinematiquePremiereEtage
+array cinematiqueRezDeChaussée
+array cinematiqueSQL
 array enigmesSQL
 array phrasesacompléter
-array qcmAlgo
-array qcmSQL
-array reponseQCMAlgo
-array reponseQCMSQL
+array qcmAlgo1
+array qcmAlgo2
+array qcmSQL1
+array qcmSQL2
+array reponseQCMAlgo1
+array reponseQCMAlgo2
+array reponseQCMSQL1
+array reponseQCMSQL2
 array reponses_juste
 array réponses
 drawable bdd
@@ -30,6 +35,10 @@ drawable photo_hall
 drawable photo_r47
 drawable photo_rdc
 drawable plan_rdc
+drawable plan_rdc_r47_ok
+drawable plan_rdc_r47_r50_ok
+drawable plan_rdc_r50_ok
+drawable plan_rdc_rienvalide
 drawable python_algo
 drawable python_reponse_1
 drawable python_reponse_2

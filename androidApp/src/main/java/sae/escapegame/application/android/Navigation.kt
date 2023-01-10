@@ -19,6 +19,8 @@ fun Navigation() {
         //do nothing
         println("Boutton retour préssé")
     })
+    var booleanEnigmeAlgo = false
+    var booleanEnigmeSQL = false
     NavHost(navController = navController, startDestination = Ecran.EcranPrincipal.route ) {
         composable(route = Ecran.EcranPrincipal.route) {
 
@@ -29,7 +31,7 @@ fun Navigation() {
             Cinematique(
                 painterResource(id = R.drawable.photo_hall),
                 painterResource(id = R.drawable.loggy),
-                stringArrayResource(id = R.array.cinematic1),
+                stringArrayResource(id = R.array.cinematiqueAlgo),
                 Ecran.EcranMenuPrincipal,
                 navController
             )
@@ -44,39 +46,59 @@ fun Navigation() {
         }
 
         composable(route = Ecran.EcranMenuPrincipal.route) {
-            MenuPrincipal(Ecran.EcranCinematiqueIntroAlgo,Ecran.EcranCinematiqueIntroSQL,navController)
+            println("Algo:"+booleanEnigmeAlgo)
+            println("=============================")
+            println("SQL"+booleanEnigmeSQL)
+            if(booleanEnigmeAlgo==true && booleanEnigmeSQL==false){
+                MenuPrincipal(navController,booleanEnigmeAlgo,booleanEnigmeSQL,  painterResource(id = R.drawable.plan_rdc_r47_ok))
+            }
+            if(booleanEnigmeAlgo==false && booleanEnigmeSQL==true){
+                MenuPrincipal(navController,booleanEnigmeAlgo,booleanEnigmeSQL,  painterResource(id = R.drawable.plan_rdc_r50_ok))
+            }
+            if(booleanEnigmeAlgo==true && booleanEnigmeSQL==true){
+                MenuPrincipal(navController,booleanEnigmeAlgo,booleanEnigmeSQL,  painterResource(id = R.drawable.plan_rdc_r47_r50_ok))
+            }
+            if(booleanEnigmeAlgo==false && booleanEnigmeAlgo == false){
+                MenuPrincipal(
+                    navController,
+                    booleanEnigmeAlgo,
+                    booleanEnigmeSQL,
+                    painterResource(id = R.drawable.plan_rdc_rienvalide)
+                )
+            }
         }
         composable(route = Ecran.EcranCinematiqueIntroAlgo.route) {
             Cinematique(
                 painterResource(id = R.drawable.photo_rdc),
                 painterResource(id = R.drawable.loggy),
-                stringArrayResource(id = R.array.enigmeOneAlgo),
+                stringArrayResource(id = R.array.cinematiqueRezDeChaussée),
                 Ecran.EcranLancementEnigmeAlgo,
                 navController
             )
+            booleanEnigmeAlgo = true
         }
         composable(route = Ecran.EcranLancementEnigmeSQL.route) {
             SQL(navController)
         }
 
         composable(route = Ecran.QCM.route){
-            var item = stringArrayResource(id = sae.escapegame.application.android.R.array.qcmAlgo)
+            var item = stringArrayResource(id = sae.escapegame.application.android.R.array.qcmAlgo1)
             repJoueur = skillTest(navController,item)
             println(repJoueur)
         }
         composable(route = Ecran.ResultatQCM.route){
-            var correctionQCM = stringArrayResource(id = sae.escapegame.application.android.R.array.reponseQCMAlgo)
+            var correctionQCM = stringArrayResource(id = sae.escapegame.application.android.R.array.reponseQCMAlgo1)
             println(correctionQCM)
             result(repJoueur, correctionQCM,navController)
         }
         composable(route = Ecran.EcranSQL.route){
-            var item = stringArrayResource(id = sae.escapegame.application.android.R.array.qcmSQL)
+            val item = stringArrayResource(id = sae.escapegame.application.android.R.array.enigmesSQL)
             repJoueur = skillTest(navController,item)
             println(repJoueur)
         }
 
         composable(route = Ecran.EcranSQLResultat.route){
-            var correctionQCM = stringArrayResource(id = sae.escapegame.application.android.R.array.reponseQCMSQL)
+            var correctionQCM = stringArrayResource(id = sae.escapegame.application.android.R.array.reponseQCMAlgo1)
             println(correctionQCM)
             result(repJoueur, correctionQCM,navController)
         }
@@ -85,7 +107,7 @@ fun Navigation() {
             Cinematique(
                 painterResource(id = R.drawable.photo_hall),
                 painterResource(id = R.drawable.loggy),
-                stringArrayResource(id = R.array.cinematic2),
+                stringArrayResource(id = R.array.cinematiquePremiereEtage),
                 Ecran.EcranCinematiqueDerniereEtage,
                 navController
             )
@@ -94,7 +116,7 @@ fun Navigation() {
             Cinematique(
                 painterResource(id = R.drawable.photo_hall),
                 painterResource(id = R.drawable.loggy),
-                stringArrayResource(id = R.array.cinematic3),
+                stringArrayResource(id = R.array.cinematiqueDeuxiemeEtage),
                 Ecran.EcranPrincipal,
                 navController
             )
@@ -106,10 +128,11 @@ fun Navigation() {
             Cinematique(
                 painterResource(id = R.drawable.photo_r47),
                 painterResource(id = R.drawable.loggy),
-                stringArrayResource(id = R.array.cinematic1),
+                stringArrayResource(id = R.array.cinematiqueSQL),
                 Ecran.EcranLancementEnigmeSQL,
                 navController
             )
+            booleanEnigmeSQL = true
         }
 
     }

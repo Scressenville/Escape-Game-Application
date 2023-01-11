@@ -4,8 +4,9 @@ import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material.MaterialTheme
-import androidx.compose.material.Text
+import androidx.compose.material.*
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Add
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -21,8 +22,9 @@ import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 import sae.escapegame.application.android.Ecran
-import sae.escapegame.application.android.EcranSplashReponseV
 
 
 @Composable
@@ -30,8 +32,9 @@ fun MainScreen(
     mainViewModel: MainViewModel,
     navController: NavController
 ) {
-
-    val screenWidth = LocalConfiguration.current.screenWidthDp
+    val largeurEcran = LocalConfiguration.current.screenWidthDp
+    val scope = rememberCoroutineScope()
+    val snackbarHostState = remember { SnackbarHostState() }
 
     Column(
         modifier = Modifier
@@ -39,6 +42,7 @@ fun MainScreen(
         verticalArrangement = Arrangement.spacedBy(50.dp),
         horizontalAlignment = Alignment.CenterHorizontally
     ){
+
         Image(
             painter = painterResource(sae.escapegame.application.android.R.drawable.python_algo),
             contentDescription = "img",
@@ -53,7 +57,7 @@ fun MainScreen(
                 .padding(20.dp),
             verticalAlignment = Alignment.CenterVertically,
             horizontalArrangement = Arrangement.SpaceBetween
-        ){
+        ) {
             mainViewModel.items.forEach { person ->
                 DragTarget(
                     dataToDrop = person,
@@ -61,12 +65,12 @@ fun MainScreen(
                 ) {
                     Box(
                         modifier = Modifier
-                            .size(Dp(screenWidth / 5f))
+                            .size(Dp(largeurEcran / 5f))
                             .clip(RoundedCornerShape(15.dp))
                             .shadow(5.dp, RoundedCornerShape(15.dp))
                             .background(person.backgroundColor, RoundedCornerShape(15.dp)),
                         contentAlignment = Alignment.Center,
-                    ){
+                    ) {
                         Text(
                             text = person.name,
                             style = MaterialTheme.typography.body1,
@@ -78,37 +82,38 @@ fun MainScreen(
             }
         }
 
-        var test1 = 0
         var nom = "add"
-        var nom2 = "add"
-        var test = false
         var i = 0
-        var listenomverif : Array<String> = arrayOf("str","print","input","print","NomJoueur")
-        var listenom = Array<String>(5){ nom }
+        var listenomverif: Array<String> =
+            arrayOf("str", "print", "input", "print", "NomJoueur")
+        var listenom = Array<String>(5) { nom }
 
         Box(
             modifier = Modifier
-                .fillMaxSize()
+                .fillMaxWidth()
+                .fillMaxHeight(0.6f)
                 .padding(top = 30.dp)
-        ){
+        ) {
             Column(
                 modifier = Modifier
-                    .fillMaxWidth(),
-            ){
+                    .fillMaxWidth()
+            ) {
                 mainViewModel.addedWord.forEach { person ->
-                    listenom.set(i,person.name)
+                    listenom.set(i, person.name)
                     i += 1
 
                 }
 
 
-                Text(text = "  if __main__ == __main__ :", color = Color.White,
+                Text(
+                    text = "  if __main__ == __main__ :", color = Color.White,
                     textAlign = TextAlign.Left,
                     fontSize = 20.sp
                 )
 
                 Row() {
-                    Text(text = "     NomJoueur :  ",color = Color.White,
+                    Text(
+                        text = "     NomJoueur :  ", color = Color.White,
                         textAlign = TextAlign.Left,
                         fontSize = 20.sp,
                     )
@@ -118,57 +123,82 @@ fun MainScreen(
                 Row() {
                     Text(text = "      ")
                     Drop(mainViewModel, text = listenom[1])
-                    Text(text = " ('Quel est ton nom ?')",
+                    Text(
+                        text = " ('Quel est ton nom ?')",
                         color = Color.White,
                         textAlign = TextAlign.Left,
-                        fontSize = 20.sp)
+                        fontSize = 20.sp
+                    )
                 }
                 Row() {
-                    Text(text = "     NomJoueur = ",
+                    Text(
+                        text = "     NomJoueur = ",
                         color = Color.White,
                         textAlign = TextAlign.Left,
-                        fontSize = 20.sp)
+                        fontSize = 20.sp
+                    )
                     Drop(mainViewModel, text = listenom[2])
-                    Text(text = " ()",
+                    Text(
+                        text = " ()",
                         color = Color.White,
                         textAlign = TextAlign.Left,
-                        fontSize = 20.sp)
+                        fontSize = 20.sp
+                    )
                 }
                 Row {
-                     Text(text = "      ")
+                    Text(text = "      ")
                     Drop(mainViewModel, text = listenom[3])
-                    Text(text = " (''moi'', ",
+                    Text(
+                        text = " (''moi'', ",
                         color = Color.White,
                         textAlign = TextAlign.Left,
-                        fontSize = 20.sp)
+                        fontSize = 20.sp
+                    )
                     Drop(mainViewModel, text = listenom[4])
-                    Text(text = " , ''je promets de vaincre '',", color = Color.White,
+                    Text(
+                        text = " , ''je promets de vaincre '',", color = Color.White,
                         textAlign = TextAlign.Left,
-                        fontSize = 20.sp)
+                        fontSize = 20.sp
+                    )
                 }
-                Text(text = "  ''Chain et ainsi de mettre fin à ses crimes'')",
+                Text(
+                    text = "  ''Chain et ainsi de mettre fin à ses crimes'')",
                     color = Color.White,
                     textAlign = TextAlign.Left,
-                    fontSize = 20.sp)
+                    fontSize = 20.sp
+                )
             }
-            println(test)
 
-            if (i==5){
-                if (listenomverif.contentEquals(listenom)){
+            if (i == 5) {
+                if (listenomverif.contentEquals(listenom)) {
                     navController.navigate(Ecran.EcranSplashReponseV.route)
-                }else{
+                } else {
                     navController.navigate(Ecran.EcranSplashReponseF.route)
                 }
             }
 
         }
+        FloatingActionButton(
+            onClick = {
+                println("onclick fonctionne")
+                //Important part here
+                scope.launch(Dispatchers.Main){
+                    println("scope.launch focntionne")
+                    snackbarHostState.showSnackbar("He kanaka hoʻopunipuni maoli ʻo Maeva")
+                }
+                //
+            },
+            content = { Icon(imageVector = Icons.Default.Add, contentDescription = "") }
+        )
+
+        SnackbarHost(hostState = snackbarHostState)
+
     }
 }
 
 
 @Composable
 private fun Drop(mainViewModel: MainViewModel,text:String){
-    var test = 0
     DropItem<WordUiItem>(
         modifier = Modifier
             .padding(0.dp)
@@ -183,7 +213,6 @@ private fun Drop(mainViewModel: MainViewModel,text:String){
                 color = Color.Red,
                 textAlign = TextAlign.Left,
                 fontSize = 20.sp)
-            test=1
         } else {
             Text(text = text,
                 textAlign = TextAlign.Left,
@@ -191,3 +220,12 @@ private fun Drop(mainViewModel: MainViewModel,text:String){
         }
     }
 }
+
+
+@Composable
+fun SnackbarScreen() {
+
+
+
+}
+

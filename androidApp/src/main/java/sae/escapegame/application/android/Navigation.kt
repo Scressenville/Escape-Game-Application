@@ -12,12 +12,14 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringArrayResource
+import androidx.compose.ui.res.stringResource
 import sae.escapegame.application.android.Algo.DragableScreen
 import sae.escapegame.application.android.Algo.MainScreen
 import sae.escapegame.application.android.Algo.MainViewModel
 import sae.escapegame.application.android.QCM.result
 import sae.escapegame.application.android.QCM.verificationCapacite
 import sae.escapegame.application.android.cinematics.Cinematique
+import sae.escapegame.application.android.cinematics.Explication
 
 @SuppressLint("SuspiciousIndentation")
 @Composable
@@ -27,6 +29,10 @@ fun Navigation() {
     val navController = rememberNavController()
     var liste_qcm : Array<Array<String>> by remember { mutableStateOf(Array(3){Array(5){""} }) }
     var liste_reponse_qcm : Array<Array<String>> by remember { mutableStateOf(Array(3){Array(4){""} }) }
+    var EcranQCM : Ecran = Ecran.EcranQCMAlgo
+    var ecranSuivant : Ecran = Ecran.EcranMenuPrincipal
+    var listePhraseExplication : Array<String> by remember {mutableStateOf(Array(5){""})}
+    var phraseExplication : String by remember {mutableStateOf("")}
     BackHandler(true, onBack = {
         //do nothing
         println("Boutton retour préssé")
@@ -71,7 +77,7 @@ fun Navigation() {
             if(booleanEnigmeAlgo==true && booleanEnigmeSQL==true){
                 MenuPrincipal(navController,booleanEnigmeAlgo,booleanEnigmeSQL,  painterResource(id = R.drawable.plan_rdc_r47_r50_ok))
             }
-            if(booleanEnigmeAlgo==false && booleanEnigmeAlgo == false){
+            if(booleanEnigmeAlgo==false && booleanEnigmeSQL == false){
                 MenuPrincipal(
                     navController,
                     booleanEnigmeAlgo,
@@ -95,18 +101,19 @@ fun Navigation() {
         }
 
         composable(route = Ecran.EcranQCMAlgo.route){
-            var qcm1 = stringArrayResource(id = sae.escapegame.application.android.R.array.qcmAlgo1)
-            var qcm2 = stringArrayResource(id = sae.escapegame.application.android.R.array.qcmAlgo2)
-            liste_qcm = arrayOf(qcm1,qcm2)
-            var correctionQCM1Algo = stringArrayResource(id = sae.escapegame.application.android.R.array.reponseQCMAlgo1)
-            var correctionQCM2Algo = stringArrayResource(id = sae.escapegame.application.android.R.array.reponseQCMAlgo2)
+            EcranQCM = Ecran.EcranQCMAlgo
+            val qcmAlgo1 = stringArrayResource(id = sae.escapegame.application.android.R.array.qcmAlgo1)
+            val qcmAlgo2 = stringArrayResource(id = sae.escapegame.application.android.R.array.qcmAlgo2)
+            liste_qcm = arrayOf(qcmAlgo1,qcmAlgo2)
+            val correctionQCM1Algo = stringArrayResource(id = sae.escapegame.application.android.R.array.reponseQCMAlgo1)
+            val correctionQCM2Algo = stringArrayResource(id = sae.escapegame.application.android.R.array.reponseQCMAlgo2)
             liste_reponse_qcm = arrayOf(correctionQCM1Algo,correctionQCM2Algo)
             repJoueur = verificationCapacite(navController,liste_qcm[compteurQCM],liste_reponse_qcm[compteurQCM])
         }
         composable(route = Ecran.EcranAiguillageQCM.route){
             compteurQCM += 1
             if (compteurQCM<liste_qcm.size){
-                navController.navigate(Ecran.EcranQCMAlgo.route)
+                navController.navigate(EcranQCM.route)
             }
             else{
                 compteurQCM = 0
@@ -118,11 +125,13 @@ fun Navigation() {
             result(repJoueur, liste_reponse_qcm[compteurQCM],navController)
         }
         composable(route = Ecran.EcranQCMSQL.route){
-            var qcm1 = stringArrayResource(id = sae.escapegame.application.android.R.array.qcmSQL1)
-            var qcm2 = stringArrayResource(id = sae.escapegame.application.android.R.array.qcmSQL2)
-            liste_qcm = arrayOf(qcm1,qcm2)
-            var correctionQCM1SQL = stringArrayResource(id = sae.escapegame.application.android.R.array.reponseQCMSQL1)
-            var correctionQCM2SQL = stringArrayResource(id = sae.escapegame.application.android.R.array.reponseQCMSQL2)
+            EcranQCM = Ecran.EcranQCMSQL
+            val qcmSQL1 = stringArrayResource(id = sae.escapegame.application.android.R.array.qcmSQL1)
+            val qcmSQL2 = stringArrayResource(id = sae.escapegame.application.android.R.array.qcmSQL2)
+            liste_qcm = arrayOf(qcmSQL1,qcmSQL2)
+            println(liste_qcm[1])
+            val correctionQCM1SQL = stringArrayResource(id = sae.escapegame.application.android.R.array.reponseQCMSQL1)
+            val correctionQCM2SQL = stringArrayResource(id = sae.escapegame.application.android.R.array.reponseQCMSQL2)
             liste_reponse_qcm = arrayOf(correctionQCM1SQL,correctionQCM2SQL)
             repJoueur = verificationCapacite(navController,liste_qcm[compteurQCM], liste_reponse_qcm[compteurQCM])
         }
@@ -155,6 +164,8 @@ fun Navigation() {
                 ) {
                     MainScreen(viewModel,navController)
                 }
+            phraseExplication = stringResource(R.string.explicationEnigmeAlgo)
+            ecranSuivant = Ecran.EcranQCMAlgo
         }
         composable(route = Ecran.EcranCinematiqueIntroSQL.route){
             Cinematique(
@@ -165,6 +176,10 @@ fun Navigation() {
                 navController
             )
             booleanEnigmeSQL = true
+
+        }
+        composable(route = Ecran.EcranExplication.route){
+            Explication(phrase = phraseExplication, ecranSuivant = ecranSuivant, controlleurNavigation = navController)
         }
 
     }

@@ -10,9 +10,11 @@ import androidx.camera.core.ImageAnalysis
 import androidx.camera.core.Preview
 import androidx.camera.lifecycle.ProcessCameraProvider
 import androidx.camera.view.PreviewView
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalLifecycleOwner
 import androidx.compose.ui.viewinterop.AndroidView
@@ -56,7 +58,9 @@ fun EcranDeScan(): String {
         .fillMaxHeight(0.9f)
         .fillMaxWidth()) {
         if (hasCameraPermission) {
+
             AndroidView(
+
                 factory = { context ->
                     val previewView = PreviewView(context)
                     val preview = Preview.Builder().build()
@@ -75,6 +79,7 @@ fun EcranDeScan(): String {
                     )
 
                     try {
+                        println("Le if est bien activée")
                         cameraProviderFuture.get().bindToLifecycle(
                             lifecycleOwner,
                             selector,
@@ -91,5 +96,6 @@ fun EcranDeScan(): String {
             )
         }
     }
+    cameraProviderFuture.get().unbindAll()
     return code
 }

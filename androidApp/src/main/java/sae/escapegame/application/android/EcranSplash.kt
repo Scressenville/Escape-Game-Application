@@ -39,7 +39,7 @@ fun EcranSplashReponseV(navController: NavController) {
                 })
         )
         delay(300L)
-        navController.navigate("QCM_screen")
+        navController.navigate("ecranExplication")
     }
 
     // Image

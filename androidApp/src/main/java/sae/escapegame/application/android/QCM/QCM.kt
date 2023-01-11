@@ -21,10 +21,10 @@ fun verificationCapacite(navController: NavController, liste_qcm: Array<String>,
     var selectedB by remember { mutableStateOf(false) }
     var selectedC by remember { mutableStateOf(false) }
     var selectedD by remember { mutableStateOf(false) }
-    val colorA = if (selectedA) Color.Green else Color.Red
-    val colorB = if (selectedB) Color.Green else Color.Red
-    val colorC = if (selectedC) Color.Green else Color.Red
-    val colorD = if (selectedD) Color.Green else Color.Red
+    val colorA = if (selectedA) Color(151,211,107) else Color.White
+    val colorB = if (selectedB) Color(151,211,107) else Color.White
+    val colorC = if (selectedC) Color(151,211,107) else Color.White
+    val colorD = if (selectedD) Color(151,211,107) else Color.White
     var a: Boolean by remember { mutableStateOf(false) }
     var b: Boolean by remember { mutableStateOf(false) }
     var c: Boolean by remember { mutableStateOf(false) }

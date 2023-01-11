@@ -18,8 +18,10 @@ import sae.escapegame.application.android.Algo.MainScreen
 import sae.escapegame.application.android.Algo.MainViewModel
 import sae.escapegame.application.android.QCM.result
 import sae.escapegame.application.android.QCM.verificationCapacite
+import sae.escapegame.application.android.SQL.EnigmeSQL
 import sae.escapegame.application.android.cinematics.Cinematique
 import sae.escapegame.application.android.cinematics.Explication
+
 
 @SuppressLint("SuspiciousIndentation")
 @Composable
@@ -55,13 +57,21 @@ fun Navigation() {
             )
         }
 
-        composable(route = Ecran.EcranSplashReponseV.route){
-            EcranSplashReponseV(navController)
+        composable(route = Ecran.EcranSplashReponseVA.route){
+            EcranSplashReponseVA(navController)
+        }
+        composable(route = Ecran.EcranSplashReponseVS.route){
+            EcranSplashReponseVS(navController)
         }
 
-        composable(route = Ecran.EcranSplashReponseF.route){
-            EcranSplashReponseF(navController)
+        composable(route = Ecran.EcranSplashReponseFA.route){
+            EcranSplashReponseFA(navController)
         }
+
+        composable(route = Ecran.EcranSplashReponseFS.route){
+            EcranSplashReponseFS(navController)
+        }
+
 
         composable(route = Ecran.EcranMenuPrincipal.route) {
             compteurQCM = 0

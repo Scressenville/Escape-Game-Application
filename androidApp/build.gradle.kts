@@ -57,5 +57,7 @@ dependencies {
 
     implementation ("com.google.accompanist:accompanist-systemuicontroller:0.17.0")
 
+    implementation("com.google.accompanist:accompanist-pager:0.12.0")
+
 
 }

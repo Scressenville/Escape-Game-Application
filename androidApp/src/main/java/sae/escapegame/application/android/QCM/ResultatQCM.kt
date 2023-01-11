@@ -1,7 +1,9 @@
 package sae.escapegame.application.android.QCM
 
 import androidx.activity.compose.BackHandler
+import androidx.compose.animation.core.Animatable
 import androidx.compose.foundation.BorderStroke
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.ButtonDefaults
@@ -13,7 +15,12 @@ import androidx.compose.material.Text
 import androidx.compose.ui.unit.dp
 import sae.escapegame.application.android.Ecran
 import androidx.compose.material.Button
+import androidx.compose.runtime.remember
+import androidx.compose.ui.draw.scale
+import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.res.painterResource
 import androidx.navigation.NavController
+import sae.escapegame.application.android.R
 
 @Composable
 fun result(repJoueur: Array<String>, correctionQCM: Array<String>,controllerNavigation: NavController) {
@@ -21,6 +28,9 @@ fun result(repJoueur: Array<String>, correctionQCM: Array<String>,controllerNavi
         //do nothing
         println("Boutton retour préssé")
     })
+    val scale = remember {
+        Animatable(0f)
+    }
     Column(
         verticalArrangement = Arrangement.SpaceBetween,
         horizontalAlignment = Alignment.CenterHorizontally,
@@ -39,8 +49,29 @@ fun result(repJoueur: Array<String>, correctionQCM: Array<String>,controllerNavi
                 modifier = Modifier
                     .padding(15.dp)
             ) {
-                var affichage =comparaisonReponses(repJoueur, correctionQCM)
-                Text("Resultats qcm"+" : "+affichage+" /4")
+                var score =comparaisonReponses(repJoueur, correctionQCM)
+
+                    Text("Félicitations, tu as résolu l'énigme ! ")
+                    Text("/!/ nouvelle lettre obtenue")
+                    Box(contentAlignment = Alignment.Center,
+                        modifier = Modifier.fillMaxSize().background(Color.Yellow))
+                        {if(score==4){
+                        Image(
+                            painter = painterResource(id = R.drawable.lea_true),
+                            contentScale = ContentScale.Crop,
+                            contentDescription = "Logo",
+                            modifier = Modifier
+                                .scale(scale.value)
+                                .fillMaxSize()
+                        )
+
+                        }else{
+                            println("perdu")
+                            Image(painter = painterResource(id = R.drawable.lea_false),
+                                contentScale = ContentScale.Fit,
+                                contentDescription = "Logo",
+                                modifier = Modifier.scale(scale.value))
+                }}
                 Button(
                     modifier = Modifier
                         .padding(15.dp, 15.dp)

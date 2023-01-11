@@ -73,7 +73,7 @@ fun Navigation() {
             if(booleanEnigmeAlgo==true && booleanEnigmeSQL==true){
                 MenuPrincipal(navController,booleanEnigmeAlgo,booleanEnigmeSQL,  painterResource(id = R.drawable.plan_rdc_r47_r50_ok))
             }
-            if(booleanEnigmeAlgo==false && booleanEnigmeAlgo == false){
+            if(booleanEnigmeAlgo==false && booleanEnigmeSQL == false){
                 MenuPrincipal(
                     navController,
                     booleanEnigmeAlgo,

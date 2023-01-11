@@ -7,9 +7,7 @@ import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.runtime.Composable
-import androidx.compose.runtime.LaunchedEffect
-import androidx.compose.runtime.remember
+import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.scale
@@ -17,6 +15,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.navigation.NavController
 import kotlinx.coroutines.delay
+import kotlin.random.Random
 
 @Composable
 fun EcranSplashReponseVA(navController: NavController) {
@@ -44,7 +43,9 @@ fun EcranSplashReponseVA(navController: NavController) {
 
     // Image
     Box(contentAlignment = Alignment.Center,
-        modifier = Modifier.fillMaxSize().background(Color.White))
+        modifier = Modifier
+            .fillMaxSize()
+            .background(Color.White))
         {
         Image(painter = painterResource(id = R.drawable.bonne_reponse),
             contentDescription = "Logo",
@@ -77,7 +78,9 @@ fun EcranSplashReponseVS(navController: NavController) {
 
     // Image
     Box(contentAlignment = Alignment.Center,
-        modifier = Modifier.fillMaxSize().background(Color.White))
+        modifier = Modifier
+            .fillMaxSize()
+            .background(Color.White))
     {
         Image(painter = painterResource(id = R.drawable.bonne_reponse),
             contentDescription = "Logo",
@@ -107,7 +110,9 @@ fun EcranSplashReponseFA(navController: NavController) {
 
     // Image
     Box(contentAlignment = Alignment.Center,
-        modifier = Modifier.fillMaxSize().background(Color.White)) {
+        modifier = Modifier
+            .fillMaxSize()
+            .background(Color.White)) {
         Image(painter = painterResource(id = R.drawable.mauvaise_reponse),
             contentDescription = "Logo",
             modifier = Modifier.scale(scale.value))
@@ -134,11 +139,19 @@ fun EcranSplashReponseFS(navController: NavController) {
         navController.navigate("ecranLancementEnigmeSQL")
     }
 
+
     // Image
     Box(contentAlignment = Alignment.Center,
-        modifier = Modifier.fillMaxSize().background(Color.White)) {
-        Image(painter = painterResource(id = R.drawable.mauvaise_reponse),
-            contentDescription = "Logo",
-            modifier = Modifier.scale(scale.value))
+        modifier = Modifier
+            .fillMaxSize()
+            .background(Color.White)) {
+        var nb = 0
+        if (nb == 0){
+            Image(painter = painterResource(id = R.drawable.leatrue),
+                contentDescription = "Logo",
+                modifier = Modifier.scale(scale.value))
+            nb += 1
+        }
+
     }
 }

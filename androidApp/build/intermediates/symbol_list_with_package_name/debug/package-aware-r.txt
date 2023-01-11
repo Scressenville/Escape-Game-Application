@@ -657,6 +657,8 @@ drawable fleche_droite
 drawable fleche_gauche
 drawable img_enigme_algo
 drawable img_enigme_sql
+drawable leatrue
+drawable leotrue
 drawable localisation
 drawable loggy
 drawable mauvaise_reponse

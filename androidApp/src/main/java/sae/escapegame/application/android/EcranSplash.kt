@@ -2,6 +2,8 @@ package sae.escapegame.application.android
 
 import android.view.animation.OvershootInterpolator
 import androidx.activity.compose.BackHandler
+import androidx.compose.animation.core.Animatable
+import androidx.compose.animation.core.AnimationVector1D
 import androidx.compose.animation.core.tween
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -12,6 +14,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.scale
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.painter.Painter
 import androidx.compose.ui.res.painterResource
 import androidx.navigation.NavController
 import kotlinx.coroutines.delay
@@ -38,7 +41,7 @@ fun EcranSplashReponseVA(navController: NavController) {
                 })
         )
         delay(300L)
-        navController.navigate("ecranExplication")
+        navController.navigate("resultatA")
     }
 
     // Image
@@ -47,7 +50,7 @@ fun EcranSplashReponseVA(navController: NavController) {
             .fillMaxSize()
             .background(Color.White))
         {
-        Image(painter = painterResource(id = R.drawable.bonne_reponse),
+        Image(painter = painterResource(id = R.drawable.maevatrue),
             contentDescription = "Logo",
             modifier = Modifier.scale(scale.value))
     }
@@ -73,7 +76,7 @@ fun EcranSplashReponseVS(navController: NavController) {
                 })
         )
         delay(300L)
-        navController.navigate("QCM_SQL")
+        navController.navigate("resultatS")
     }
 
     // Image
@@ -82,7 +85,7 @@ fun EcranSplashReponseVS(navController: NavController) {
             .fillMaxSize()
             .background(Color.White))
     {
-        Image(painter = painterResource(id = R.drawable.bonne_reponse),
+        Image(painter = painterResource(id = R.drawable.sylvaintrue),
             contentDescription = "Logo",
             modifier = Modifier.scale(scale.value))
     }
@@ -113,7 +116,7 @@ fun EcranSplashReponseFA(navController: NavController) {
         modifier = Modifier
             .fillMaxSize()
             .background(Color.White)) {
-        Image(painter = painterResource(id = R.drawable.mauvaise_reponse),
+        Image(painter = painterResource(id = R.drawable.leofalse),
             contentDescription = "Logo",
             modifier = Modifier.scale(scale.value))
     }
@@ -139,19 +142,17 @@ fun EcranSplashReponseFS(navController: NavController) {
         navController.navigate("ecranLancementEnigmeSQL")
     }
 
-
-    // Image
-    Box(contentAlignment = Alignment.Center,
+    Box(
+        contentAlignment = Alignment.Center,
         modifier = Modifier
             .fillMaxSize()
-            .background(Color.White)) {
-        var nb = 0
-        if (nb == 0){
-            Image(painter = painterResource(id = R.drawable.leatrue),
-                contentDescription = "Logo",
-                modifier = Modifier.scale(scale.value))
-            nb += 1
-        }
+            .background(Color.White)
+    ) {
 
+        Image(
+            painter = painterResource(id = R.drawable.leafalse),
+            contentDescription = "Logo",
+            modifier = Modifier.scale(scale.value)
+        )
     }
 }

@@ -4,9 +4,9 @@ import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material.*
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.Add
+import androidx.compose.material.MaterialTheme
+import androidx.compose.material.Text
+import androidx.compose.material.TextButton
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -22,8 +22,8 @@ import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.launch
+import sae.escapegame.application.android.AlerteDialogueParticipation
+import sae.escapegame.application.android.AlerteDialogueRegle
 import sae.escapegame.application.android.Ecran
 
 
@@ -34,14 +34,13 @@ fun MainScreen(
 ) {
     val largeurEcran = LocalConfiguration.current.screenWidthDp
     val scope = rememberCoroutineScope()
-    val snackbarHostState = remember { SnackbarHostState() }
 
     Column(
         modifier = Modifier
             .fillMaxSize(),
-        verticalArrangement = Arrangement.spacedBy(50.dp),
+        verticalArrangement = Arrangement.spacedBy(20.dp),
         horizontalAlignment = Alignment.CenterHorizontally
-    ){
+    ) {
 
         Image(
             painter = painterResource(sae.escapegame.application.android.R.drawable.python_algo),
@@ -82,6 +81,14 @@ fun MainScreen(
             }
         }
 
+
+        Text(
+            text = "Traduit cet Algorithme en Python : ",
+            color = Color.White,
+            textAlign = TextAlign.Center,
+            fontSize = 20.sp,
+        )
+
         var nom = "add"
         var i = 0
         var listenomverif: Array<String> =
@@ -106,7 +113,7 @@ fun MainScreen(
 
 
                 Text(
-                    text = "  if __main__ == __main__ :", color = Color.White,
+                    text = "  if __name__ == __main__ :", color = Color.White,
                     textAlign = TextAlign.Left,
                     fontSize = 20.sp
                 )
@@ -167,32 +174,34 @@ fun MainScreen(
                     textAlign = TextAlign.Left,
                     fontSize = 20.sp
                 )
-            }
-
-            if (i == 5) {
-                if (listenomverif.contentEquals(listenom)) {
-                    navController.navigate(Ecran.EcranSplashReponseV.route)
-                } else {
-                    navController.navigate(Ecran.EcranSplashReponseF.route)
+                Column(
+                        horizontalAlignment = Alignment.Start
+                        ) {
+                    var bool by remember {
+                        mutableStateOf(false)
+                    }
+                    TextButton(onClick = {
+                        bool = true
+                    }) {
+                        Text(
+                            text = "Quelque règle",
+                            textAlign = TextAlign.Left
+                        )
+                    }
+                    if (bool) {
+                        AlerteDialogueRegle(navController)
+                    }
                 }
             }
 
         }
-        FloatingActionButton(
-            onClick = {
-                println("onclick fonctionne")
-                //Important part here
-                scope.launch(Dispatchers.Main){
-                    println("scope.launch focntionne")
-                    snackbarHostState.showSnackbar("He kanaka hoʻopunipuni maoli ʻo Maeva")
-                }
-                //
-            },
-            content = { Icon(imageVector = Icons.Default.Add, contentDescription = "") }
-        )
-
-        SnackbarHost(hostState = snackbarHostState)
-
+        if (i == 5) {
+            if (listenomverif.contentEquals(listenom)) {
+                navController.navigate(Ecran.EcranSplashReponseVA.route)
+            } else {
+                navController.navigate(Ecran.EcranSplashReponseFA.route)
+            }
+        }
     }
 }
 
@@ -221,11 +230,4 @@ private fun Drop(mainViewModel: MainViewModel,text:String){
     }
 }
 
-
-@Composable
-fun SnackbarScreen() {
-
-
-
-}
 

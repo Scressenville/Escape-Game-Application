@@ -26,4 +26,7 @@ sealed class Ecran(val route: String){
     object EcranQCMAlgo : Ecran("QCM_screen")
     object EcranAiguillageQCM: Ecran("EcranAiguillageQCM")
 
+    object EcranResultatA : Ecran("resultatA")
+    object EcranResultatS : Ecran("resultatS")
+
 }

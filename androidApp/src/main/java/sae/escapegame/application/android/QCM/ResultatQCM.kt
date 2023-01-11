@@ -2,6 +2,7 @@ package sae.escapegame.application.android.QCM
 
 import androidx.activity.compose.BackHandler
 import androidx.compose.foundation.BorderStroke
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.ButtonDefaults
@@ -13,6 +14,9 @@ import androidx.compose.material.Text
 import androidx.compose.ui.unit.dp
 import sae.escapegame.application.android.Ecran
 import androidx.compose.material.Button
+import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 
 @Composable
@@ -40,11 +44,25 @@ fun result(repJoueur: Array<String>, correctionQCM: Array<String>,controllerNavi
                     .padding(15.dp)
             ) {
                 var affichage =comparaisonReponses(repJoueur, correctionQCM)
-                Text("Resultats qcm"+" : "+affichage+" /4")
+                if (affichage == 4){
+                    Image(painter = painterResource(id = sae.escapegame.application.android.R.drawable.leatrue),
+                        contentDescription = "img")
+                    Text("Bravo vous avez reussi !!!!!",
+                        textAlign = TextAlign.Center,
+                        fontSize = 20.sp)
+                }else{
+                    Image(painter = painterResource(id = sae.escapegame.application.android.R.drawable.maevafalse),
+                        contentDescription = "img" )
+                    Text("Dommage vous avez eu faux ",
+                        textAlign = TextAlign.Center,
+                        fontSize = 20.sp)
+                }
+
                 Button(
                     modifier = Modifier
                         .padding(15.dp, 15.dp)
-                        .height(60.dp).width(500.dp),
+                        .height(60.dp)
+                        .width(500.dp),
                     onClick = {
                         controllerNavigation.navigate(Ecran.EcranAiguillageQCM.route)
                     },

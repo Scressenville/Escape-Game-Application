@@ -25,10 +25,16 @@ drawable fleche_droite
 drawable fleche_gauche
 drawable img_enigme_algo
 drawable img_enigme_sql
+drawable leafalse
 drawable leatrue
+drawable leofalse
 drawable leotrue
 drawable localisation
 drawable loggy
+drawable maevafalse
+drawable maevatrue
+drawable matteofalse
+drawable matteotrue
 drawable mauvaise_reponse
 drawable photo_escalier1
 drawable photo_escalier2
@@ -50,6 +56,8 @@ drawable requettesqlfausse3
 drawable requettesqlfausse4
 drawable requettesqlfausse5
 drawable requettesqlvrai
+drawable sylvainfalse
+drawable sylvaintrue
 drawable symbole_aide
 drawable symbole_ecran_principal
 drawable symbole_inventaire

@@ -16,6 +16,8 @@ import androidx.compose.ui.res.stringResource
 import sae.escapegame.application.android.Algo.DragableScreen
 import sae.escapegame.application.android.Algo.MainScreen
 import sae.escapegame.application.android.Algo.MainViewModel
+import sae.escapegame.application.android.QCM.ResultatA
+import sae.escapegame.application.android.QCM.ResultatS
 import sae.escapegame.application.android.QCM.result
 import sae.escapegame.application.android.QCM.verificationCapacite
 import sae.escapegame.application.android.SQL.EnigmeSQL
@@ -41,6 +43,11 @@ fun Navigation() {
     })
     var booleanEnigmeAlgo = false
     var booleanEnigmeSQL = false
+
+    var nb by remember {
+        mutableStateOf(0)
+    }
+
     NavHost(navController = navController, startDestination = Ecran.EcranPrincipal.route ) {
         composable(route = Ecran.EcranPrincipal.route) {
 
@@ -69,7 +76,14 @@ fun Navigation() {
         }
 
         composable(route = Ecran.EcranSplashReponseFS.route){
-            EcranSplashReponseFS(navController)
+                EcranSplashReponseFS(navController)
+        }
+
+        composable(route = Ecran.EcranResultatA.route){
+            ResultatA(navController)
+        }
+        composable(route = Ecran.EcranResultatS.route){
+            ResultatS(navController)
         }
 
 

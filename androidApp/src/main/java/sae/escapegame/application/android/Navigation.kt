@@ -17,6 +17,7 @@ import sae.escapegame.application.android.Algo.MainScreen
 import sae.escapegame.application.android.Algo.MainViewModel
 import sae.escapegame.application.android.QCM.result
 import sae.escapegame.application.android.QCM.verificationCapacite
+import sae.escapegame.application.android.SQL.EnigmeSQL
 import sae.escapegame.application.android.cinematics.Cinematique
 
 
@@ -50,12 +51,19 @@ fun Navigation() {
             )
         }
 
-        composable(route = Ecran.EcranSplashReponseV.route){
-            EcranSplashReponseV(navController)
+        composable(route = Ecran.EcranSplashReponseVA.route){
+            EcranSplashReponseVA(navController)
+        }
+        composable(route = Ecran.EcranSplashReponseVS.route){
+            EcranSplashReponseVS(navController)
         }
 
-        composable(route = Ecran.EcranSplashReponseF.route){
-            EcranSplashReponseF(navController)
+        composable(route = Ecran.EcranSplashReponseFA.route){
+            EcranSplashReponseFA(navController)
+        }
+
+        composable(route = Ecran.EcranSplashReponseFS.route){
+            EcranSplashReponseFS(navController)
         }
 
 
@@ -73,7 +81,7 @@ fun Navigation() {
             if(booleanEnigmeAlgo==true && booleanEnigmeSQL==true){
                 MenuPrincipal(navController,booleanEnigmeAlgo,booleanEnigmeSQL,  painterResource(id = R.drawable.plan_rdc_r47_r50_ok))
             }
-            if(booleanEnigmeAlgo==false && booleanEnigmeAlgo == false){
+            if(booleanEnigmeAlgo==false && booleanEnigmeSQL == false){
                 MenuPrincipal(
                     navController,
                     booleanEnigmeAlgo,

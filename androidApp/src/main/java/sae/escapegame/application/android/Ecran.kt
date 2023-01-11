@@ -12,9 +12,12 @@ sealed class Ecran(val route: String){
     object EcranLancementEnigmeAlgo : Ecran("ecranLancementEnigmeAlgo")
     object EcranLancementEnigmeSQL : Ecran("ecranLancementEnigmeSQL")
     object EcranMenuPrincipal : Ecran("ecranMenuPrincipal")
-    object EcranSplashReponseV : Ecran("ecranSplashReponseV")
-    object EcranSplashReponseF : Ecran("ecranSplashReponseF")
+    object EcranSplashReponseVA : Ecran("ecranSplashReponseVA")
+    object EcranSplashReponseVS : Ecran("ecranSplashReponseVS")
+    object EcranSplashReponseFA : Ecran("ecranSplashReponseFA")
+    object EcranSplashReponseFS : Ecran("ecranSplashReponseFS")
     object EcranFonctionResultatQCM : Ecran("ecranFonctionResultatQCM")
+    object AlerteDialogueRegle : Ecran("alerteDialogueRegle")
 
     object EcranDidacticiel : Ecran("didacticiel")
     object EcranQCMSQL : Ecran("QCM_SQL")
@@ -23,12 +26,4 @@ sealed class Ecran(val route: String){
     object EcranQCMAlgo : Ecran("QCM_screen")
     object EcranAiguillageQCM: Ecran("EcranAiguillageQCM")
 
-    fun avecArguments(vararg args: String): String {
-        return buildString {
-            append(route)
-            args.forEach{ arg ->
-                append("/$arg")
-            }
-        }
-    }
 }

@@ -6,6 +6,7 @@ import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Text
+import androidx.compose.material.TextButton
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -21,8 +22,9 @@ import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
+import sae.escapegame.application.android.AlerteDialogueParticipation
+import sae.escapegame.application.android.AlerteDialogueRegle
 import sae.escapegame.application.android.Ecran
-import sae.escapegame.application.android.EcranSplashReponseV
 
 
 @Composable
@@ -36,7 +38,7 @@ fun MainScreen(
     Column(
         modifier = Modifier
             .fillMaxSize(),
-        verticalArrangement = Arrangement.spacedBy(50.dp),
+        verticalArrangement = Arrangement.spacedBy(20.dp),
         horizontalAlignment = Alignment.CenterHorizontally
     ){
         Image(
@@ -47,6 +49,8 @@ fun MainScreen(
                 .padding(horizontal = 5.dp)
                 .fillMaxWidth()
         )
+
+
         Row(
             modifier = Modifier
                 .fillMaxWidth()
@@ -78,10 +82,14 @@ fun MainScreen(
             }
         }
 
-        var test1 = 0
+
+        Text(text = "Traduit cet Algorithme en Python : ",
+            color = Color.White,
+            textAlign = TextAlign.Center,
+            fontSize = 20.sp,
+        )
+
         var nom = "add"
-        var nom2 = "add"
-        var test = false
         var i = 0
         var listenomverif : Array<String> = arrayOf("str","print","input","print","NomJoueur")
         var listenom = Array<String>(5){ nom }
@@ -102,7 +110,7 @@ fun MainScreen(
                 }
 
 
-                Text(text = "  if __main__ == __main__ :", color = Color.White,
+                Text(text = "  if __name__ == __main__ :", color = Color.White,
                     textAlign = TextAlign.Left,
                     fontSize = 20.sp
                 )
@@ -142,22 +150,39 @@ fun MainScreen(
                         textAlign = TextAlign.Left,
                         fontSize = 20.sp)
                     Drop(mainViewModel, text = listenom[4])
-                    Text(text = " , ''je promets de vaincre '',", color = Color.White,
+                    Text(text = " , ''je promets de ", color = Color.White,
                         textAlign = TextAlign.Left,
                         fontSize = 20.sp)
                 }
-                Text(text = "  ''Chain et ainsi de mettre fin à ses crimes'')",
+                Text(text = " vaincre '', ''Chain et ainsi de mettre fin à ses crimes'')",
                     color = Color.White,
                     textAlign = TextAlign.Left,
                     fontSize = 20.sp)
+
+                Column(
+                        horizontalAlignment = Alignment.Start
+                        ) {
+                    var bool by remember {
+                        mutableStateOf(false)
+                    }
+                    TextButton(onClick = {
+                        bool = true
+                    }) {
+                        Text(text = "Quelque règle",
+                            textAlign = TextAlign.Left
+                        )
+                    }
+                    if (bool){
+                        AlerteDialogueRegle(navController)
+                    }
+                }
             }
-            println(test)
 
             if (i==5){
                 if (listenomverif.contentEquals(listenom)){
-                    navController.navigate(Ecran.EcranSplashReponseV.route)
+                    navController.navigate(Ecran.EcranSplashReponseVA.route)
                 }else{
-                    navController.navigate(Ecran.EcranSplashReponseF.route)
+                    navController.navigate(Ecran.EcranSplashReponseFA.route)
                 }
             }
 
@@ -166,9 +191,9 @@ fun MainScreen(
 }
 
 
+
 @Composable
 private fun Drop(mainViewModel: MainViewModel,text:String){
-    var test = 0
     DropItem<WordUiItem>(
         modifier = Modifier
             .padding(0.dp)
@@ -183,7 +208,6 @@ private fun Drop(mainViewModel: MainViewModel,text:String){
                 color = Color.Red,
                 textAlign = TextAlign.Left,
                 fontSize = 20.sp)
-            test=1
         } else {
             Text(text = text,
                 textAlign = TextAlign.Left,

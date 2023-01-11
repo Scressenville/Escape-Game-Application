@@ -63,7 +63,7 @@ fun resoudrePremiereEnigme(controlleurNavigation : NavController): Boolean {
                         onClick = {
                             Toast
                                 .makeText(context, "", Toast.LENGTH_LONG).show()
-                            controlleurNavigation.navigate(Ecran.EcranSplashReponseF.route)
+                            controlleurNavigation.navigate(Ecran.EcranSplashReponseFA.route)
                         }
                     )
             )
@@ -81,7 +81,7 @@ fun resoudrePremiereEnigme(controlleurNavigation : NavController): Boolean {
                         onClick = {
                             Toast
                                 .makeText(context, "", Toast.LENGTH_LONG).show()
-                            controlleurNavigation.navigate(Ecran.EcranSplashReponseV.route)
+                            controlleurNavigation.navigate(Ecran.EcranSplashReponseVA.route)
                             reussite=true
 
                         }

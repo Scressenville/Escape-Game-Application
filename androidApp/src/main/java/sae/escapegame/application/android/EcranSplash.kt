@@ -19,7 +19,7 @@ import androidx.navigation.NavController
 import kotlinx.coroutines.delay
 
 @Composable
-fun EcranSplashReponseV(navController: NavController) {
+fun EcranSplashReponseVA(navController: NavController) {
     val scale = remember {
         androidx.compose.animation.core.Animatable(0f)
     }
@@ -51,9 +51,42 @@ fun EcranSplashReponseV(navController: NavController) {
             modifier = Modifier.scale(scale.value))
     }
 }
+@Composable
+fun EcranSplashReponseVS(navController: NavController) {
+    val scale = remember {
+        androidx.compose.animation.core.Animatable(0f)
+    }
+    BackHandler(true, onBack = {
+        //do nothing
+        println("Boutton retour préssé")
+    })
+
+    // AnimationEffect
+    LaunchedEffect(key1 = true) {
+        scale.animateTo(
+            targetValue = 0.7f,
+            animationSpec = tween(
+                durationMillis = 800,
+                easing = {
+                    OvershootInterpolator(4f).getInterpolation(it)
+                })
+        )
+        delay(300L)
+        navController.navigate("QCM_SQL")
+    }
+
+    // Image
+    Box(contentAlignment = Alignment.Center,
+        modifier = Modifier.fillMaxSize().background(Color.White))
+    {
+        Image(painter = painterResource(id = R.drawable.bonne_reponse),
+            contentDescription = "Logo",
+            modifier = Modifier.scale(scale.value))
+    }
+}
 
 @Composable
-fun EcranSplashReponseF(navController: NavController) {
+fun EcranSplashReponseFA(navController: NavController) {
     val scale = remember {
         androidx.compose.animation.core.Animatable(0f)
     }
@@ -70,6 +103,35 @@ fun EcranSplashReponseF(navController: NavController) {
         )
         delay(300L)
         navController.navigate("ecranLancementEnigmeAlgo")
+    }
+
+    // Image
+    Box(contentAlignment = Alignment.Center,
+        modifier = Modifier.fillMaxSize().background(Color.White)) {
+        Image(painter = painterResource(id = R.drawable.mauvaise_reponse),
+            contentDescription = "Logo",
+            modifier = Modifier.scale(scale.value))
+    }
+}
+
+@Composable
+fun EcranSplashReponseFS(navController: NavController) {
+    val scale = remember {
+        androidx.compose.animation.core.Animatable(0f)
+    }
+
+    // AnimationEffect
+    LaunchedEffect(key1 = true) {
+        scale.animateTo(
+            targetValue = 0.7f,
+            animationSpec = tween(
+                durationMillis = 800,
+                easing = {
+                    OvershootInterpolator(4f).getInterpolation(it)
+                })
+        )
+        delay(300L)
+        navController.navigate("ecranLancementEnigmeSQL")
     }
 
     // Image

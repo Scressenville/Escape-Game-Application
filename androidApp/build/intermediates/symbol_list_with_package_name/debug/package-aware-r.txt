@@ -686,6 +686,12 @@ drawable plan_rdc_rienvalide
 drawable python_algo
 drawable python_reponse_1
 drawable python_reponse_2
+drawable requettesqlfausse1
+drawable requettesqlfausse2
+drawable requettesqlfausse3
+drawable requettesqlfausse4
+drawable requettesqlfausse5
+drawable requettesqlvrai
 drawable symbole_aide
 drawable symbole_ecran_principal
 drawable symbole_inventaire
@@ -694,6 +700,8 @@ drawable symbole_sauvegarde
 drawable titre_escape_game
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+font poppins
+font reemkufi
 id ALT
 id CTRL
 id FUNCTION

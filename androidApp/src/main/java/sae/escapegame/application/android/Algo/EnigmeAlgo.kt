@@ -1,9 +1,12 @@
 package sae.escapegame.application.android.Algo
 
+import android.widget.ImageButton
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material.FloatingActionButton
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Text
 import androidx.compose.material.TextButton
@@ -22,9 +25,9 @@ import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
-import sae.escapegame.application.android.AlerteDialogueParticipation
-import sae.escapegame.application.android.AlerteDialogueRegle
-import sae.escapegame.application.android.Ecran
+import kotlinx.coroutines.launch
+import sae.escapegame.application.android.*
+import sae.escapegame.application.android.R
 
 
 @Composable
@@ -194,14 +197,16 @@ fun MainScreen(
                 }
             }
 
-        }
-        if (i == 5) {
-            if (listenomverif.contentEquals(listenom)) {
-                navController.navigate(Ecran.EcranSplashReponseVA.route)
-            } else {
-                navController.navigate(Ecran.EcranSplashReponseFA.route)
+            if (i == 5) {
+                if (listenomverif.contentEquals(listenom)) {
+                    navController.navigate(Ecran.EcranSplashReponseVA.route)
+                } else {
+                    navController.navigate(Ecran.EcranSplashReponseFA.route)
+                }
             }
         }
+
+
     }
 }
 
@@ -230,4 +235,11 @@ private fun Drop(mainViewModel: MainViewModel,text:String){
     }
 }
 
+
+@Composable
+fun SnackbarScreen() {
+
+
+
+}
 

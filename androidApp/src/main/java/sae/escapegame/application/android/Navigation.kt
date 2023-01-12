@@ -126,6 +126,7 @@ fun Navigation() {
 
         composable(route = Ecran.EcranQCMAlgo.route){
             EcranQCM = Ecran.EcranQCMAlgo
+            println(EcranQCM.route)
             val qcmAlgo1 = stringArrayResource(id = sae.escapegame.application.android.R.array.qcmAlgo1)
             val qcmAlgo2 = stringArrayResource(id = sae.escapegame.application.android.R.array.qcmAlgo2)
             liste_qcm = arrayOf(qcmAlgo1,qcmAlgo2)
@@ -150,6 +151,7 @@ fun Navigation() {
         }
         composable(route = Ecran.EcranQCMSQL.route){
             EcranQCM = Ecran.EcranQCMSQL
+            println(EcranQCM.route)
             val qcmSQL1 = stringArrayResource(id = sae.escapegame.application.android.R.array.qcmSQL1)
             val qcmSQL2 = stringArrayResource(id = sae.escapegame.application.android.R.array.qcmSQL2)
             liste_qcm = arrayOf(qcmSQL1,qcmSQL2)

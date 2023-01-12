@@ -85,3 +85,40 @@ fun AlerteDialogueRegle(navController: NavController) {
         )
     }
 }
+@Composable
+fun AlerteDialogueAide(navController: NavController) {
+
+    val context = LocalContext
+        .current
+    val openDialog = remember { mutableStateOf(true) }
+
+    if (openDialog.value) {
+        AlertDialog(
+            onDismissRequest = { openDialog.value = false },
+            title = { Text(text = "Aide", color = Color.Black) },
+            text = {
+                Text(
+                    text = "--- Attend que la box du mot que tu a selectionner devienne plus grand avant de le deplacer.\n" +
+                            "---Une fois que tu depose un mot tu ne peut l'enveler.\n " +
+                            "---Tu doit obligatoirement remplir les champs dans l'ordre.\n" ,
+                    color = Color.Black
+                )
+            },
+
+            confirmButton = {
+
+                TextButton(
+                    onClick = {
+                        openDialog.value = false
+                        Toast.makeText(context, "", Toast.LENGTH_SHORT).show()
+                        navController.navigate(Ecran.EcranLancementEnigmeAlgo.route)
+                    }) {
+                    Text(text = "OK", color = Color.Black)
+                }
+
+            },
+            backgroundColor = Color.White,
+            contentColor = Color.White
+        )
+    }
+}

@@ -22,6 +22,7 @@ import kotlin.random.Random
 
 @Composable
 fun EcranSplashReponseVA(navController: NavController) {
+
     val scale = remember {
         androidx.compose.animation.core.Animatable(0f)
     }

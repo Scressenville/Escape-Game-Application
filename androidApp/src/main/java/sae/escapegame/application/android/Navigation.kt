@@ -86,6 +86,9 @@ fun Navigation() {
             ResultatS(navController)
         }
 
+        composable(route = Ecran.EcranDidacticiel.route){
+
+        }
 
         composable(route = Ecran.EcranMenuPrincipal.route) {
             compteurQCM = 0

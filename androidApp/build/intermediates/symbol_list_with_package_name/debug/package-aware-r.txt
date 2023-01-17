@@ -700,6 +700,7 @@ drawable requettesqlfausse3
 drawable requettesqlfausse4
 drawable requettesqlfausse5
 drawable requettesqlvrai
+drawable swipe
 drawable sylvainfalse
 drawable sylvaintrue
 drawable symbole_aide

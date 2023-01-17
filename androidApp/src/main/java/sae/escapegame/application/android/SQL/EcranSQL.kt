@@ -52,17 +52,18 @@ fun EnigmeSQL(controllerNavigation: NavController){
         )
     )
 
-    items.add(
-        OnBoardingData(
-            R.drawable.requettesqlfausse5
-        )
-    )
+    //------------ Suppression pour reglage difficulté abordable----------------
+    //items.add(
+    //    OnBoardingData(
+    //        R.drawable.requettesqlfausse5
+    //    )
+    //)
 
-    items.add(
-        OnBoardingData(
-            R.drawable.requettesqlfausse4
-        )
-    )
+    //items.add(
+    //    OnBoardingData(
+    //        R.drawable.requettesqlfausse4
+    //    )
+    //)
 
     val pagerState = rememberPagerState(
         pageCount = items.size,
@@ -125,17 +126,18 @@ fun OnBoardingPager(
                         )
 
                     }
-                    Text(text = "Swipe!!",
-                    color = Color.Black,
-                    textAlign = TextAlign.Center,
-                    fontSize = 15.sp
+                    Image(painter = painterResource(R.drawable.swipe),
+                        contentDescription ="iconswipe",
+                        modifier=Modifier
+                            .fillMaxSize(0.3f)
+
                     )
                 }
             }
 
-
+        Text("Entre le chiffre de la reponse correcte")
         var text by remember {
-        mutableStateOf("Entre le chiffre de la reponse que tu veut")
+        mutableStateOf("")
         }
         TextField(
             modifier = Modifier

@@ -699,6 +699,7 @@ int drawable requettesqlfausse3 0x7f07008c
 int drawable requettesqlfausse4 0x7f07008d
 int drawable requettesqlfausse5 0x7f07008e
 int drawable requettesqlvrai 0x7f07008f
+int drawable swipe 0x7f07009a
 int drawable sylvainfalse 0x7f070090
 int drawable sylvaintrue 0x7f070091
 int drawable symbole_aide 0x7f070092

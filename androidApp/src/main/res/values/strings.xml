@@ -73,7 +73,7 @@
         <item>false</item>
     </string-array>
     <string-array name="qcmSQL1">
-        <item>Afin de sélectionner un élément dans une table on utilise</item>
+        <item>Afin de SELECTIONNER un élément dans une table on utilise</item>
         <item>A : Select</item>
         <item>B : Having</item>
         <item>C : Where</item>

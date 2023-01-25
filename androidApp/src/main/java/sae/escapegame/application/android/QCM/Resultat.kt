@@ -41,8 +41,7 @@ fun ResultatA(navController: NavController){
             ) {
                     Text(
                         "Maintenant nous allons tester vos connaissance a traver un QCM\n" +
-                                "Repondez juste et vous aurez 5 min en plus \n" +
-                                "Repondez faux et vous aurez 5 min en moins",
+                                "Repondez juste et vous aurez 5 min en plus \n",
                         textAlign = TextAlign.Center,
                         fontSize = 20.sp
                     )

@@ -109,7 +109,7 @@ fun OnBoardingPager(
         )
 
         Text(text = "Nous voulons savoir  la note de Bob\n"+
-            "Quelle requette est correct ?",
+            "Quelle requette est correct ?\n"+"Aide des tables en haut!!",
             color = Color.White,
             textAlign = TextAlign.Center,
             fontSize = 20.sp,

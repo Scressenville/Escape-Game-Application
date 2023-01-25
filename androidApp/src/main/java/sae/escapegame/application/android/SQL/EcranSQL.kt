@@ -1,5 +1,6 @@
 package sae.escapegame.application.android.SQL
 
+
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
@@ -20,6 +21,7 @@ import com.google.accompanist.pager.ExperimentalPagerApi
 import com.google.accompanist.pager.HorizontalPager
 import com.google.accompanist.pager.PagerState
 import com.google.accompanist.pager.rememberPagerState
+import sae.escapegame.application.android.EcranSplashReponseFS
 import sae.escapegame.application.android.R
 import sae.escapegame.application.android.cinematics.OnBoardingData
 
@@ -27,6 +29,7 @@ import sae.escapegame.application.android.cinematics.OnBoardingData
 @OptIn(ExperimentalPagerApi::class)
 @Composable
 fun EnigmeSQL(controllerNavigation: NavController){
+
     val items = ArrayList<OnBoardingData>()
     items.add(
         OnBoardingData(
@@ -152,7 +155,7 @@ fun OnBoardingPager(
                         navController.navigate("ecranSplashReponseVS")
                     }else{
                         navController.navigate("ecranSplashReponseFS")
-                    }
+                 }
                 }) {
                     Icon(
                         imageVector = Icons.Filled.Check ,

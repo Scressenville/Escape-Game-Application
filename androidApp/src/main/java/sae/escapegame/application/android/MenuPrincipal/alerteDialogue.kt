@@ -122,3 +122,38 @@ fun AlerteDialogueAide(navController: NavController) {
         )
     }
 }
+@Composable
+fun AlerteDialogSQL(navController: NavController,explication : String) {
+
+    val context = LocalContext
+        .current
+    val openDialog = remember { mutableStateOf(true) }
+
+    if (openDialog.value) {
+        AlertDialog(
+            onDismissRequest = { openDialog.value = false },
+            title = { Text(text = "Explication", color = Color.Black) },
+            text = {
+                Text(
+                    text = explication,
+                    color = Color.Black
+                )
+            },
+
+            confirmButton = {
+
+                TextButton(
+                    onClick = {
+                        openDialog.value = false
+                        Toast.makeText(context, "", Toast.LENGTH_SHORT).show()
+                        navController.navigate(Ecran.EcranLancementEnigmeSQL.route)
+                    }) {
+                    Text(text = "OK", color = Color.Black)
+                }
+
+            },
+            backgroundColor = Color.White,
+            contentColor = Color.White
+        )
+    }
+}

@@ -1,5 +1,6 @@
 R_DEF: Internal format may change without notice
 local
+array ExplicationEnSQL
 array choix_enigmes1_nom
 array cinematiqueAlgo
 array cinematiqueDeuxiemeEtage

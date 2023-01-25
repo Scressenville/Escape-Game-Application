@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="ExplicationEnSQL">
+        <item> Raté : Regarde bien on cherche la note de "BOB", est-ce le bon prénom?</item>
+        <item>Regarde ta feuille d\'indice, le squelette de ta requete est il correcte?  SELECT … FROM … WHERE</item>
+        <item>Where sert à relier deux tables entre elle; Ici on veut les NOTES d\'un ETUDIANT. Donc, on va avoir la structure suivante : WHERE NOTES.ETUDIANT = ETUDIANTS.IDETUDIANT</item>
+    </string-array>
     <string-array name="choix_enigmes1_nom">
         <item>Python</item>
         <item>SQL</item>

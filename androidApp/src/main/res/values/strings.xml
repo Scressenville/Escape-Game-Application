@@ -26,24 +26,23 @@
     </string-array>
     <string-array name="cinematiqueAlgo">
         <item>Chain  : "Mouahaha ! Tu seras bientôt à ma merci, ce n\’est qu\’une question de temps!"</item>
-        <item>Loggy : "Mon ami.e je t\’ai laissé un fragment de mes recherches dans la salle, tu l\’as trouvé?"</item>
+        <item>Loggy : "Mon ami.e, je t\’ai laissé un fragment de mes recherches dans la salle, tu l\’as trouvé?"</item>
         <item>Oh non!!!</item>
         <item>Loggy : "Le langage Python s\'est malheureusement allié avec Chain, Java également, c\’est désastreux !" </item>
-        <item>Bon, dans un premier temps essayons de vaincre Python à son propre jeu. Traduisons l\’algo que je t\’ai laissé dans son langage pour le vaincre.</item>
-        <item> /!\ Item trouvé : /!\ </item>
-        <item> "recueil de notes de Loggy", "Le serment de protection"</item>
+        <item>Bon, dans un premier temps essayons de vaincre Python à son propre jeu. Traduisons l\’algorithme que je t\’ai laissé dans son langage pour le vaincre.</item>
+        <item> /!\ Recueil de notes de Loggy, "Le serment de protection" trouvé /!\ </item>
     </string-array>
     <string name="explicationEnigmeAlgo">
-        <item>L\'Algo n\'est pas un langage de programmation a proprement parlé, il sert à comprendre ce que le code doit faire, il reste donc nécessaire afin de savoir ce que l\'on veut faire. Vous avez pu vaire qu\'il est ici très simple de mettre en place l\'algo dans un vrai langage de programmation.</item>
+        <item>L\'Algorithmique n\'est pas un langage de programmation à proprement parler, elle sert à comprendre ce que le code doit faire, elle reste donc nécessaire afin de savoir ce que l\'on veut faire. Vous avez pu voire qu\'il est ici très simple de traduire l\'algorithme dans un langage de programmation.</item>
     </string>
     <string-array name="cinematiqueSQL">
-        <item>Chain  : "Bouahahaha Je vais te transformer en nft et t'obliger a tourner dans tout internet!"</item>
+        <item>Chain  : "Bouahahaha Je vais te transformer en NFT et t'obliger à tourner dans tout Internet!"</item>
         <item>Loggy : " Bon sang, je dois me calmer et réfléchir. Il doit y avoir un moyen de sortir d'ici.
             </item>
         <item>"Il faut que l'on trouve des indices et que l'on résolve les énigmes avant que le temps ne s'écoule"</item>
-        <item>Loggy : "Bob était l'un de mes precieux camarades il vient de se faire desintegrer...." </item>
-        <item>"Heureusement il nous a laissé une feuille"</item>
-        <item>"Gagnons cette enigme en sa mémoire</item>
+        <item>Loggy : "Bob était l'un de mes precieux camarades il vient de se faire désintegrer...." </item>
+        <item>"Heureusement, il nous a laissé une feuille"</item>
+        <item>"Gagnons cette énigme en sa mémoire</item>
     </string-array>
 
     <string-array name="qcmAlgo1">
@@ -73,18 +72,18 @@
         <item>false</item>
     </string-array>
     <string-array name="qcmSQL1">
-        <item>Afin de SELECTIONNER un élément dans une table on utilise</item>
+        <item>Afin de SELECTIONNER un élément dans une table on utilise le mot clé :</item>
         <item>A : Select</item>
         <item>B : Having</item>
         <item>C : Where</item>
         <item>D : From</item>
     </string-array>
     <string-array name="qcmSQL2">
-        <item>D\'après l\'épreuve que vous venez de passer le SQL sert à : </item>
+        <item>D\'après l\'épreuve que vous venez de passer, le SQL sert à : </item>
         <item>A : Développer des intelligences artificielles</item>
         <item>B : Créer des tables de données et gérer des bases de données</item>
         <item>C : Faire des jeux vidéos</item>
-        <item>D : Etablir des connexions entre des machines</item>
+        <item>D : Établir des connexions entre des machines</item>
     </string-array>
     <string-array name="reponseQCMSQL1">
         <item>true</item>
@@ -121,17 +120,17 @@
         <item>Notes,*,Etudiant</item>
     </string-array>
     <string-array name="ExplicationEnSQL">
-        <item> Raté : Regarde bien on cherche la note de "BOB", est-ce le bon prénom?</item>
-        <item>Regarde ta feuille d\'indice, le squelette de ta requete est il correcte?  SELECT … FROM … WHERE</item>
+        <item> Raté : Regarde bien, on cherche la note de "BOB", est-ce le bon prénom?</item>
+        <item>Regarde ta feuille d\'indices, le squelette de ta requête est-il correct?  SELECT … FROM … WHERE</item>
         <item>Where sert à relier deux tables entre elle; Ici on veut les NOTES d\'un ETUDIANT. Donc, on va avoir la structure suivante : WHERE NOTES.ETUDIANT = ETUDIANTS.IDETUDIANT</item>
     </string-array>
 
     <string-array name="didacticiel">
-        <item> Appuyer sur l\'icon Qrcode pour scanner les Qrcode present dans les salles</item>
-        <item>En appuyant sur l\icone avec les 3 traie vous aurais acces a votre inventaire....</item>
-        <item>  mais aussi vous avez la possibilité de sauvegarder et de recomencer ce didacticiel</item>
-        <item> Vous avez le timer en haut a droit de la page un fois celui si terminer vous aurais perdu </item>
-        <item> La carte au centre vous montreras les salles ou ce trouve les enigmes mais aussi vous indique si un enigme est terminer </item>
+        <item> Appuyer sur l\'icône Qrcode pour scanner les Qrcodes presents dans les salles.</item>
+        <item>En appuyant sur l\icône avec les 3 traits, vous aurez accès a votre inventaire....</item>
+        <item>  mais vous avez aussi la possibilité de sauvegarder et de recomencer ce didacticiel</item>
+        <item> Vous avez le chronomètre en haut à droite de la page. Une fois celui-ci écoulé, vous aurez perdu. </item>
+        <item> La carte au centre vous montrera les salles ou se trouvent les énigmes, mais aussi vous indique si une énigme est terminée. </item>
     </string-array>
 
 </resources>

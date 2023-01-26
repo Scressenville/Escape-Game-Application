@@ -108,8 +108,8 @@ fun OnBoardingPager(
                 .fillMaxWidth()
         )
 
-        Text(text = "Nous voulons savoir  la note de Bob\n"+
-            "Quelle requette est correct ?\n"+"Aide des tables en haut!!",
+        Text(text = "Nous voulons savoir  la note de BOB\n"+
+            "Quelle requete est correct ?\n"+"Aide toi des tables en haut!!",
             color = Color.White,
             textAlign = TextAlign.Center,
             fontSize = 20.sp,
@@ -129,12 +129,19 @@ fun OnBoardingPager(
                         )
 
                     }
-                    Image(painter = painterResource(R.drawable.swipe),
-                        contentDescription ="iconswipe",
-                        modifier=Modifier
-                            .fillMaxSize(0.3f)
+                    Column(
+                        verticalArrangement = Arrangement.SpaceEvenly,
+                        horizontalAlignment = Alignment.CenterHorizontally,
+                    ) {
+                        Text("Swipe à droite ou à gauche pour découvrir les différentes requetes :)")
+                        Image(painter = painterResource(R.drawable.swipe),
+                            contentDescription ="iconswipe",
+                            modifier=Modifier
+                                .fillMaxSize(0.3f)
 
-                    )
+                        )
+                    }
+
                 }
             }
 

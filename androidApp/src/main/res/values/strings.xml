@@ -81,7 +81,7 @@
     </string-array>
     <string-array name="qcmSQL2">
         <item>D\'après l\'épreuve que vous venez de passer le SQL sert à : </item>
-        <item>A : Développé des intelligences artificielles</item>
+        <item>A : Développer des intelligences artificielles</item>
         <item>B : Créer des tables de données et gérer des bases de données</item>
         <item>C : Faire des jeux vidéos</item>
         <item>D : Etablir des connexions entre des machines</item>

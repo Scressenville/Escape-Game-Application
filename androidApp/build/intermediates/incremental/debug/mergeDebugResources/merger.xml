@@ -2733,7 +2733,7 @@
         <item>false</item>
         <item>false</item>
     </string-array><string-array name="qcmSQL1">
-        <item>Afin de sélectionner un élément dans une table on utilise</item>
+        <item>Afin de SELECTIONNER un élément dans une table on utilise</item>
         <item>A : Select</item>
         <item>B : Having</item>
         <item>C : Where</item>
@@ -2773,6 +2773,12 @@
         <item> Raté : Regarde bien on cherche la note de "BOB", est-ce le bon prénom?</item>
         <item>Regarde ta feuille d\'indice, le squelette de ta requete est il correcte?  SELECT … FROM … WHERE</item>
         <item>Where sert à relier deux tables entre elle; Ici on veut les NOTES d\'un ETUDIANT. Donc, on va avoir la structure suivante : WHERE NOTES.ETUDIANT = ETUDIANTS.IDETUDIANT</item>
+    </string-array><string-array name="didacticiel">
+        <item> Appuyer sur l\'icon Qrcode pour scanner les Qrcode present dans les salles</item>
+        <item>En appuyant sur l\icone avec les 3 traie vous aurais acces a votre inventaire....</item>
+        <item>  mais aussi vous avez la possibilité de sauvegarder et de recomencer ce didacticiel</item>
+        <item> Vous avez le timer en haut a droit de la page un fois celui si terminer vous aurais perdu </item>
+        <item> La carte au centre vous montreras les salles ou ce trouve les enigmes mais aussi vous indique si un enigme est terminer </item>
     </string-array></file><file path="C:\new\Escape-Game-Application\androidApp\src\main\res\values\styles.xml" qualifiers=""><style name="AppTheme" parent="android:Theme.Material.NoActionBar"/></file></source><source path="C:\new\Escape-Game-Application\androidApp\build\generated\res\rs\debug"/><source path="C:\new\Escape-Game-Application\androidApp\build\generated\res\resValues\debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\new\Escape-Game-Application\androidApp\src\debug\res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug" generated-set="debug$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\new\Escape-Game-Application\androidApp\src\debug\res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="generated$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"/><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="generated" generated-set="generated$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"/><mergedItems><configuration qualifiers=""><declare-styleable name="AlertDialog">
         <attr name="android:layout"/>
         <attr format="reference" name="buttonPanelSideLayout"/>

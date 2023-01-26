@@ -7,6 +7,7 @@ array cinematiqueDeuxiemeEtage
 array cinematiquePremiereEtage
 array cinematiqueRezDeChaussée
 array cinematiqueSQL
+array didacticiel
 array enigmesSQL
 array phrasesacompléter
 array qcmAlgo1

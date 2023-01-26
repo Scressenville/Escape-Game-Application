@@ -35,7 +35,6 @@ fun Navigation() {
     var liste_reponse_qcm : Array<Array<String>> by remember { mutableStateOf(Array(3){Array(4){""} }) }
     var EcranQCM : Ecran = Ecran.EcranQCMAlgo
     var ecranSuivant : Ecran = Ecran.EcranMenuPrincipal
-    var listePhraseExplication : Array<String> by remember {mutableStateOf(Array(5){""})}
     var phraseExplication : String by remember {mutableStateOf("")}
     BackHandler(true, onBack = {
         //do nothing
@@ -43,10 +42,7 @@ fun Navigation() {
     })
     var booleanEnigmeAlgo = false
     var booleanEnigmeSQL = false
-
-    var nb by remember {
-        mutableStateOf(0)
-    }
+    var booleanDidacticiel = false
 
     NavHost(navController = navController, startDestination = Ecran.EcranPrincipal.route ) {
         composable(route = Ecran.EcranPrincipal.route) {
@@ -96,22 +92,24 @@ fun Navigation() {
             println("=============================")
             println("SQL"+booleanEnigmeSQL)
             if(booleanEnigmeAlgo==true && booleanEnigmeSQL==false){
-                MenuPrincipal(navController,booleanEnigmeAlgo,booleanEnigmeSQL,  painterResource(id = R.drawable.plan_rdc_r47_ok))
+                MenuPrincipal(navController,booleanEnigmeAlgo,booleanEnigmeSQL,booleanDidacticiel,  painterResource(id = R.drawable.plan_rdc_r47_ok))
             }
             if(booleanEnigmeAlgo==false && booleanEnigmeSQL==true){
-                MenuPrincipal(navController,booleanEnigmeAlgo,booleanEnigmeSQL,  painterResource(id = R.drawable.plan_rdc_r50_ok))
+                MenuPrincipal(navController,booleanEnigmeAlgo,booleanEnigmeSQL,booleanDidacticiel,  painterResource(id = R.drawable.plan_rdc_r50_ok))
             }
             if(booleanEnigmeAlgo==true && booleanEnigmeSQL==true){
-                MenuPrincipal(navController,booleanEnigmeAlgo,booleanEnigmeSQL,  painterResource(id = R.drawable.plan_rdc_r47_r50_ok))
+                MenuPrincipal(navController,booleanEnigmeAlgo,booleanEnigmeSQL,booleanDidacticiel,  painterResource(id = R.drawable.plan_rdc_r47_r50_ok))
             }
             if(booleanEnigmeAlgo==false && booleanEnigmeSQL == false){
                 MenuPrincipal(
                     navController,
                     booleanEnigmeAlgo,
                     booleanEnigmeSQL,
+                    booleanDidacticiel,
                     painterResource(id = R.drawable.plan_rdc_rienvalide)
                 )
             }
+            booleanDidacticiel = true
         }
         composable(route = Ecran.EcranCinematiqueIntroAlgo.route) {
             Cinematique(
@@ -133,8 +131,8 @@ fun Navigation() {
             val qcmAlgo1 = stringArrayResource(id = sae.escapegame.application.android.R.array.qcmAlgo1)
             val qcmAlgo2 = stringArrayResource(id = sae.escapegame.application.android.R.array.qcmAlgo2)
             liste_qcm = arrayOf(qcmAlgo1,qcmAlgo2)
-            val correctionQCM1Algo = stringArrayResource(id = sae.escapegame.application.android.R.array.reponseQCMAlgo1)
-            val correctionQCM2Algo = stringArrayResource(id = sae.escapegame.application.android.R.array.reponseQCMAlgo2)
+            val correctionQCM1Algo = stringArrayResource(id = R.array.reponseQCMAlgo1)
+            val correctionQCM2Algo = stringArrayResource(id = R.array.reponseQCMAlgo2)
             liste_reponse_qcm = arrayOf(correctionQCM1Algo,correctionQCM2Algo)
             repJoueur = verificationCapacite(navController,liste_qcm[compteurQCM],liste_reponse_qcm[compteurQCM])
         }
@@ -159,8 +157,8 @@ fun Navigation() {
             val qcmSQL2 = stringArrayResource(id = sae.escapegame.application.android.R.array.qcmSQL2)
             liste_qcm = arrayOf(qcmSQL1,qcmSQL2)
             println(liste_qcm[1])
-            val correctionQCM1SQL = stringArrayResource(id = sae.escapegame.application.android.R.array.reponseQCMSQL1)
-            val correctionQCM2SQL = stringArrayResource(id = sae.escapegame.application.android.R.array.reponseQCMSQL2)
+            val correctionQCM1SQL = stringArrayResource(id = R.array.reponseQCMSQL1)
+            val correctionQCM2SQL = stringArrayResource(id = R.array.reponseQCMSQL2)
             liste_reponse_qcm = arrayOf(correctionQCM1SQL,correctionQCM2SQL)
             repJoueur = verificationCapacite(navController,liste_qcm[compteurQCM], liste_reponse_qcm[compteurQCM])
         }

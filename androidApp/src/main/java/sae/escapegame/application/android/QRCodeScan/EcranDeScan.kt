@@ -10,20 +10,24 @@ import androidx.camera.core.ImageAnalysis
 import androidx.camera.core.Preview
 import androidx.camera.lifecycle.ProcessCameraProvider
 import androidx.camera.view.PreviewView
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalLifecycleOwner
+import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.unit.dp
 import androidx.compose.ui.viewinterop.AndroidView
 import androidx.core.content.ContextCompat
 import androidx.navigation.NavController
 import sae.escapegame.application.android.QRCodeScan.QRCodeAnalyzer
 
 @Composable
-fun EcranDeScan(): String {
+fun EcranDeScan(controlleurNavigation: NavController): String {
 
     val context = LocalContext.current
     val lifecycleOwner = LocalLifecycleOwner.current
@@ -95,6 +99,14 @@ fun EcranDeScan(): String {
                 modifier = Modifier.weight(1f)
             )
         }
+        Image(
+            painter = painterResource(R.drawable.symbole_ecran_principal),
+            contentDescription = "MenuPrincipale",
+            modifier = Modifier
+                .height(50.dp)
+                .clickable {
+                    controlleurNavigation.navigate(Ecran.EcranMenuPrincipal.route)
+                })
     }
     cameraProviderFuture.get().unbindAll()
     return code

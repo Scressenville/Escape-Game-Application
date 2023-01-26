@@ -126,4 +126,12 @@
         <item>Where sert à relier deux tables entre elle; Ici on veut les NOTES d\'un ETUDIANT. Donc, on va avoir la structure suivante : WHERE NOTES.ETUDIANT = ETUDIANTS.IDETUDIANT</item>
     </string-array>
 
+    <string-array name="didacticiel">
+        <item> Appuyer sur l\'icon Qrcode pour scanner les Qrcode present dans les salles</item>
+        <item>En appuyant sur l\icone avec les 3 traie vous aurais acces a votre inventaire....</item>
+        <item>  mais aussi vous avez la possibilité de sauvegarder et de recomencer ce didacticiel</item>
+        <item> Vous avez le timer en haut a droit de la page un fois celui si terminer vous aurais perdu </item>
+        <item> La carte au centre vous montreras les salles ou ce trouve les enigmes mais aussi vous indique si un enigme est terminer </item>
+    </string-array>
+
 </resources>

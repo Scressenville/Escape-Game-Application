@@ -20,7 +20,7 @@ class MainViewModel :ViewModel() {
             WordUiItem("print","1", Color(223,98,98)),
             WordUiItem("input","2", Color(197, 79, 137, 255)),
             WordUiItem("str","3", Color(98,207,223)),
-            WordUiItem("NomJoueur","3", Color(237,246,109))
+            WordUiItem("NomJoueur","3", Color(214, 129, 2, 255))
         )
     }
 

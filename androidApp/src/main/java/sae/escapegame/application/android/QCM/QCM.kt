@@ -140,7 +140,7 @@ fun verificationCapacite(navController: NavController, liste_qcm: Array<String>,
                 {
                     Text(text = "Valider", color = Color.DarkGray)
                 }
-                if (valider == true){
+                if (valider){
                     repJoueur = arrayOf(a.toString(),b.toString(),c.toString(),d.toString())
                     println(a.toString()+b.toString()+c.toString()+d.toString())
                     navController.navigate(Ecran.EcranFonctionResultatQCM.route)

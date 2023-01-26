@@ -33,12 +33,18 @@ import sae.escapegame.application.android.QRCodeScan.EcranDeScanSQL
 @Composable
 fun MenuPrincipal(
     controlleurNavigation: NavController,
-    booleanEnigmeAlgo: Boolean, booleanEnigmeSQL: Boolean, planActuel: Painter) {
+    booleanEnigmeAlgo: Boolean, booleanEnigmeSQL: Boolean, booleanDidacticiel: Boolean, planActuel: Painter) {
 
     var qrcode by remember{ mutableStateOf(false) }
 
     val scaffoldState = rememberScaffoldState(rememberDrawerState(DrawerValue.Closed))
     val coroutineScope = rememberCoroutineScope()
+
+    if (!booleanDidacticiel){
+        Didacticiel(controlleurNavigation)
+    }
+
+
     BackHandler(true, onBack = {
         //do nothing
         println("Boutton retour préssé")
@@ -67,20 +73,9 @@ fun MenuPrincipal(
                 modifier = Modifier
                     .fillMaxWidth()
                     .fillMaxHeight(),
-                horizontalArrangement = Arrangement.SpaceAround,
+                horizontalArrangement = Arrangement.Center,
                 verticalAlignment = Alignment.Bottom
             ) {
-                Image(
-                    painter = painterResource(R.drawable.symbole_ecran_principal),
-                    contentDescription = "MenuPrincipale",
-                    modifier = Modifier
-                        .height(50.dp)
-                        .clickable {
-                            if (qrcode == true) {
-                                qrcode = false
-                            }
-                        })
-
                 Image(
                     painter = painterResource(R.drawable.symbole_qr_code),
                     contentDescription = "Qrcode",
@@ -93,10 +88,7 @@ fun MenuPrincipal(
                             }
                         })
             }
-
         },
-
-
         // Pass the body in
         // content parameter
         content = {
@@ -118,7 +110,7 @@ fun MenuPrincipal(
                             }
 
                 } else {
-                    var code = EcranDeScan()
+                    var code = EcranDeScan(controlleurNavigation)
 
                     if (code == "Enigme Algo") kotlin.run{
                         EcranDeScanAlgo(controlleurNavigation = controlleurNavigation, booleanEnigmeAlgo)

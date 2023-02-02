@@ -58,6 +58,7 @@ drawable requettesqlfausse3
 drawable requettesqlfausse4
 drawable requettesqlfausse5
 drawable requettesqlvrai
+drawable reset
 drawable swipe
 drawable sylvainfalse
 drawable sylvaintrue

@@ -1,15 +1,15 @@
 package sae.escapegame.application.android.Algo
 
+import android.widget.Button
 import android.widget.ImageButton
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material.FloatingActionButton
-import androidx.compose.material.MaterialTheme
-import androidx.compose.material.Text
-import androidx.compose.material.TextButton
+import androidx.compose.material.*
+import androidx.compose.material.MaterialTheme.colors
+import androidx.compose.material.SnackbarDefaults.backgroundColor
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -91,6 +91,16 @@ fun MainScreen(
             textAlign = TextAlign.Center,
             fontSize = 20.sp,
         )
+        Button(onClick = {
+            navController.navigate(Ecran.EcranLancementEnigmeAlgo.route)
+                         },colors = ButtonDefaults.buttonColors(backgroundColor = Color.Magenta)) {
+
+            Image(
+                    painterResource(id = R.drawable.reset),
+            contentDescription ="reset",
+            modifier = Modifier.size(20.dp))
+            Text(text = "  Reinitialiser", color = Color.White)
+        }
 
         var nom = "add"
         var i = 0
@@ -190,7 +200,7 @@ fun MainScreen(
                             text = "Quelque règle",
                             textAlign = TextAlign.Left
                         )
-                    }
+                        }
                     if (bool) {
                         AlerteDialogueRegle(navController)
                     }

@@ -108,9 +108,9 @@ fun Didacticiel(navController: NavController) {
     if (openDialog.value) {
         AlertDialog(
             onDismissRequest = { openDialog.value = false },
-            title = { Text(text = "Didacticiel", color = Color.Black) },
+            title = { Text(text = "Didacticiel", color = Color.White) },
             text = {
-                Text(text = dialogue[compteur], color = Color.Black)
+                Text(text = dialogue[compteur], color = Color.White)
             },
 
             confirmButton = {
@@ -124,10 +124,25 @@ fun Didacticiel(navController: NavController) {
                             navController.navigate(Ecran.EcranMenuPrincipal.route)
                         }
                     }) {
-                    Text(text = "OK", color = Color.Black)
+                    Text(text = "  ->", color = Color.White)
                 }
+                            },
+                dismissButton = {
+                    if(compteur != 0){
+                        TextButton(
 
-            },
+                            onClick = {
+                                if (dialogue.size -1> compteur){
+                                    compteur--
+                                }
+                            }) {
+                            Text("<-  ",color= Color.White)
+                        }
+                    }
+                },
+
+
+
             backgroundColor = Color(166, 110, 187, 255),
             contentColor = Color.White,
         )

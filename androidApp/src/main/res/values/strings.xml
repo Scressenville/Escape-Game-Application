@@ -30,7 +30,7 @@
         <item>Oh non!!!</item>
         <item>Loggy : "Le langage Python s\'est malheureusement allié avec Chain, Java également, c\’est désastreux !" </item>
         <item>Bon, dans un premier temps essayons de vaincre Python à son propre jeu. Traduisons l\’algorithme que je t\’ai laissé dans son langage pour le vaincre.</item>
-        <item> /!\ Recueil de notes de Loggy, "Le serment de protection" trouvé /!\ </item>
+
     </string-array>
     <string name="explicationEnigmeAlgo">
         <item>L\'Algorithmique n\'est pas un langage de programmation à proprement parler, elle sert à comprendre ce que le code doit faire, elle reste donc nécessaire afin de savoir ce que l\'on veut faire. Vous avez pu voire qu\'il est ici très simple de traduire l\'algorithme dans un langage de programmation.</item>

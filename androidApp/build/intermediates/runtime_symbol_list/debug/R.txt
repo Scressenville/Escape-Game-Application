@@ -664,6 +664,7 @@ int drawable leofalse 0x7f070067
 int drawable leotrue 0x7f070068
 int drawable localisation 0x7f070069
 int drawable loggy 0x7f07006a
+int drawable loggyavatar 0x7f07009c
 int drawable maevafalse 0x7f07006b
 int drawable maevatrue 0x7f07006c
 int drawable matteofalse 0x7f07006d

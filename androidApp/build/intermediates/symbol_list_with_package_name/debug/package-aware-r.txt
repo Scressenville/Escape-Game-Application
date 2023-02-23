@@ -665,6 +665,7 @@ drawable leofalse
 drawable leotrue
 drawable localisation
 drawable loggy
+drawable loggyavatar
 drawable maevafalse
 drawable maevatrue
 drawable matteofalse

@@ -39,7 +39,7 @@ fun MenuPrincipal(
     booleanEnigmeAlgo: Boolean, booleanEnigmeSQL: Boolean, booleanDidacticiel: Boolean, planActuel: Painter) {
 
     var qrcode by remember{ mutableStateOf(false) }
-    var aide by remember{ mutableStateOf(false) }
+    val aide = remember { mutableStateOf(false) }
     val scaffoldState = rememberScaffoldState(rememberDrawerState(DrawerValue.Closed))
     val coroutineScope = rememberCoroutineScope()
 
@@ -47,7 +47,7 @@ fun MenuPrincipal(
         Didacticiel(controlleurNavigation)
     }
 
-    if(aide){
+    if(aide.value){
         Aide(aide)
     }
 
@@ -96,7 +96,7 @@ fun MenuPrincipal(
                 contentScale = ContentScale.Crop,            // crop the image if it's not a square
                 modifier = Modifier
                     .clickable {
-                        aide = true
+                        aide.value = true
                     }
                     .size(64.dp)
                     .clip(CircleShape)                       // clip to the circle shape

@@ -211,11 +211,10 @@ fun AlerteDialogSQL(navController: NavController,explication : String) {
     }
 }
 @Composable
-fun Aide(aide: Boolean) : Boolean {
+fun Aide(aide: MutableState<Boolean>) : MutableState<Boolean> {
     println("je passe dans la fonction aide")
 
     var showDialog by remember { mutableStateOf(true )}
-    var retour by remember { mutableStateOf(true )}
     if (showDialog) {
         AlertDialog(
             onDismissRequest = { showDialog = false },
@@ -236,7 +235,7 @@ fun Aide(aide: Boolean) : Boolean {
                     onClick = {
                         // Actions à effectuer lors de l'annulation
                         showDialog = false
-                        retour=false
+                        aide.value = false
                     }
                 ) {
                     Text("Annuler")
@@ -244,5 +243,5 @@ fun Aide(aide: Boolean) : Boolean {
             }
         )
     }
-    return retour
+    return aide
 }

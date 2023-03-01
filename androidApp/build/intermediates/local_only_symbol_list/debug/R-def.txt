@@ -20,6 +20,7 @@ array reponseQCMSQL1
 array reponseQCMSQL2
 array reponses_juste
 array réponses
+drawable ampouleaide
 drawable bdd
 drawable bonne_reponse
 drawable evilloggy

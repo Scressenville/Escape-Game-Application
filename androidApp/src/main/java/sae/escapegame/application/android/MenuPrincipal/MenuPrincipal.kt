@@ -39,13 +39,19 @@ fun MenuPrincipal(
     booleanEnigmeAlgo: Boolean, booleanEnigmeSQL: Boolean, booleanDidacticiel: Boolean, planActuel: Painter) {
 
     var qrcode by remember{ mutableStateOf(false) }
-
+    var aide by remember{ mutableStateOf(false) }
     val scaffoldState = rememberScaffoldState(rememberDrawerState(DrawerValue.Closed))
     val coroutineScope = rememberCoroutineScope()
 
     if (!booleanDidacticiel){
         Didacticiel(controlleurNavigation)
     }
+
+    if(aide){
+        Aide(aide)
+    }
+
+
 
 
     BackHandler(true, onBack = {
@@ -88,9 +94,10 @@ fun MenuPrincipal(
                 painter = painterResource(R.drawable.loggyavatar),
                 contentDescription = "avatarAideLoggy",
                 contentScale = ContentScale.Crop,            // crop the image if it's not a square
-                modifier = Modifier.clickable {
-
-                }
+                modifier = Modifier
+                    .clickable {
+                        aide = true
+                    }
                     .size(64.dp)
                     .clip(CircleShape)                       // clip to the circle shape
                     .border(2.dp, Color.Black, CircleShape)
@@ -201,5 +208,4 @@ fun MyNavigationDrawer(
         }
     )
 }
-
 

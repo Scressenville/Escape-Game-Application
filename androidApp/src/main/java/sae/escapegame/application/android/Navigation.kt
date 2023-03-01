@@ -27,7 +27,7 @@ import sae.escapegame.application.android.cinematics.Explication
 
 @SuppressLint("SuspiciousIndentation")
 @Composable
-fun Navigation() {
+fun Navigation(tempsDepart :  Int) {
     var repJoueur: Array<String> by remember { mutableStateOf(Array(4){""}) }
     var compteurQCM : Int by remember { mutableStateOf(0)}
     val navController = rememberNavController()
@@ -92,17 +92,18 @@ fun Navigation() {
             println("=============================")
             println("SQL"+booleanEnigmeSQL)
             if(booleanEnigmeAlgo==true && booleanEnigmeSQL==false){
-                MenuPrincipal(navController,booleanEnigmeAlgo,booleanEnigmeSQL,booleanDidacticiel,  painterResource(id = R.drawable.plan_rdc_r47_ok))
+                MenuPrincipal(navController,tempsDepart,booleanEnigmeAlgo,booleanEnigmeSQL,booleanDidacticiel,  painterResource(id = R.drawable.plan_rdc_r47_ok))
             }
             if(booleanEnigmeAlgo==false && booleanEnigmeSQL==true){
-                MenuPrincipal(navController,booleanEnigmeAlgo,booleanEnigmeSQL,booleanDidacticiel,  painterResource(id = R.drawable.plan_rdc_r50_ok))
+                MenuPrincipal(navController,tempsDepart,booleanEnigmeAlgo,booleanEnigmeSQL,booleanDidacticiel,  painterResource(id = R.drawable.plan_rdc_r50_ok))
             }
             if(booleanEnigmeAlgo==true && booleanEnigmeSQL==true){
-                MenuPrincipal(navController,booleanEnigmeAlgo,booleanEnigmeSQL,booleanDidacticiel,  painterResource(id = R.drawable.plan_rdc_r47_r50_ok))
+                MenuPrincipal(navController,tempsDepart,booleanEnigmeAlgo,booleanEnigmeSQL,booleanDidacticiel,  painterResource(id = R.drawable.plan_rdc_r47_r50_ok))
             }
             if(booleanEnigmeAlgo==false && booleanEnigmeSQL == false){
                 MenuPrincipal(
                     navController,
+                    tempsDepart,
                     booleanEnigmeAlgo,
                     booleanEnigmeSQL,
                     booleanDidacticiel,

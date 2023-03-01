@@ -58,7 +58,8 @@ class ActivitePrincipale : ComponentActivity() {
     override fun onCreate(etatInstanceSauvegardee: Bundle?) {
         super.onCreate(etatInstanceSauvegardee)
         setContent {
-            Navigation()
+            val tempsDepart = (System.currentTimeMillis() / 1000).toInt()
+            Navigation(tempsDepart)
         }
     }
 }

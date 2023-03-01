@@ -33,18 +33,14 @@ import sae.escapegame.application.android.QRCodeScan.EcranDeScanSQL
 @Composable
 fun MenuPrincipal(
     controlleurNavigation: NavController,
+    tempsDepart : Int,
     booleanEnigmeAlgo: Boolean, booleanEnigmeSQL: Boolean, booleanDidacticiel: Boolean, planActuel: Painter) {
+
 
     var qrcode by remember{ mutableStateOf(false) }
 
     val scaffoldState = rememberScaffoldState(rememberDrawerState(DrawerValue.Closed))
     val coroutineScope = rememberCoroutineScope()
-
-    if (!booleanDidacticiel){
-        Didacticiel(controlleurNavigation)
-    }
-
-
     BackHandler(true, onBack = {
         //do nothing
         println("Boutton retour préssé")
@@ -55,7 +51,7 @@ fun MenuPrincipal(
         scaffoldState = scaffoldState,
 
         topBar = {
-            MyTopAppBar {
+            MyTopAppBar(tempsDepart) {
                 // open the drawer
                 coroutineScope.launch {
                     scaffoldState.drawerState.open()
@@ -124,14 +120,26 @@ fun MenuPrincipal(
 }
 
 @Composable
-fun MyTopAppBar(onNavigationIconClick: () -> Unit) {
+fun MyTopAppBar(tempsDepart : Int,onNavigationIconClick: () -> Unit) {
+    var tempsTotal = 40*60
+    var tempsActuelle by remember { mutableStateOf(0) }
+    var tempsRestant by remember {mutableStateOf("")}
+    var tempsRestantInt by remember {mutableStateOf(0)}
+    var minutes by remember {mutableStateOf(0)}
+    var secondes by remember {mutableStateOf(0)}
+    tempsActuelle = (System.currentTimeMillis() / 1000).toInt()
+    tempsRestantInt = tempsTotal - (tempsActuelle - tempsDepart)
+    minutes = tempsRestantInt/60
+    secondes = tempsRestantInt%60
+    tempsRestant = minutes.toString() + " : " + secondes.toString()
+
     TopAppBar(
         title = {
             Text(
                 text = "Menu"
             )
             Text(
-                text = "40:00",
+                text = tempsRestant,
                 modifier = Modifier.fillMaxWidth(),
                 textAlign = TextAlign.Right,
                 fontWeight = FontWeight.Bold,

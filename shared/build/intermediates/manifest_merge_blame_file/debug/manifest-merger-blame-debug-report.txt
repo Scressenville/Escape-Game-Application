@@ -4,8 +4,8 @@
 4
 5    <uses-sdk
 6        android:minSdkVersion="21"
-6-->C:\new\Escape-Game-Application\shared\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest3524163155235911078.xml
+6-->C:\Users\Leo\Desktop\travail\A2 BUT INFO\SAE\SAE-Escape-Game\Escape-Game-Application\shared\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest349209944020039242.xml
 7        android:targetSdkVersion="32" />
-7-->C:\new\Escape-Game-Application\shared\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest3524163155235911078.xml
+7-->C:\Users\Leo\Desktop\travail\A2 BUT INFO\SAE\SAE-Escape-Game\Escape-Game-Application\shared\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest349209944020039242.xml
 8
 9</manifest>

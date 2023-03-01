@@ -29,4 +29,7 @@ sealed class Ecran(val route: String){
     object EcranResultatA : Ecran("resultatA")
     object EcranResultatS : Ecran("resultatS")
 
+    object EcranInventaire : Ecran("ecranInventaire")
+    object EcranSplashLettreK : Ecran("ecranSplashLettreK")
+
 }

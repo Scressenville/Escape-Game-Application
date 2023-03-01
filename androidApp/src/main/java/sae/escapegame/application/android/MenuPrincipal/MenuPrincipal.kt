@@ -2,6 +2,7 @@ package sae.escapegame.application.android
 
 
 import android.annotation.SuppressLint
+import android.widget.ImageButton
 import androidx.activity.compose.BackHandler
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -60,7 +61,7 @@ fun MenuPrincipal(
         },
 
         drawerContent = {
-            MyNavigationDrawer(coroutineScope = coroutineScope, scaffoldState = scaffoldState)
+            MyNavigationDrawer(coroutineScope = coroutineScope, scaffoldState = scaffoldState, controlleurNavigation)
 
         },
 
@@ -162,15 +163,18 @@ fun MyTopAppBar(tempsDepart : Int,onNavigationIconClick: () -> Unit) {
 @Composable
 fun MyNavigationDrawer(
     coroutineScope: CoroutineScope,
-    scaffoldState: ScaffoldState
+    scaffoldState: ScaffoldState,
+    controlleurNavigation: NavController,
 ) {
     DrawerBody(
+
         items = listOf(
             MenuItem(
                 id = "Inventaire",
                 title = "Inventaire",
                 contentDescription = "Go to home screen",
-                icon = painterResource(R.drawable.symbole_inventaire)
+                icon = painterResource(R.drawable.symbole_inventaire),
+
             ),
             MenuItem(
                 id = "Sauvegarde",
@@ -186,6 +190,9 @@ fun MyNavigationDrawer(
             ),
         ),
         onItemClick = {
+            if (it.title=="Inventaire"){
+                controlleurNavigation.navigate("ecranInventaire")
+            }
             println("Clicked on ${it.title}")
         }
     )

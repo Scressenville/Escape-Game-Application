@@ -23,6 +23,8 @@ import sae.escapegame.application.android.QCM.verificationCapacite
 import sae.escapegame.application.android.SQL.EnigmeSQL
 import sae.escapegame.application.android.cinematics.Cinematique
 import sae.escapegame.application.android.cinematics.Explication
+import sae.escapegame.application.android.inventaire.EcranInventaire
+import sae.escapegame.application.android.inventaire.inventaire
 
 
 @SuppressLint("SuspiciousIndentation")
@@ -35,6 +37,7 @@ fun Navigation(tempsDepart :  Int) {
     var liste_reponse_qcm : Array<Array<String>> by remember { mutableStateOf(Array(3){Array(4){""} }) }
     var EcranQCM : Ecran = Ecran.EcranQCMAlgo
     var ecranSuivant : Ecran = Ecran.EcranMenuPrincipal
+    var inventaire = inventaire(B = false, L = false,O = false,C = false, K = false)
     var phraseExplication : String by remember {mutableStateOf("")}
     BackHandler(true, onBack = {
         //do nothing
@@ -43,6 +46,7 @@ fun Navigation(tempsDepart :  Int) {
     var booleanEnigmeAlgo = false
     var booleanEnigmeSQL = false
     var booleanDidacticiel = false
+    var affichecransplash = 0
 
     NavHost(navController = navController, startDestination = Ecran.EcranPrincipal.route ) {
         composable(route = Ecran.EcranPrincipal.route) {
@@ -93,12 +97,17 @@ fun Navigation(tempsDepart :  Int) {
             println("SQL"+booleanEnigmeSQL)
             if(booleanEnigmeAlgo==true && booleanEnigmeSQL==false){
                 MenuPrincipal(navController,tempsDepart,booleanEnigmeAlgo,booleanEnigmeSQL,booleanDidacticiel,  painterResource(id = R.drawable.plan_rdc_r47_ok))
+                inventaire.K = true
+
             }
             if(booleanEnigmeAlgo==false && booleanEnigmeSQL==true){
                 MenuPrincipal(navController,tempsDepart,booleanEnigmeAlgo,booleanEnigmeSQL,booleanDidacticiel,  painterResource(id = R.drawable.plan_rdc_r50_ok))
+                inventaire.B = true
             }
             if(booleanEnigmeAlgo==true && booleanEnigmeSQL==true){
                 MenuPrincipal(navController,tempsDepart,booleanEnigmeAlgo,booleanEnigmeSQL,booleanDidacticiel,  painterResource(id = R.drawable.plan_rdc_r47_r50_ok))
+                inventaire.B = true
+                inventaire.K = true
             }
             if(booleanEnigmeAlgo==false && booleanEnigmeSQL == false){
                 MenuPrincipal(
@@ -195,6 +204,7 @@ fun Navigation(tempsDepart :  Int) {
             phraseExplication = stringResource(R.string.explicationEnigmeAlgo)
             ecranSuivant = Ecran.EcranQCMAlgo
         }
+
         composable(route = Ecran.EcranCinematiqueIntroSQL.route){
             Cinematique(
                 painterResource(id = R.drawable.photo_r47),
@@ -208,6 +218,10 @@ fun Navigation(tempsDepart :  Int) {
         }
         composable(route = Ecran.EcranExplication.route){
             Explication(phrase = phraseExplication, ecranSuivant = ecranSuivant, controlleurNavigation = navController)
+        }
+
+        composable(route = Ecran.EcranInventaire.route){
+            EcranInventaire(navController, inventaire)
         }
 
     }

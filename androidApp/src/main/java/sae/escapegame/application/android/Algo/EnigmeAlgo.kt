@@ -193,6 +193,7 @@ fun MainScreen(
                     var bool by remember {
                         mutableStateOf(false)
                     }
+
                     TextButton(onClick = {
                         bool = true
                     }) {

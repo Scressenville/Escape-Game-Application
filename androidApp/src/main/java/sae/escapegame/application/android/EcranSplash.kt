@@ -42,7 +42,7 @@ fun EcranSplashReponseVA(navController: NavController) {
                     OvershootInterpolator(4f).getInterpolation(it)
                 })
         )
-        delay(300L)
+        delay(3000L)
         navController.navigate("resultatA")
     }
 
@@ -52,9 +52,13 @@ fun EcranSplashReponseVA(navController: NavController) {
             .fillMaxSize()
             .background(Color.White))
         {
-        Image(painter = painterResource(id = R.drawable.maevatrue),
-            contentDescription = "Logo",
-            modifier = Modifier.scale(scale.value))
+            Column() {
+                Text(text = "Bravo vous avez gagner la lettre K !!!")
+                Image(painter = painterResource(id = R.drawable.maevatrue),
+                    contentDescription = "Logo",
+                    modifier = Modifier.scale(scale.value))
+            }
+
     }
 }
 @Composable
@@ -88,6 +92,7 @@ fun EcranSplashReponseVS(navController: NavController) {
             .background(Color.White))
     {
         Column {
+            Text(text = "Bravo vous avez gagner la lettre B !!!")
             Image(painter = painterResource(id = R.drawable.sylvaintrue),
                 contentDescription = "Logo",
                 modifier = Modifier.scale(scale.value))

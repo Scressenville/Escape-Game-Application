@@ -211,7 +211,7 @@ fun AlerteDialogSQL(navController: NavController,explication : String) {
     }
 }
 @Composable
-fun Aide(aide: MutableState<Boolean>) : MutableState<Boolean> {
+fun Aide(aide: MutableState<Boolean>, text : String){
     println("je passe dans la fonction aide")
 
     var showDialog by remember { mutableStateOf(true )}
@@ -219,29 +219,20 @@ fun Aide(aide: MutableState<Boolean>) : MutableState<Boolean> {
         AlertDialog(
             onDismissRequest = { showDialog = false },
             title = { Text("Help Loggy") },
-            text = { Text("Je viens t'aider ! ") },
+            text = {
+                Text(text)
+            },
             confirmButton = {
                 Button(
                     onClick = {
                         // Actions à effectuer lors de la confirmation
                         showDialog = false
+                        aide.value = false
                     }
                 ) {
                     Text("Confirmer")
                 }
             },
-            dismissButton = {
-                Button(
-                    onClick = {
-                        // Actions à effectuer lors de l'annulation
-                        showDialog = false
-                        aide.value = false
-                    }
-                ) {
-                    Text("Annuler")
-                }
-            }
         )
     }
-    return aide
 }

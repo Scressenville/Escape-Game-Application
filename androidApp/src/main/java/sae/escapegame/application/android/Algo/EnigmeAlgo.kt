@@ -46,7 +46,7 @@ fun MainScreen(
     ) {
 
         Image(
-            painter = painterResource(sae.escapegame.application.android.R.drawable.python_algo),
+            painter = painterResource(R.drawable.python_algo),
             contentDescription = "img",
             contentScale = ContentScale.Crop,
             modifier = Modifier
@@ -234,23 +234,28 @@ private fun Drop(mainViewModel: MainViewModel,text:String){
             }
         }
         if (isInBound) {
-            Text(text = text,
-                color = Color.Red,
-                textAlign = TextAlign.Left,
-                fontSize = 20.sp)
+            Box(modifier = Modifier.background(Color.Gray)){
+                Text(text = text,
+                    color = Color.Red,
+                    textAlign = TextAlign.Left,
+                    fontSize = 30.sp)
+            }
+
         } else {
-            Text(text = text,
-                textAlign = TextAlign.Left,
-                fontSize = 20.sp)
+            if (text == "add"){
+                Text(text = text,
+                    textAlign = TextAlign.Left,
+                    fontSize = 20.sp)
+            }else{
+                Text(text = text,
+                    textAlign = TextAlign.Left,
+                    fontSize = 20.sp,
+                    color = Color(175, 38, 85, 255)
+                )
+            }
+
         }
     }
 }
 
-
-@Composable
-fun SnackbarScreen() {
-
-
-
-}
 

@@ -1,6 +1,8 @@
 package sae.escapegame.application.android.Algo
 
+import androidx.compose.foundation.gestures.detectDragGestures
 import androidx.compose.foundation.gestures.detectDragGesturesAfterLongPress
+import androidx.compose.foundation.gestures.detectTapGestures
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.BoxScope
 import androidx.compose.foundation.layout.fillMaxSize
@@ -71,13 +73,13 @@ fun <T> DragTarget(
             )
         }
         .pointerInput(Unit) {
-            detectDragGesturesAfterLongPress(onDragStart = {
+            detectDragGestures(onDragStart = {
                 viewModel.startDragging()
                 currentState.dataToDrop = dataToDrop
                 currentState.isDragging = true
                 currentState.dragPosition = currentPosition + it
                 currentState.draggableComposable = content
-            }, onDrag = { change, dragAmount ->
+            },onDrag = { change, dragAmount ->
                 change.consumeAllChanges()
                 currentState.dragOffset += Offset(dragAmount.x, dragAmount.y)
             }, onDragEnd = {

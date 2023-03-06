@@ -91,7 +91,7 @@ fun MenuPrincipal(
                 verticalAlignment = Alignment.Bottom
             ) {
                 Image(
-                painter = painterResource(R.drawable.loggyavatar),
+                painter = painterResource(R.drawable.loggyaides),
                 contentDescription = "avatarAideLoggy",
                 contentScale = ContentScale.Crop,            // crop the image if it's not a square
                 modifier = Modifier

@@ -3,13 +3,17 @@ package sae.escapegame.application.android.SQL
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
+import androidx.compose.foundation.border
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material.*
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Check
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
@@ -21,6 +25,7 @@ import com.google.accompanist.pager.ExperimentalPagerApi
 import com.google.accompanist.pager.HorizontalPager
 import com.google.accompanist.pager.PagerState
 import com.google.accompanist.pager.rememberPagerState
+import sae.escapegame.application.android.Aide
 import sae.escapegame.application.android.EcranSplashReponseFS
 import sae.escapegame.application.android.R
 import sae.escapegame.application.android.cinematics.OnBoardingData
@@ -88,7 +93,10 @@ fun OnBoardingPager(
     item: List<OnBoardingData>,
     pagerState: PagerState,
     navController: NavController
-){
+){val aide = remember { mutableStateOf(false) }
+    if(aide.value){
+        Aide(aide, "Tu peux t'aider des indices présents  dans la salle")
+    }
     Column(
         verticalArrangement = Arrangement.SpaceEvenly,
         horizontalAlignment = Alignment.CenterHorizontally,
@@ -140,35 +148,50 @@ fun OnBoardingPager(
                                 .fillMaxSize(0.3f)
 
                         )
+
                     }
 
                 }
             }
-
-        Text("Entre le chiffre de la reponse correcte")
-        var text by remember {
-        mutableStateOf("")
-        }
-        TextField(
-            modifier = Modifier
-                .background(Color(151, 151, 151, 255)),
-            value = text,
-            onValueChange = { newText ->
-                text = newText
-            },
-            trailingIcon = {
-                IconButton(onClick = {
-                    if (text == "3"){
-                        navController.navigate("ecranSplashReponseVS")
-                    }else{
-                        navController.navigate("ecranSplashReponseFS")
-                 }
-                }) {
-                    Icon(
-                        imageVector = Icons.Filled.Check ,
-                        contentDescription =  "OK")
-                }
+        Column() {
+            Text("Entre le chiffre de la reponse correcte")
+            var text by remember {
+                mutableStateOf("")
             }
+            TextField(
+                modifier = Modifier
+                    .background(Color(151, 151, 151, 255)),
+                value = text,
+                onValueChange = { newText ->
+                    text = newText
+                },
+                trailingIcon = {
+                    IconButton(onClick = {
+                        if (text == "3"){
+                            navController.navigate("ecranSplashReponseVS")
+                        }else{
+                            navController.navigate("ecranSplashReponseFS")
+                        }
+                    }) {
+                        Icon(
+                            imageVector = Icons.Filled.Check ,
+                            contentDescription =  "OK")
+                    }
+                }
+            )
+
+        }
+        Image(
+            painter = painterResource(R.drawable.loggyaides),
+            contentDescription = "avatarAideLoggy",
+            contentScale = ContentScale.Crop,            // crop the image if it's not a square
+            modifier = Modifier
+                .clickable {
+                    aide.value = true
+                }
+                .size(64.dp)
+                .clip(CircleShape)                       // clip to the circle shape
+                .border(2.dp, Color.Black, CircleShape)
         )
 
     }

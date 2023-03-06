@@ -20,7 +20,7 @@ array reponseQCMSQL1
 array reponseQCMSQL2
 array reponses_juste
 array réponses
-drawable b
+drawable ampouleaide
 drawable bdd
 drawable bonne_reponse
 drawable evilloggy
@@ -28,13 +28,14 @@ drawable fleche_droite
 drawable fleche_gauche
 drawable img_enigme_algo
 drawable img_enigme_sql
-drawable k
 drawable leafalse
 drawable leatrue
 drawable leofalse
 drawable leotrue
 drawable localisation
 drawable loggy
+drawable loggyaides
+drawable loggyavatar
 drawable maevafalse
 drawable maevatrue
 drawable matteofalse

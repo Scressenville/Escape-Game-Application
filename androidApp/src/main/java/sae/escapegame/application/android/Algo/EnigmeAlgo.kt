@@ -4,8 +4,10 @@ import android.widget.Button
 import android.widget.ImageButton
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
+import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.*
 import androidx.compose.material.MaterialTheme.colors
@@ -37,7 +39,10 @@ fun MainScreen(
 ) {
     val largeurEcran = LocalConfiguration.current.screenWidthDp
     val scope = rememberCoroutineScope()
-
+    val aide = remember { mutableStateOf(false) }
+    if(aide.value){
+        Aide(aide, "-Tu doit obligatoirement remplir les champs dans l'ordre.\\n+" +"Si tu eprouve des difficultées trouve l'aide cachée dans la salle ;)")
+    }
     Column(
         modifier = Modifier
             .fillMaxSize(),
@@ -217,7 +222,18 @@ fun MainScreen(
             }
         }
 
-
+        Image(
+            painter = painterResource(R.drawable.loggyaides),
+            contentDescription = "avatarAideLoggy",
+            contentScale = ContentScale.Crop,            // crop the image if it's not a square
+            modifier = Modifier
+                .clickable {
+                    aide.value = true
+                }
+                .size(64.dp)
+                .clip(CircleShape)                       // clip to the circle shape
+                .border(2.dp, Color.Black, CircleShape)
+        )
     }
 }
 

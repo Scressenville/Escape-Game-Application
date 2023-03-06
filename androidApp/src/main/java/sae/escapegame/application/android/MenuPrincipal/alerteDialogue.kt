@@ -2,24 +2,14 @@ package sae.escapegame.application.android
 
 
 import android.widget.Toast
-import androidx.compose.foundation.Image
-import androidx.compose.foundation.layout.height
-import androidx.compose.foundation.layout.width
 import androidx.compose.material.AlertDialog
+import androidx.compose.material.Button
 import androidx.compose.material.Text
 import androidx.compose.material.TextButton
 import androidx.compose.runtime.*
-import androidx.compose.ui.Alignment
-import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalContext
-import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringArrayResource
-import androidx.compose.ui.res.stringResource
-import androidx.compose.ui.text.style.TextAlign
-import androidx.compose.ui.unit.dp
-import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 
 @Composable
@@ -217,6 +207,32 @@ fun AlerteDialogSQL(navController: NavController,explication : String) {
             },
             backgroundColor = Color.White,
             contentColor = Color.White
+        )
+    }
+}
+@Composable
+fun Aide(aide: MutableState<Boolean>, text : String){
+    println("je passe dans la fonction aide")
+
+    var showDialog by remember { mutableStateOf(true )}
+    if (showDialog) {
+        AlertDialog(
+            onDismissRequest = { showDialog = false },
+            title = { Text("Help Loggy") },
+            text = {
+                Text(text)
+            },
+            confirmButton = {
+                Button(
+                    onClick = {
+                        // Actions à effectuer lors de la confirmation
+                        showDialog = false
+                        aide.value = false
+                    }
+                ) {
+                    Text("Confirmer")
+                }
+            },
         )
     }
 }

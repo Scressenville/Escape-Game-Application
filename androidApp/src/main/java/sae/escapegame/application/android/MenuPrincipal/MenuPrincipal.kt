@@ -6,14 +6,17 @@ import android.widget.ImageButton
 import androidx.activity.compose.BackHandler
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
+import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material.*
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.outlined.Menu
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.painter.Painter
 import androidx.compose.ui.layout.ContentScale
@@ -39,9 +42,21 @@ fun MenuPrincipal(
 
 
     var qrcode by remember{ mutableStateOf(false) }
-
+    val aide = remember { mutableStateOf(false) }
     val scaffoldState = rememberScaffoldState(rememberDrawerState(DrawerValue.Closed))
     val coroutineScope = rememberCoroutineScope()
+
+    if (!booleanDidacticiel){
+        Didacticiel(controlleurNavigation)
+    }
+
+    if(aide.value){
+        Aide(aide," Rend toi sur une des deux salles indiquées sur le plan. \n Ensuite, clique sur le bouton de scan en bas à droite puis scan le QR code présent sur le mur pour accéder à l'énigme")
+    }
+
+
+
+
     BackHandler(true, onBack = {
         //do nothing
         println("Boutton retour préssé")
@@ -66,13 +81,30 @@ fun MenuPrincipal(
         },
 
         bottomBar = {
+
             Row(
                 modifier = Modifier
                     .fillMaxWidth()
                     .fillMaxHeight(),
-                horizontalArrangement = Arrangement.Center,
+                horizontalArrangement = Arrangement
+                    .spacedBy(
+                        space= 50.dp,
+                        alignment= Alignment.CenterHorizontally
+                    ),
                 verticalAlignment = Alignment.Bottom
             ) {
+                Image(
+                painter = painterResource(R.drawable.loggyaides),
+                contentDescription = "avatarAideLoggy",
+                contentScale = ContentScale.Crop,            // crop the image if it's not a square
+                modifier = Modifier
+                    .clickable {
+                        aide.value = true
+                    }
+                    .size(64.dp)
+                    .clip(CircleShape)                       // clip to the circle shape
+                    .border(2.dp, Color.Black, CircleShape)
+                )
                 Image(
                     painter = painterResource(R.drawable.symbole_qr_code),
                     contentDescription = "Qrcode",

@@ -5,22 +5,26 @@ import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material.Button
 import androidx.compose.material.ButtonDefaults
+import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
-import androidx.compose.material.Text
-import androidx.compose.ui.unit.dp
-import sae.escapegame.application.android.Ecran
-import androidx.compose.material.Button
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
+import sae.escapegame.application.android.Ecran
+
 
 @Composable
 fun result(repJoueur: Array<String>, correctionQCM: Array<String>,controllerNavigation: NavController) {
+    val explication = "COUOU"
     BackHandler(true, onBack = {
         //do nothing
         println("Boutton retour préssé")
@@ -50,6 +54,15 @@ fun result(repJoueur: Array<String>, correctionQCM: Array<String>,controllerNavi
                     Text("Bravo vous avez reussi !!!!!",
                         textAlign = TextAlign.Center,
                         fontSize = 20.sp)
+                    Column(
+                        Modifier
+                            .size(200.dp)
+                            .clip(RoundedCornerShape(30.dp))
+                            .background(Color.LightGray)
+                            .align(Alignment.CenterHorizontally)
+                    ){
+                        Text(explication ,modifier = Modifier.padding(16.dp))
+                    }
                 }else{
                     Image(painter = painterResource(id = sae.escapegame.application.android.R.drawable.maevafalse),
                         contentDescription = "img" )

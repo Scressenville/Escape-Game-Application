@@ -214,12 +214,6 @@ fun MyNavigationDrawer(
                 contentDescription = "Go to settings screen",
                 icon = painterResource(R.drawable.symbole_sauvegarde)
             ),
-            MenuItem(
-                id = "Aide",
-                title = "Aide",
-                contentDescription = "Get help",
-                icon = painterResource(R.drawable.symbole_aide)
-            ),
         ),
         onItemClick = {
             if (it.title=="Inventaire"){

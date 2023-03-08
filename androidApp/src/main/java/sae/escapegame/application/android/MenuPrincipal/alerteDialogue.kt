@@ -115,9 +115,8 @@ fun Didacticiel(navController: NavController) {
                         }
                     }) {
                     Text(text = "  ->", color = Color.White)
-                }
-                            },
-                dismissButton = {
+                } },
+            dismissButton = {
                     if(compteur != 0){
                         TextButton(
 
@@ -128,10 +127,7 @@ fun Didacticiel(navController: NavController) {
                             }) {
                             Text("<-  ",color= Color.White)
                         }
-                    }
-                },
-
-
+                    } },
 
             backgroundColor = Color(166, 110, 187, 255),
             contentColor = Color.White,

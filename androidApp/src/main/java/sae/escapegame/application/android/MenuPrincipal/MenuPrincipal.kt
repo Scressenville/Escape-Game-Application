@@ -189,13 +189,11 @@ fun MyTopAppBar(tempsDepart : Int,onNavigationIconClick: () -> Unit) {
                 text = "Menu"
             )
             LaunchedEffect(Unit){
-                while(true){
                     tempsActuelle = (System.currentTimeMillis() / 1000).toInt()
                     tempsRestantInt = tempsTotal - (tempsActuelle - tempsDepart)
                     minutes = tempsRestantInt/60
                     secondes = tempsRestantInt%60
                     tempsRestant = minutes.toString() + " : " + secondes.toString()
-                }
             }
 
             Text(

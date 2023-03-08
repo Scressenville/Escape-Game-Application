@@ -99,14 +99,6 @@ fun EcranDeScan(controlleurNavigation: NavController): String {
                 modifier = Modifier.weight(1f)
             )
         }
-        Image(
-            painter = painterResource(R.drawable.symbole_ecran_principal),
-            contentDescription = "MenuPrincipale",
-            modifier = Modifier
-                .height(50.dp)
-                .clickable {
-                    controlleurNavigation.navigate(Ecran.EcranMenuPrincipal.route)
-                })
     }
     cameraProviderFuture.get().unbindAll()
     return code

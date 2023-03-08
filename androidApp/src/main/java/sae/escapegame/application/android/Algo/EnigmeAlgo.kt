@@ -125,6 +125,7 @@ fun MainScreen(
             ) {
                 mainViewModel.addedWord.forEach { person ->
                     listenom.set(i, person.name)
+
                     i += 1
 
                 }
@@ -142,12 +143,12 @@ fun MainScreen(
                         textAlign = TextAlign.Left,
                         fontSize = 20.sp,
                     )
-                    Drop(mainViewModel, text = listenom[0])
+                    Drop(mainViewModel, text = listenom[0], color = Color.Red)
 
                 }
                 Row() {
                     Text(text = "      ")
-                    Drop(mainViewModel, text = listenom[1])
+                    Drop(mainViewModel, text = listenom[1], color = Color.Red)
                     Text(
                         text = " ('Quel est ton nom ?')",
                         color = Color.White,
@@ -162,7 +163,7 @@ fun MainScreen(
                         textAlign = TextAlign.Left,
                         fontSize = 20.sp
                     )
-                    Drop(mainViewModel, text = listenom[2])
+                    Drop(mainViewModel, text = listenom[2], color = Color.Red)
                     Text(
                         text = " ()",
                         color = Color.White,
@@ -172,14 +173,14 @@ fun MainScreen(
                 }
                 Row {
                     Text(text = "      ")
-                    Drop(mainViewModel, text = listenom[3])
+                    Drop(mainViewModel, text = listenom[3], color = Color.Red)
                     Text(
                         text = " (''moi'', ",
                         color = Color.White,
                         textAlign = TextAlign.Left,
                         fontSize = 20.sp
                     )
-                    Drop(mainViewModel, text = listenom[4])
+                    Drop(mainViewModel, text = listenom[4], color = Color.Red)
                     Text(
                         text = " , ''je promets de vaincre '',", color = Color.White,
                         textAlign = TextAlign.Left,
@@ -239,7 +240,7 @@ fun MainScreen(
 
 
 @Composable
-private fun Drop(mainViewModel: MainViewModel,text:String){
+private fun Drop(mainViewModel: MainViewModel,text:String, color : Color){
     DropItem<WordUiItem>(
         modifier = Modifier
             .padding(0.dp)

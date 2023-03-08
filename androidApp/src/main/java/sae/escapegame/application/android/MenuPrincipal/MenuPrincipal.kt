@@ -92,6 +92,7 @@ fun MenuPrincipal(
                         alignment= Alignment.CenterHorizontally
                     ),
                 verticalAlignment = Alignment.Bottom
+
             ) {
                 Image(
                 painter = painterResource(R.drawable.loggyaides),
@@ -105,17 +106,31 @@ fun MenuPrincipal(
                     .clip(CircleShape)                       // clip to the circle shape
                     .border(2.dp, Color.Black, CircleShape)
                 )
-                Image(
-                    painter = painterResource(R.drawable.symbole_qr_code),
-                    contentDescription = "Qrcode",
-                    contentScale = ContentScale.Crop,
-                    modifier = Modifier
-                        .height(50.dp)
-                        .clickable {
-                            if (qrcode == false) {
-                                qrcode = true
-                            }
-                        })
+                if (qrcode ==false) {
+                    Image(
+                        painter = painterResource(R.drawable.symbole_qr_code),
+                        contentDescription = "Qrcode",
+                        contentScale = ContentScale.Crop,
+                        modifier = Modifier
+
+                            .clickable {
+                                if (qrcode == false) {
+                                    qrcode = true
+                                }
+                            })
+                }else{
+                    Image(
+                        painter = painterResource(R.drawable.symbole_ecran_principal),
+                        contentDescription = "Menu principal",
+                        contentScale = ContentScale.Crop,
+                        modifier = Modifier
+                            .size(50.dp)
+                            .clickable {
+                                if (qrcode == true) {
+                                    qrcode = false
+                                }
+                            })
+                }
             }
         },
         // Pass the body in
@@ -160,17 +175,29 @@ fun MyTopAppBar(tempsDepart : Int,onNavigationIconClick: () -> Unit) {
     var tempsRestantInt by remember {mutableStateOf(0)}
     var minutes by remember {mutableStateOf(0)}
     var secondes by remember {mutableStateOf(0)}
+
     tempsActuelle = (System.currentTimeMillis() / 1000).toInt()
     tempsRestantInt = tempsTotal - (tempsActuelle - tempsDepart)
     minutes = tempsRestantInt/60
     secondes = tempsRestantInt%60
     tempsRestant = minutes.toString() + " : " + secondes.toString()
 
+
     TopAppBar(
         title = {
             Text(
                 text = "Menu"
             )
+            LaunchedEffect(Unit){
+                while(true){
+                    tempsActuelle = (System.currentTimeMillis() / 1000).toInt()
+                    tempsRestantInt = tempsTotal - (tempsActuelle - tempsDepart)
+                    minutes = tempsRestantInt/60
+                    secondes = tempsRestantInt%60
+                    tempsRestant = minutes.toString() + " : " + secondes.toString()
+                }
+            }
+
             Text(
                 text = tempsRestant,
                 modifier = Modifier.fillMaxWidth(),

@@ -94,8 +94,7 @@ fun ResultatS(navController: NavController){
                     fontSize = 20.sp
                 )
                 Text(
-                    text = "*Repondez juste et vous aurez 5 min en plus \n" +
-                            "*Repondez faux et vous aurez 5 min en moins",
+                    text = "*Repondez juste et vous aurez 5 min en plus \n",
                     textAlign = TextAlign.Left,
                     fontSize = 10.sp)
 

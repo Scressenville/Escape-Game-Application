@@ -24,7 +24,8 @@ import sae.escapegame.application.android.Ecran
 
 @Composable
 fun result(repJoueur: Array<String>, correctionQCM: Array<String>,controllerNavigation: NavController) {
-    val explication = "COUOU"
+    val explication = ""
+    generateurExplication(correctionQCM,explication)
     BackHandler(true, onBack = {
         //do nothing
         println("Boutton retour préssé")
@@ -69,6 +70,15 @@ fun result(repJoueur: Array<String>, correctionQCM: Array<String>,controllerNavi
                     Text("Dommage vous avez eu faux ",
                         textAlign = TextAlign.Center,
                         fontSize = 20.sp)
+                    Column(
+                        Modifier
+                            .size(200.dp)
+                            .clip(RoundedCornerShape(30.dp))
+                            .background(Color.LightGray)
+                            .align(Alignment.CenterHorizontally)
+                    ){
+                        Text(explication ,modifier = Modifier.padding(16.dp))
+                    }
                 }
 
                 Button(
@@ -98,6 +108,11 @@ fun result(repJoueur: Array<String>, correctionQCM: Array<String>,controllerNavi
         println("###### ligne suivante #####")
         println(comparaisonReponses(repJoueur, correctionQCM))
     }
+}
+
+fun generateurExplication(correctionQCM: Array<String>, explication: String) {
+
+
 }
 
 fun comparaisonReponses(repJoueur: Array<String>, correctionQCM: Array<String>): Int {

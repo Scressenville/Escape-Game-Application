@@ -52,6 +52,7 @@
         <item>C : une fonction Booléenne</item>
         <item>D : une fonction Arithmétique </item>
     </string-array>
+    <string name="explAlgo1">En effet, on appelle une fonction qui s\'appelle toute seule une fonction récursive</string>
     <string-array name="reponseQCMAlgo1">
         <item>true</item>
         <item>false</item>
@@ -71,6 +72,7 @@
         <item>false</item>
         <item>false</item>
     </string-array>
+    <String name="explAlgo2"> En effet : Int correspond à un entier, String à une chaine de caractère, Bool à une entité qui peut etre soit vrai soit fausse et enfin Float correspont à un nombre a virgule.</String>
     <string-array name="qcmSQL1">
         <item>Afin de SELECTIONNER un élément dans une table on utilise le mot clé :</item>
         <item>A : Select</item>
@@ -78,6 +80,7 @@
         <item>C : Where</item>
         <item>D : From</item>
     </string-array>
+    <String name="explSQL1">Afin de SELECTIONNER un élément dans une table on utilise le mot clé : Select, vous le verez en cours de Base de données ;)  </String>
     <string-array name="qcmSQL2">
         <item>D\'après l\'épreuve que vous venez de passer, le SQL sert à : </item>
         <item>A : Développer des intelligences artificielles</item>
@@ -85,6 +88,7 @@
         <item>C : Faire des jeux vidéos</item>
         <item>D : Établir des connexions entre des machines</item>
     </string-array>
+    <String name = "explSQL2"> Eb effet le SQL (Structured Query Language) est un langage permettant de communiquer avec une base de données.</String>
     <string-array name="reponseQCMSQL1">
         <item>true</item>
         <item>false</item>

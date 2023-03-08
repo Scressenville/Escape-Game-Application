@@ -645,6 +645,7 @@ drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable ampouleaide
+drawable b
 drawable bdd
 drawable bonne_reponse
 drawable btn_checkbox_checked_mtrl
@@ -660,6 +661,7 @@ drawable fleche_droite
 drawable fleche_gauche
 drawable img_enigme_algo
 drawable img_enigme_sql
+drawable k
 drawable leafalse
 drawable leatrue
 drawable leofalse

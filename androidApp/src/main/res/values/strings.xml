@@ -126,9 +126,9 @@
     </string-array>
 
     <string-array name="didacticiel">
-        <item> Appuyer sur l\'icône Qrcode pour scanner les Qrcodes presents dans les salles.</item>
-        <item>En appuyant sur l\icône avec les 3 traits, vous aurez accès a votre inventaire....</item>
-        <item>  mais vous avez aussi la possibilité de sauvegarder et de recomencer ce didacticiel</item>
+        <item> Appuyez sur l\'icône Qrcode pour scanner les Qrcodes presents dans les salles.</item>
+        <item>En appuyant sur l\icône avec les 3 traits, vous aurez accès à votre inventaire....</item>
+        <item>  mais vous avez aussi la possibilité de sauvegarder et de recommencer ce didacticiel</item>
         <item> Vous avez le chronomètre en haut à droite de la page. Une fois celui-ci écoulé, vous aurez perdu. </item>
         <item> La carte au centre vous montrera les salles ou se trouvent les énigmes, mais aussi vous indique si une énigme est terminée. </item>
     </string-array>

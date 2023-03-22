@@ -41,7 +41,7 @@ fun MainScreen(
     val scope = rememberCoroutineScope()
     val aide = remember { mutableStateOf(false) }
     if(aide.value){
-        Aide(aide, "-Tu doit obligatoirement remplir les champs dans l'ordre.\\n+" +"Si tu eprouve des difficultées trouve l'aide cachée dans la salle ;)")
+        Aide(aide, " Tu dois obligatoirement remplir les champs dans l'ordre.\n Si tu éprouve des difficultés, trouve l'aide cachée dans la salle ;)")
     }
     Column(
         modifier = Modifier

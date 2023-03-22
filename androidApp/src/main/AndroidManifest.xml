@@ -6,7 +6,8 @@
     <application
         android:allowBackup="false"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        android:icon="@drawable/app_icon">
         <activity
             android:name=".ActivitePrincipale"
             android:exported="true">

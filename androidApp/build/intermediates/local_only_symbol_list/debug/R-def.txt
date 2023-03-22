@@ -21,6 +21,7 @@ array reponseQCMSQL2
 array reponses_juste
 array réponses
 drawable ampouleaide
+drawable app_icon
 drawable b
 drawable bdd
 drawable bonne_reponse

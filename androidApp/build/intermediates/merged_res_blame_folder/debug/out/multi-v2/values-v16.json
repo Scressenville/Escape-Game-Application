@@ -4,7 +4,7 @@
             "outputFile": "sae.escapegame.application.android.androidApp-mergeDebugResources-50:/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Sylvain\\.gradle\\caches\\transforms-3\\41321fd6cd24c15f8133434e15183865\\transformed\\appcompat-1.1.0\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\leado\\.gradle\\caches\\transforms-3\\41321fd6cd24c15f8133434e15183865\\transformed\\appcompat-1.1.0\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Sylvain\\.gradle\\caches\\transforms-3\\10634acf96c8b2d41780170076f28ac9\\transformed\\core-1.8.0\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\leado\\.gradle\\caches\\transforms-3\\10634acf96c8b2d41780170076f28ac9\\transformed\\core-1.8.0\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

@@ -224,6 +224,17 @@ fun Navigation(tempsDepart :  Int) {
             EcranInventaire(navController, inventaire)
         }
 
+        composable(route = Ecran.EcranEnigmeFin.route){
+            Cinematique(
+                painterResource(id = R.drawable.photo_escalier1),
+                painterResource(id = R.drawable.loggy),
+                stringArrayResource(id = R.array.cinematiqueFin),
+                Ecran.EcranPrincipal,
+                navController
+            )
+
+        }
+
     }
 }
 

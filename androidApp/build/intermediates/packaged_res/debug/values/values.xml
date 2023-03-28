@@ -22,6 +22,15 @@
         <item>Cela fut difficile, mais maintenant nous allons enfin pouvoir en découdre avec Chain !</item>
         <item>Il est temps que cette mascarade se termine !</item>
     </string-array>
+    <string-array name="cinematiqueFin">
+        <item>Chain :  Bouahahahahaaaaa, pas mal pour un avorton !</item>
+        <item>Chain : Cependant, vous ne parviendrez pas à bout du deuxième étage!</item>
+        <item>Chain : On se revoit là haut !</item>
+        <item>Loggy : Bien joué eheh</item>
+        <item>Loggy : on forme une belle équipe! </item>
+        <item>Loggy : Continuons comme ca, on se retrouve à l\'étage superieur</item>
+        <item>Fin de la démo merci d\'avoir joué ! </item>
+    </string-array>
     <string-array name="cinematiquePremiereEtage">
         <item>Très bien, on a réussi à passer le rez-de-chaussée</item>
         <item>Il faut maintenant réussir à passer le premier étage !</item>

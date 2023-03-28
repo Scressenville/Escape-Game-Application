@@ -53,7 +53,10 @@ fun MenuPrincipal(
     if(aide.value){
         Aide(aide," Rends toi sur une des deux salles indiquées sur le plan. \n Ensuite, clique sur le bouton de scan en bas à droite puis scanne le QR code présent sur le mur pour accéder à l'énigme.")
     }
+    if(booleanEnigmeAlgo && booleanEnigmeSQL){
+        controlleurNavigation.navigate("enigmeFin")
 
+    }
 
 
 

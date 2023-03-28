@@ -44,6 +44,16 @@
         <item>"Heureusement, il nous a laissé une feuille"</item>
         <item>"Gagnons cette énigme en sa mémoire</item>
     </string-array>
+    
+    <string-array name="cinematiqueFin">
+        <item>Chain :  Bouahahahahaaaaa, pas mal pour un avorton !</item>
+        <item>Chain : Cependant, vous ne parviendrez pas à bout du deuxième étage!</item>
+        <item>Chain : On se revoit là haut !</item>
+        <item>Loggy : Bien joué eheh</item>
+        <item>Loggy : on forme une belle équipe! </item>
+        <item>Loggy : Continuons comme ca, on se retrouve à l\'étage superieur</item>
+        <item>Fin de la démo merci d\'avoir joué ! </item>
+    </string-array>
 
     <string-array name="qcmAlgo1">
         <item>Une fonction qui s\'appelle toute seule est :</item>
